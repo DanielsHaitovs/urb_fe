@@ -14,8 +14,9 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #200577;
     --foreground: #ededed;
+    --background: radial-gradient(circle at top, #200577, #200577 70%);
   }
 }
 
