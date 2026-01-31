@@ -25,11 +25,11 @@ function Drill() {
         const size = new Vector3();
         box.getSize(size);
 
-        console.log("Model size:", size);
-        const maxDimension = Math.max(size.x, size.y, size.z);
-        const scale =  5 / maxDimension;
+        // console.log("Model size:", size);
+        // const maxDimension = Math.max(size.x, size.y, size.z);
+        // const scale = 5 / maxDimension;
 
-        scene.scale.setScalar(scale);
+        // scene.scale.setScalar(scale);
     }, [scene]);
 
   return (
@@ -52,17 +52,29 @@ function Drill() {
 
 useGLTF.preload(MODEL_PATH);
 
+function DrillScene() {
+  return (
+<Bounds fit observe margin={1.05}>
+  <Drill />
+</Bounds>
+
+  );
+}
+
 export default function DrillingCanvas() {
   return (
-    <Canvas className="w-full h-full">
-      <Suspense fallback={null}>
+<Canvas
+  orthographic
+  camera={{ zoom: 150, position: [0, 0, 10] }}
+  className="w-full h-full"
+>
+
+    <Suspense fallback={null}>
         <ambientLight intensity={1.2} />
         <directionalLight position={[3, 5, 4]} intensity={1} />
-        <Bounds fit clip observe>
-          <Drill />
-        </Bounds>
+        <DrillScene />
         <Environment preset="studio" />
-      </Suspense>
+    </Suspense>
     </Canvas>
   );
 }
