@@ -1,0 +1,24 @@
+{
+  "HomePage": {
+    "title": "Hello world!"
+  },
+  "AboutPage": {
+    "kicker": "About Urb",
+    "title": "Engineering immersive urban journeys",
+    "summary": "We blend architecture, responsive media, and civic technology to transform streets into playful destinations.",
+    "highlights": {
+      "mission": {
+        "title": "Mission first",
+        "body": "Design adaptive infrastructure that invites neighbors to explore their city differently."
+      },
+      "team": {
+        "title": "Interdisciplinary team",
+        "body": "Architects, artists, and engineers prototype together to keep experiences human."
+      },
+      "impact": {
+        "title": "Measured impact",
+        "body": "Installations already activate plazas across twelve cities worldwide."
+      }
+    }
+  }
+}
