@@ -1,11 +1,11 @@
 import { useTranslations } from "next-intl";
-import styles from "./AboutPage.module.scss";
+import styles from "./ContactPage.module.scss";
 
 const highlightKeys = ["mission", "team", "impact"] as const;
 
 type HighlightKey = (typeof highlightKeys)[number];
 
-export default function AboutPage() {
+export default function ContactPage() {
   const t = useTranslations("AboutPage");
 
   const highlights = highlightKeys.map((key: HighlightKey) => ({

@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   padding: 20px 0;
+  margin-top: 40px;
   z-index: 20;
   transition: padding 200ms ease;
 }
@@ -43,7 +44,7 @@ flex-direction: row;
 }
 
 .innerDark {
-  background: rgba(7, 8, 15, 0.75);
+  background: rgba(255, 255, 255, 0.92);
   border-color: rgba(255, 255, 255, 0.2);
   color: #f8f9ff;
 }
@@ -55,10 +56,17 @@ flex-direction: row;
 }
 
 .innerTransparent {
-  background: rgba(5, 6, 12, 0.35);
+  background: rgba(255, 255, 255, 0.92);
   border-color: rgba(255, 255, 255, 0.25);
-  color: #f8f9ff;
+  color: #0b1222;
   backdrop-filter: blur(12px);
+}
+
+.logo {
+  display: block;
+  height: auto;
+  filter: none; /* default: no inversion on dark/transparent variants */
+  transition: filter 200ms ease;
 }
 
 .brand {
@@ -194,13 +202,7 @@ flex-direction: row;
 }
 
 @media (max-width: 768px) {
-  .inner {
-    // flex-direction: column;
-    // align-items: stretch;
-  }
-
   .links {
-    // width: 100%;
     justify-content: space-between;
   }
 

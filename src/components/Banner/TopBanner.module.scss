@@ -1,0 +1,47 @@
+.topBanner {
+  z-index: 1000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: fixed;
+  align-items: center;
+  width: calc(100% - 48px);
+  left: 0;
+  top: 0;
+  right: 0;
+
+  padding: 5px 24px;
+
+  // Replace dark gradient with brighter primary accent
+  background: linear-gradient(90deg, #5ab0ff 0%, #35a0ff 40%, #0070f3 80%, #0057c2 100%);
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+
+  // Tone down blur so colors stay crisp
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.title, .address {
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  margin: 5px 0;
+}
+
+// Helper to offset page content below fixed banner
+.bannerSpacer {
+  height: 48px; // match banner height so content doesn’t jump
+}

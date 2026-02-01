@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import styles from "./Menu.module.scss";
+import Image from "next/image";
 
 type MenuProps = {
   variant?: "dark" | "light";
@@ -23,7 +24,7 @@ export function Menu({ variant = "dark", floating = false }: MenuProps) {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrolled = window.scrollY > 40;
+      const scrolled = window.scrollY > 10;
       setIsPinned(scrolled);
     };
 
@@ -75,7 +76,7 @@ export function Menu({ variant = "dark", floating = false }: MenuProps) {
       <nav ref={navRef} className={wrapperClass} aria-label="Primary">
         <div className={innerClass}>
           <Link href="/" className={styles.brand}>
-            URB
+            <Image src={"/logo.png"} className={styles.logo} alt="URB" width={100} height={24} />
           </Link>
 
           <ul className={styles.links}>

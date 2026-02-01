@@ -1,4 +1,8 @@
 {
+  "TopBanner": {
+    "title": "Привет, мир!",
+    "address": "Ropažu nov., Stopiņu pag., Saurieši, \"Lejas Akmeņkalni\", LV-2118"
+  },
   "HomePage": {
     "title": "Привет, мир!"
   },

@@ -1,4 +1,8 @@
 {
+  "TopBanner": {
+    "title": "Hello world!",
+    "address": "Ropažu nov., Stopiņu pag., Saurieši, \"Lejas Akmeņkalni\", LV-2118"
+  },
   "HomePage": {
     "title": "Hello world!"
   },
