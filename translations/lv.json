@@ -1,0 +1,24 @@
+{
+  "HomePage": {
+    "title": "Sveika, pasaule!"
+  },
+  "AboutPage": {
+    "kicker": "Par Urb",
+    "title": "Veidojam iesaistosas pilsetas pieredzes",
+    "summary": "Apvienojam arhitekturu, interaktivos medijus un tehnologijas, lai publiska telpa klutu rotaliga.",
+    "highlights": {
+      "mission": {
+        "title": "Musu misija",
+        "body": "Radam pielagojamu infrastrukturu, kas aicina iedzivotajus atklat pilsetu no jauna."
+      },
+      "team": {
+        "title": "Komanda",
+        "body": "Arhitekti, makslinieki un inzenieri strada plecu pie pleca, lai saglabatu cilvecisku sajutu."
+      },
+      "impact": {
+        "title": "Ietekme",
+        "body": "Instalacijas darbojas 12 pilsetas visapkart pasaulei."
+      }
+    }
+  }
+}

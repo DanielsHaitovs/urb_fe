@@ -1,0 +1,28 @@
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #000;
+  isolation: isolate;
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+  z-index: 1;
+  pointer-events: none;
+}
+
+.background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  object-fit: cover;
+  filter: brightness(0.9);
+}
