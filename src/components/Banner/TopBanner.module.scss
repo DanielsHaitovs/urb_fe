@@ -41,6 +41,92 @@
   margin: 5px 0;
 }
 
+// New rows for responsive layouts
+.staticRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.runningRow {
+  display: none; // hidden by default, shown on mobile/tablet
+  width: 100%;
+  overflow: hidden;
+}
+
+// Marquee implementation
+.marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex; // keep both content blocks on one line
+  white-space: nowrap; // prevent wrapping to next line
+  align-items: center;
+  gap: 0; // avoid extra spacing between duplicated blocks
+}
+
+// New: a track that holds two identical content blocks and animates continuously
+.marqueeTrack {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  will-change: transform;
+}
+
+/* Enable seamless animation only when we have two identical panels */
+.hasDuplicate {
+  animation: marquee-scroll 16s linear infinite;
+  width: max-content; // track sizes to its combined content (two panels)
+}
+
+.marqueeContent {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  white-space: nowrap;
+  padding-left: 12px;
+  flex: 0 0 auto; // each panel sizes to its content; two panels side-by-side
+}
+
+.item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.separator {
+  opacity: 0.8;
+  margin: 0 12px; // symmetric spacing around every dot
+}
+
+@keyframes marquee-scroll {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); } // move by exactly one panel width
+}
+
+// Mobile & tablet: show running line, hide static layout
+@media (max-width: 1024px) {
+  .staticRow { display: none; }
+  .runningRow { display: block; }
+
+  // Tighten paddings and sizes for smaller screens
+  .topBanner {
+    padding: 6px 0px;
+    width: 100%;
+  }
+  .title, .address {
+    font-size: 13px;
+  }
+}
+
+// Desktop: hide running line
+@media (min-width: 1025px) {
+  .runningRow { display: none; }
+  .staticRow { display: flex; }
+}
+
 // Helper to offset page content below fixed banner
 .bannerSpacer {
   height: 48px; // match banner height so content doesn’t jump
