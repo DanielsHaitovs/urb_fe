@@ -1,22 +1,13 @@
 .banner {
   position: relative;
   width: 100%;
-  min-height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background-color: #000;
+  background-color: unset;
   isolation: isolate;
-}
-
-.banner::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.65));
-  z-index: 1;
-  pointer-events: none;
+  height: 110vh;
 }
 
 .background {
@@ -24,7 +15,8 @@
   inset: 0;
   z-index: 0;
   object-fit: cover;
-  filter: brightness(0.95);
+  height: 100%;
+  filter: brightness(0.75);
 }
 
 .content {
@@ -32,34 +24,90 @@
   z-index: 2;
   color: #fff;
   text-align: start;
-  width: 100%;
-  height: 70%;
-  top: 30%; 
-  left: 40px;
-  padding: 0 20px;
+  width: 90%;
 }
 
 .actions {
-  position: relative;
+  width: 40%;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  gap: 20px;
-  height: 100%;
-  max-height: 320px;
-  max-width: 320px;
+  flex-direction: row;
+  margin-top: 1.5rem;
 }
 
 .action {
-  width: 100%;
-  height: 150px;
-  min-width: 150px;
-  max-width: 150px;
-  background: linear-gradient(90deg, #5ab0ff 0%, #35a0ff 40%, #0070f3 80%, #0057c2 100%);
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: #0070f3;
+  word-break: break-word;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s ease-in-out;
+  min-width: 110px;
+  max-width: 110px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
+  .banner {
+    max-height: 500px;
+  }
+
+  .content {
+    height: 70%;
+    top: 30%; 
+  }
+
+  .title {
+    font-size: 1.70rem;
+  }
+  
   .actions {
-    display: none;
+    gap: 20px;
+    width: 50%;
+  }
+
+  .action {
+    min-width: 110px;
+    max-width: 110px;
+    min-height: 110px;
+    max-height: 110px;
+  }
+
+  .actions .action:nth-child(1),
+  .actions .action:nth-child(3) {
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 993px) {
+  .banner {
+    max-height: 600px;
+  }
+
+  .content {
+    height: 70%;
+    top: 30%; 
+  }
+
+  .actions {
+    gap: 25px;
+    width: 375px;
+  }
+
+  .action {
+    min-width: 150px;
+    max-width: 150px;
+    min-height: 150px;
+    max-height: 150px;
+  }
+
+  .actions .action:nth-child(1),
+  .actions .action:nth-child(3) {
+    margin-right: 30px;
   }
 }

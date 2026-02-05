@@ -3,8 +3,12 @@
     "title": "Hello world!",
     "address": "Ropažu nov., Stopiņu pag., Saurieši, \"Lejas Akmeņkalni\", LV-2118"
   },
-  "HomePage": {
-    "title": "Hello world!"
+  "Banner": {
+    "title": "Professional borehole drilling to full completion",
+    "contact": "Contact us",
+    "strength": "Our Strength",
+    "offers": "Our Offers",
+    "prices": "Prices"
   },
   "AboutPage": {
     "kicker": "About Urb",
@@ -24,5 +28,12 @@
         "body": "Installations already activate plazas across twelve cities worldwide."
       }
     }
+  },
+  "MenuItems": {
+    "main": "Home",
+    "about": "About Urb",
+    "strength": "Our Strength",
+    "offers": "Our Offers",
+    "prices": "Prices"
   }
 }

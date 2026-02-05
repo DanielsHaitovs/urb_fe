@@ -3,8 +3,12 @@
     "title": "Saņemiet detalizētu komercpiedāvājumu 24H laikā",
     "address": "Ropažu nov., Stopiņu pag., Saurieši, \"Lejas Akmeņkalni\", LV-2118"
   },
-  "HomePage": {
-    "title": "Sveika, pasaule!"
+  "Banner": {
+    "title": "Profesionāla urbumu veikšana līdz pilnīgai gatavībai",
+    "contact": "Sazinieties ar mums",
+    "strength": "Mūsu stiprums",
+    "offers": "Mūsu piedāvājumi",
+    "prices": "Cenas"
   },
   "AboutPage": {
     "kicker": "Par Urb",
@@ -24,5 +28,12 @@
         "body": "Instalacijas darbojas 12 pilsetas visapkart pasaulei."
       }
     }
+  },
+  "MenuItems": {
+    "main": "Galvenā",
+    "about": "Par Urb",
+    "strength": "Musu stiprums",
+    "offers": "Musu piedavajumi",
+    "prices": "Cenas"
   }
 }
