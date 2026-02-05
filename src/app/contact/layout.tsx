@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
-import { Menu } from "@/components/Menu/Menu";
-import styles from "./AboutLayout.module.scss";
+import Header from "@/components/Header/Header";
+import styles from "./ContactLayout.module.scss";
 
 export default function AboutLayout({
   children,
@@ -8,13 +8,13 @@ export default function AboutLayout({
   children: ReactNode;
 }>) {
   return (
-<>
-      <Menu variant="light" />
+    <>
+      <Header />
       <section className={styles.shell}>
         <div className={styles.backdrop} aria-hidden="true" />
         <div className={styles.frame}>{children}</div>
       </section>
-      </>
+    </>
   );
 }
 
