@@ -3,8 +3,12 @@
     "title": "Привет, мир!",
     "address": "Ropažu nov., Stopiņu pag., Saurieši, \"Lejas Akmeņkalni\", LV-2118"
   },
-  "HomePage": {
-    "title": "Привет, мир!"
+  "Banner": {
+    "title": "Профессиональное бурение скважин до полной готовности",
+    "contact": "Свяжитесь с нами",
+    "strength": "Наши преимущества",
+    "offers": "Наши предложения",
+    "prices": "Цены"
   },
   "AboutPage": {
     "kicker": "О Urb",
@@ -24,6 +28,13 @@
         "body": "Установки Urb уже работают в двенадцати городах по всему миру."
       }
     }
+  },
+  "MenuItems": {
+    "main": "Главная",
+    "about": "О Urb",
+    "strength": "Наши преимущества",
+    "offers": "Наши предложения",
+    "prices": "Цены"
   }
 }
 
