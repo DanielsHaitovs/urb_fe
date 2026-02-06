@@ -1,6 +1,6 @@
 {
   "TopBanner": {
-    "title": "Hello world!",
+    "title": "Get a detailed commercial offer within 24H",
     "address": "Ropažu nov., Stopiņu pag., Saurieši, \"Lejas Akmeņkalni\", LV-2118"
   },
   "Banner": {
@@ -129,6 +129,27 @@
         "label": "Schedule the consultation now",
         "helper": "Pick a time that fits your build plan",
         "aria": "Open the consultation form"
+      }
+    },
+    "form": {
+      "title": "Book a site check-in",
+      "subtitle": "Share your contacts and ideal timing. We respond within one business day.",
+      "fields": {
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone",
+        "message": "Message (optional)"
+      },
+      "buttons": {
+        "send": "Send request",
+        "close": "Close"
+      },
+      "success": "Thanks! We will contact you shortly.",
+      "errors": {
+        "emailRequired": "Email is required",
+        "emailInvalid": "Enter a valid email address",
+        "phoneRequired": "Phone number is required",
+        "phoneInvalid": "Enter a valid phone number"
       }
     }
   },

@@ -130,6 +130,27 @@
         "helper": "Izvēlieties sev ērtu laiku detalizētai konsultācijai",
         "aria": "Atvērt konsultācijas pieteikumu"
       }
+    },
+    "form": {
+      "title": "Piesakiet vietas apsekojumu",
+      "subtitle": "Norādiet kontaktus un vēlamo laiku. Atbildēsim vienas darba dienas laikā.",
+      "fields": {
+        "name": "Vārds",
+        "email": "E-pasts",
+        "phone": "Telefons",
+        "message": "Ziņa (pēc izvēles)"
+      },
+      "buttons": {
+        "send": "Nosūtīt pieteikumu",
+        "close": "Aizvērt"
+      },
+      "success": "Paldies! Sazināsimies pavisam drīz.",
+      "errors": {
+        "emailRequired": "Lūdzu, ievadiet e-pastu",
+        "emailInvalid": "Lūdzu, ievadiet derīgu e-pasta adresi",
+        "phoneRequired": "Lūdzu, ievadiet telefona numuru",
+        "phoneInvalid": "Lūdzu, ievadiet derīgu telefona numuru"
+      }
     }
   },
   "MenuItems": {
