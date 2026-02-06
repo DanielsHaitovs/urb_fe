@@ -27,7 +27,7 @@ export default function Banner({ screen }: { screen: ScreenType }) {
               <RedirectTo className="banner" href="#strength" label={t("strength")} />
             </div>
             <div className={styles.mobileAction}>
-              <RedirectTo className="banner" href="#prices" label={t("prices")} />
+              <RedirectTo className="banner" href="#clean-water" label={t("cleanWater")} />
             </div>
             <div className={styles.mobileAction}>
               <RedirectTo className="banner" href="#contact" label={t("contact")} />
