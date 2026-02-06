@@ -28,6 +28,7 @@ export function Menu({ screen }: { screen: ScreenType }) {
         </div>
       ) : (
       <div className={styles.content}>
+        <MenuItems screen={screen} isOpen={isOpen} setOpen={setOpen} />
         <div className={styles.hamburger} onClick={() => setOpen(true)}>
           <MenuIcon size={24} />
         </div>
@@ -41,7 +42,6 @@ export function Menu({ screen }: { screen: ScreenType }) {
         </div>
       </div>
       )}
-     <MenuItems screen={screen} isOpen={isOpen} setOpen={setOpen} />
     </nav>
   )
 }

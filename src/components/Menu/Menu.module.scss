@@ -50,3 +50,11 @@
   align-items: center;
   cursor: pointer;
 }
+
+@media (min-width: 993px) {
+ .brand {
+  position: relative;
+  width: auto;
+  top: 0;
+ }
+}
