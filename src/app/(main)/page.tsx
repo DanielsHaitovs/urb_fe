@@ -1,6 +1,7 @@
 "use client";
 
 import styles from "@/app/(main)/HomePage.module.scss";
+import CleanWater from "@/components/Clean/Clean";
 import DailySolutions from "@/components/Solutions/Solutions";
 import Strength from "@/components/Strength/Strength";
 import { useScreenSize } from "@/providers/ScreenTypeProvider";
@@ -11,25 +12,22 @@ export default function Home() {
 
   return (
     <main className={styles.page}>
-      <section key={1} id="strength" className={styles.section}>
+      <section id="strength" className={styles.section}>
         <Strength screen={screen} />
       </section>
-      <section key={1} id="daily-solutions" className={styles.section}>
+      <section id="daily-solutions" className={styles.section}>
         <DailySolutions screen={screen} />
       </section>
-      <section key={2} id="prices" className={styles.section}>
-        <div>
-          prices
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </div>
+      <section id="prices" className={styles.section}>
+        <CleanWater screen={screen} />
       </section>
-      <section key={3} id="offers" className={styles.section}>
+      <section id="offers" className={styles.section}>
         <div>
           offers
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </div>
       </section>
-      <section key={4} id="contact" className={styles.section}>
+      <section id="contact" className={styles.section}>
         <div>
           contact
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

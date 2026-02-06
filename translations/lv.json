@@ -69,6 +69,44 @@
       }
     }
   },
+  "CleanWater": {
+    "kicker": "KVALITĀTES RISINĀJUMU PARTNERIS",
+    "title": {
+      "line1": "KVALITĀTES RISINĀJUMU PARTNERIS",
+      "line2": "Dabiski tīrs ūdens",
+      "line3": "Tavā īpašumā"
+    },
+    "summary": "Mēs apvienojam individuālu pieeju, caurspīdīgas cenas un garantētu servisu, lai nodrošinātu drošu piekļuvi dabīgi tīram ūdenim.",
+    "options": {
+      "custom": {
+        "title": "Individuāli risinājumi",
+        "body": "Mēs pielāgojamies jūsu vajadzībām, izmantojot jaunākās tehnoloģijas efektīvai un videi draudzīgai ūdens ieguvei.",
+        "bullets": [
+          "Adaptējamies jebkurai virsmai un teritorijai",
+          "Izmantojam modernās tehnoloģijas un aprīkojumu",
+          "Ar minimālo ietekmi uz apkārtējo teritoriju"
+        ]
+      },
+      "pricing": {
+        "title": "Caurspīdīgas cenas",
+        "body": "Garantējam skaidru cenu politiku bez slēptiem izdevumiem visā sadarbības procesā.",
+        "bullets": [
+          "Cenas iepriekš zināmas: 2300 EUR līdz 30 metriem",
+          "Pēc tam 70 EUR/metrs",
+          "Bez slēptiem maksājumiem"
+        ]
+      },
+      "warranty": {
+        "title": "Garantija",
+        "body": "Uzticieties mūsu divu gadu garantijai, kas sedz servisa darbus un materiālus ilgtermiņa drošībai.",
+        "bullets": [
+          "2 gadu garantija funkcionalitātei",
+          "Sertificēti materiāli",
+          "Ietaupījums ūdens piegādē"
+        ]
+      }
+    }
+  },
   "MenuItems": {
     "main": "Galvenā",
     "about": "Par Urb",

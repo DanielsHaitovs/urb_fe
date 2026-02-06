@@ -69,6 +69,44 @@
       }
     }
   },
+  "CleanWater": {
+    "kicker": "Quality solutions partner",
+    "title": {
+      "line1": "QUALITY SOLUTIONS PARTNER",
+      "line2": "Naturally clean water",
+      "line3": "For your property"
+    },
+    "summary": "Tailored engineering, transparent pricing, and guaranteed service keep pure water flowing with confidence.",
+    "options": {
+      "custom": {
+        "title": "Tailored solutions",
+        "body": "We adapt to your needs with the latest, eco-friendly technology for efficient water extraction.",
+        "bullets": [
+          "Adapt to every surface and terrain",
+          "Deploy modern technology and equipment",
+          "Minimal impact on the surrounding area"
+        ]
+      },
+      "pricing": {
+        "title": "Transparent pricing",
+        "body": "Clear budgets without hidden fees ensure trust throughout the project.",
+        "bullets": [
+          "Upfront quote: €2300 up to 30 meters",
+          "€70 per meter beyond 30 m",
+          "No hidden payments"
+        ]
+      },
+      "warranty": {
+        "title": "Guaranteed care",
+        "body": "Rely on our two-year warranty covering service and materials for lasting peace of mind.",
+        "bullets": [
+          "2-year functionality guarantee",
+          "Certified, food-grade materials",
+          "Savings versus delivered water"
+        ]
+      }
+    }
+  },
   "MenuItems": {
     "main": "Home",
     "about": "About Urb",
