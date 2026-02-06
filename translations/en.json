@@ -8,7 +8,7 @@
     "contact": "Contact us within 24H",
     "strength": "Our Strength",
     "offers": "Our Offers",
-    "prices": "Prices"
+    "cleanWater": "Clean Water"
   },
   "AboutPage": {
     "kicker": "About Urb",
@@ -150,6 +150,67 @@
         "emailInvalid": "Enter a valid email address",
         "phoneRequired": "Phone number is required",
         "phoneInvalid": "Enter a valid phone number"
+      }
+    }
+  },
+  "Footer": {
+    "kicker": "Beyond the borehole",
+    "title": {
+      "line1": "Futureproof water access",
+      "line2": "for every property"
+    },
+    "summary": "From hydro-geologic scouting to maintenance schedules, URB keeps private water systems stable and beautiful.",
+    "stats": {
+      "projects": {
+        "value": "320+",
+        "label": "Water projects delivered"
+      },
+      "depth": {
+        "value": "310 m",
+        "label": "Deepest engineered borehole"
+      },
+      "response": {
+        "value": "<24h",
+        "label": "Average response time"
+      }
+    },
+    "nav": {
+      "compass": {
+        "title": "Navigate"
+      },
+      "services": {
+        "title": "Services",
+        "links": {
+          "drilling": "Precision boreholes",
+          "survey": "Hydro-geologic survey",
+          "maintenance": "Pump & system care"
+        }
+      },
+      "resources": {
+        "title": "Resources",
+        "links": {
+          "process": "Clean-water blueprint",
+          "pricing": "Transparent pricing",
+          "warranty": "Warranty & care plan"
+        }
+      }
+    },
+    "contact": {
+      "title": "Let’s map your water access",
+      "summary": "Share a parcel pin or construction plan and we’ll outline the next steps instantly.",
+      "phoneLabel": "Hotline",
+      "emailLabel": "Project inbox",
+      "buttons": {
+        "schedule": "Book inspection",
+        "contact": "Visit contact page"
+      }
+    },
+    "legal": {
+      "rights": "© {year} URB Drilling. All rights reserved.",
+      "address": "Ropažu nov., Stopiņu pag., Saurieši, \"Lejas Akmeņkalni\", LV-2118",
+      "links": {
+        "privacy": "Privacy & data",
+        "terms": "Terms of service"
       }
     }
   },
