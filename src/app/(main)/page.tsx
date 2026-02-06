@@ -1,6 +1,7 @@
 "use client";
 
 import styles from "@/app/(main)/HomePage.module.scss";
+import DailySolutions from "@/components/Solutions/Solutions";
 import Strength from "@/components/Strength/Strength";
 import { useScreenSize } from "@/providers/ScreenTypeProvider";
 
@@ -12,6 +13,9 @@ export default function Home() {
     <main className={styles.page}>
       <section key={1} id="strength" className={styles.section}>
         <Strength screen={screen} />
+      </section>
+      <section key={1} id="daily-solutions" className={styles.section}>
+        <DailySolutions screen={screen} />
       </section>
       <section key={2} id="prices" className={styles.section}>
         <div>

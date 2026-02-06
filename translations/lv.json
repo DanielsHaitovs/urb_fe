@@ -46,6 +46,29 @@
       "body": "Mēs stāvam aiz mūsu darba ar visaptverošu garantiju, sniedzot mūsu klientiem mieru."
     }
   },
+  "DailySolutions": {
+    "kicker": "Ikdienas risinājumi",
+    "title": {
+      "line1": "MŪSDIENĪGI URBŠANAS RISINĀJUMI",
+      "line2": "Nodrošinām uzticamu",
+      "line3": "Ūdens piegādi jūsu mājām"
+    },
+    "summary": "Trīs savstarpēji papildinoši pakalpojumi – no urbšanas un apkopes līdz pilnai uzstādīšanai – lai svaigs ūdens plūstu bez raizēm.",
+    "cards": {
+      "drilling": {
+        "title": "Ūdens urbšana",
+        "body": "Uzticami un efektīvi urbšanas risinājumi stabilas ūdens piegādes nodrošināšanai jūsu īpašumā."
+      },
+      "maintenance": {
+        "title": "Aku apkope",
+        "body": "Visaptveroša aku skalošana un sūknēšana, lai nodrošinātu optimālu darbību un ilgmūžību."
+      },
+      "installation": {
+        "title": "Pilna uzstādīšana",
+        "body": "Urbšana ar pārtikas plastikāta caurulēm, sūkņu montāža un cauruļvada vilkšana līdz mājai ar filtru uzstādīšanu bezrūpīgai pieredzei."
+      }
+    }
+  },
   "MenuItems": {
     "main": "Galvenā",
     "about": "Par Urb",

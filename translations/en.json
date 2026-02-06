@@ -46,6 +46,29 @@
       "body": "We stand behind our work with a comprehensive warranty, giving our clients peace of mind."
     }
   },
+  "DailySolutions": {
+    "kicker": "Daily solutions",
+    "title": {
+      "line1": "Modern drilling solutions",
+      "line2": "Delivering reliable",
+      "line3": "Water supply for your home"
+    },
+    "summary": "Three signature services ensure a seamless flow—from precision drilling to dedicated upkeep and turnkey installation.",
+    "cards": {
+      "drilling": {
+        "title": "Water well drilling",
+        "body": "Reliable, efficient drilling engineered to secure a stable water source for every property."
+      },
+      "maintenance": {
+        "title": "Well maintenance",
+        "body": "Full-spectrum flushing and pumping keep wells performing at peak output for years."
+      },
+      "installation": {
+        "title": "Full installation",
+        "body": "Food-grade casing, pump mounting, and filtered piping installed all the way to your home."
+      }
+    }
+  },
   "MenuItems": {
     "main": "Home",
     "about": "About Urb",
