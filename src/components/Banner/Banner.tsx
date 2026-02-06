@@ -23,10 +23,18 @@ export default function Banner({ screen }: { screen: ScreenType }) {
         <h1 className={styles.title}>{t("title")}</h1>
         {screen === "mobile" ? (
           <div className={styles.mobileActions} aria-label="Quick actions">
-            <RedirectTo className="banner" href="#strength" label={t("strength")} />
-            <RedirectTo className="banner" href="#prices" label={t("prices")} />
-            <RedirectTo className="banner" href="#contact" label={t("contact")} />
-            <RedirectTo className="banner" href="#offers" label={t("offers")} />
+            <div className={styles.mobileAction}>
+              <RedirectTo className="banner" href="#strength" label={t("strength")} />
+            </div>
+            <div className={styles.mobileAction}>
+              <RedirectTo className="banner" href="#prices" label={t("prices")} />
+            </div>
+            <div className={styles.mobileAction}>
+              <RedirectTo className="banner" href="#contact" label={t("contact")} />
+            </div>
+            <div className={styles.mobileAction}>
+              <RedirectTo className="banner" href="#offers" label={t("offers")} />
+            </div>
           </div>
         ) : (
           <div className={styles.actions} aria-label="Quick actions">

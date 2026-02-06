@@ -1,0 +1,47 @@
+.button {
+  position: fixed;
+  bottom: clamp(16px, 4vw, 40px);
+  right: clamp(16px, 4vw, 48px);
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background:
+    radial-gradient(circle at 30% 30%, rgba(147, 199, 255, 0.45), transparent 65%),
+    linear-gradient(135deg, rgba(6, 15, 36, 0.85), rgba(7, 22, 55, 0.92));
+  color: #f7fbff;
+  box-shadow: 0 20px 60px rgba(2, 6, 18, 0.8);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: opacity 220ms ease, transform 220ms ease, box-shadow 220ms ease;
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+  z-index: 20;
+  backdrop-filter: blur(8px);
+}
+
+.button[data-visible] {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.button:hover {
+  box-shadow: 0 24px 70px rgba(4, 12, 30, 0.9);
+}
+
+.button:focus-visible {
+  outline: 2px solid rgba(147, 199, 255, 0.9);
+  outline-offset: 3px;
+}
+
+@media (max-width: 480px) {
+  .button {
+    width: 48px;
+    height: 48px;
+    bottom: 20px;
+    right: 16px;
+  }
+}
