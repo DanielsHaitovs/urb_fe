@@ -1,6 +1,5 @@
 .menu {
   width: 90%;
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   z-index: 20;
@@ -25,9 +24,37 @@
   transition: border-color 200ms ease, background 200ms ease;
 }
 
+.brand {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  z-index: 0;
+}
+
 .logo {
   display: block;
   height: auto;
   transition: filter 200ms ease;
 }
 
+.hamburger, .language {
+  z-index: 10;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+@media (min-width: 993px) {
+ .brand {
+  position: relative;
+  width: auto;
+  top: 0;
+ }
+}

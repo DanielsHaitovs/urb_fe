@@ -1,0 +1,26 @@
+.actionButton {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #0070f3;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.banner {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #5ab0ff 0%, #35a0ff 40%, #0070f3 80%, #0057c2 100%);
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.2s ease-in-out;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
