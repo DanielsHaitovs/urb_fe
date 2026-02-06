@@ -2,11 +2,12 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import styles from "./Menu.module.scss";
+import styles from "@/components/Menu/Menu.module.scss";
 import Image from "next/image";
 import { ScreenType } from "@/types/deviceType";
 import { MenuIcon } from "lucide-react";
-import { MenuItems } from "./MenuItems";
+import { MenuItems } from "@/components/Menu/MenuItems";
+import { LocaleToggleButton } from "@/components/Language/LocaleToggleButton";
 
 export function Menu({ screen }: { screen: ScreenType }) {
   const [isOpen, setOpen] = useState<boolean>(false);
@@ -22,25 +23,25 @@ export function Menu({ screen }: { screen: ScreenType }) {
           </div>
           <MenuItems screen={screen} isOpen={false} setOpen={setOpen} />
           <div className={styles.language}>
-              EN
+            <LocaleToggleButton />
           </div>
         </div>
       ) : (
       <div className={styles.content}>
         <div className={styles.hamburger} onClick={() => setOpen(true)}>
-            <MenuIcon size={24} />
+          <MenuIcon size={24} />
         </div>
-        <MenuItems screen={screen} isOpen={isOpen} setOpen={setOpen} />
         <div className={styles.brand}>
           <Link href="/">
             <Image src={"/logo.png"} className={styles.logo} alt="URB" width={60} height={60} />
           </Link>
         </div>
         <div className={styles.language}>
-            EN
+          <LocaleToggleButton />
         </div>
       </div>
       )}
+     <MenuItems screen={screen} isOpen={isOpen} setOpen={setOpen} />
     </nav>
   )
 }

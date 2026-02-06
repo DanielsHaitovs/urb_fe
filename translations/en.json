@@ -5,7 +5,7 @@
   },
   "Banner": {
     "title": "Professional borehole drilling to full completion",
-    "contact": "Contact us",
+    "contact": "Contact us within 24H",
     "strength": "Our Strength",
     "offers": "Our Offers",
     "prices": "Prices"
@@ -34,6 +34,8 @@
     "about": "About Urb",
     "strength": "Our Strength",
     "offers": "Our Offers",
-    "prices": "Prices"
+    "prices": "Prices",
+    "call": "Call us",
+    "email": "Email us"
   }
 }
