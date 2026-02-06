@@ -5,6 +5,7 @@ import CleanWater from "@/components/Clean/Clean";
 import DailySolutions from "@/components/Solutions/Solutions";
 import ContactCTA from "@/components/ContactCTA/ContactCTA";
 import Strength from "@/components/Strength/Strength";
+import { ScrollTopButton } from "@/components/ScrollTopButton/ScrollTopButton";
 import { useScreenSize } from "@/providers/ScreenTypeProvider";
 
 
@@ -25,6 +26,7 @@ export default function Home() {
       <section id="contact" className={styles.section}>
         <ContactCTA screen={screen} />
       </section>
+      <ScrollTopButton />
     </main>
   );
 }
