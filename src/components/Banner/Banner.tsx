@@ -27,13 +27,13 @@ export default function Banner({ screen }: { screen: ScreenType }) {
               <RedirectTo className="banner" href="#strength" label={t("strength")} />
             </div>
             <div className={styles.mobileAction}>
-              <RedirectTo className="banner" href="#prices" label={t("prices")} />
+              <RedirectTo className="banner" href="#clean-water" label={t("cleanWater")} />
             </div>
             <div className={styles.mobileAction}>
               <RedirectTo className="banner" href="#contact" label={t("contact")} />
             </div>
             <div className={styles.mobileAction}>
-              <RedirectTo className="banner" href="#offers" label={t("offers")} />
+              <RedirectTo className="banner" href="#solutions" label={t("offers")} />
             </div>
           </div>
         ) : (
@@ -42,13 +42,13 @@ export default function Banner({ screen }: { screen: ScreenType }) {
               <RedirectTo className="banner" href="#strength" label={t("strength")} />
             </div>
             <div className={styles.action}>
-              <RedirectTo className="banner" href="#price" label={t("prices")} />
+              <RedirectTo className="banner" href="#clean-water" label={t("cleanWater")} />
             </div>
             <div className={styles.action}>
               <RedirectTo className="banner" href="#contact" label={t("contact")} />
             </div>
             <div className={styles.action}>
-              <RedirectTo className="banner" href="#offers" label={t("offers")} />
+              <RedirectTo className="banner" href="#solutions" label={t("offers")} />
             </div>
           </div>
         )}

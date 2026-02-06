@@ -17,7 +17,7 @@ export default function Home() {
       <section id="strength" className={styles.section}>
         <Strength screen={screen} />
       </section>
-      <section id="daily-solutions" className={styles.section}>
+      <section id="solutions" className={styles.section}>
         <DailySolutions screen={screen} />
       </section>
       <section id="clean-water" className={styles.section}>

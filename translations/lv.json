@@ -8,7 +8,7 @@
     "contact": "Konsultējieties ar mums 24H laikā",
     "strength": "Mūsu stiprums",
     "offers": "Mūsu piedāvājumi",
-    "prices": "Cenas"
+    "cleanWater": "Dabiski tīrs ūdens"
   },
   "AboutPage": {
     "kicker": "Par Urb",
@@ -150,6 +150,67 @@
         "emailInvalid": "Lūdzu, ievadiet derīgu e-pasta adresi",
         "phoneRequired": "Lūdzu, ievadiet telefona numuru",
         "phoneInvalid": "Lūdzu, ievadiet derīgu telefona numuru"
+      }
+    }
+  },
+  "Footer": {
+    "kicker": "Pāri urbuma robežām",
+    "title": {
+      "line1": "Droša ūdens piekļuve",
+      "line2": "katram īpašumam"
+    },
+    "summary": "No hidroģeoloģiskās izpētes līdz uzturēšanas grafikiem URB rūpējas par stabilu un estētisku ūdens apgādi.",
+    "stats": {
+      "projects": {
+        "value": "320+",
+        "label": "Pabeigti ūdens projekti"
+      },
+      "depth": {
+        "value": "310 m",
+        "label": "Dziļākais izurbtais urbums"
+      },
+      "response": {
+        "value": "<24h",
+        "label": "Vidējais reaģēšanas laiks"
+      }
+    },
+    "nav": {
+      "compass": {
+        "title": "Navigācija"
+      },
+      "services": {
+        "title": "Pakalpojumi",
+        "links": {
+          "drilling": "Precīza urbšana",
+          "survey": "Hidroģeoloģiskā izpēte",
+          "maintenance": "Sūkņu un sistēmu aprūpe"
+        }
+      },
+      "resources": {
+        "title": "Resursi",
+        "links": {
+          "process": "Tīra ūdens plāns",
+          "pricing": "Cenu politika",
+          "warranty": "Garantija un serviss"
+        }
+      }
+    },
+    "contact": {
+      "title": "Ieplānosim ūdens piekļuvi",
+      "summary": "Dalieties ar kadastra numuru vai būvprojektu, un mēs uzreiz iezīmēsim nākamos soļus.",
+      "phoneLabel": "Karstais tālrunis",
+      "emailLabel": "Projekta pasts",
+      "buttons": {
+        "schedule": "Pieteikt apsekojumu",
+        "contact": "Apskatīt kontaktus"
+      }
+    },
+    "legal": {
+      "rights": "© {year} URB Drilling. Visas tiesības aizsargātas.",
+      "address": "Ropažu nov., Stopiņu pag., Saurieši, \"Lejas Akmeņkalni\", LV-2118",
+      "links": {
+        "privacy": "Privātums un dati",
+        "terms": "Noteikumi un nosacījumi"
       }
     }
   },
