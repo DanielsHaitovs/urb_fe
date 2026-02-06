@@ -8,7 +8,7 @@
     "contact": "Contact us within 24H",
     "strength": "Our Strength",
     "offers": "Our Offers",
-    "prices": "Prices"
+    "cleanWater": "Clean Water"
   },
   "AboutPage": {
     "kicker": "About Urb",
@@ -67,6 +67,119 @@
         "title": "Full installation",
         "body": "Food-grade casing, pump mounting, and filtered piping installed all the way to your home."
       }
+    }
+  },
+  "OffersPage": {
+    "kicker": "Offer catalog",
+    "bannerTitle": "Custom borehole offers",
+    "title": {
+      "line1": "Daily drilling solutions",
+      "line2": "Expanded into complete delivery modes"
+    },
+    "summary": "Extend the homepage trio into fully documented packages with timing, deliverables, and the tricky scenarios we already know how to defuse.",
+    "note": "Need a bespoke mix? Combine steps across services and we will blueprint the path in under 24 hours.",
+    "badge": {
+      "top": "Average activation",
+      "bottom": "17 days door-to-water"
+    },
+    "supportBadge": {
+      "top": "24/7 support",
+      "bottom": "Engineer on call"
+    },
+    "labels": {
+      "deliverables": "Deliverables",
+      "cornerCases": "Corner cases we plan for"
+    },
+    "services": {
+      "drilling": {
+        "title": "Precision borehole program",
+        "description": "Permitting, drilling, and on-site testing for a sanitary, long-lived water source tailored to your parcel.",
+        "timeline": "Field window: 10-14 days",
+        "deliverables": [
+          "Hydro-geologic parcel walk and permit brief",
+          "Cased borehole up to 30 m with food-grade piping",
+          "Sanitary sealing plus 4-hour test pumping",
+          "Two-year mechanical warranty with first service visit"
+        ],
+        "cornerCases": [
+          "Granite shelves or boulder fields require dual-rotary rig planning",
+          "Driveways narrower than 2.7 m call for compact track rigs or matting",
+          "Septic tanks or drains trigger minimum 15 m offsets and lab testing"
+        ]
+      },
+      "maintenance": {
+        "title": "Flow protection care plan",
+        "description": "Scheduled flushing, pump diagnostics, and filtration swaps that keep yields stable year-round.",
+        "timeline": "Service window: 4-6 hours",
+        "deliverables": [
+          "Full-system flush and shock chlorination",
+          "Pump performance diagnostics with telemetry logs",
+          "Filter media swap plus debris extraction",
+          "Updated maintenance record for warranty continuity"
+        ],
+        "cornerCases": [
+          "Iron-heavy water needs staged flushing to avoid staining",
+          "Abandoned wells nearby can contaminate flow and must be sealed",
+          "Seasonal shutdowns require glycol purge to protect lines"
+        ]
+      },
+      "installation": {
+        "title": "Turnkey installation stack",
+        "description": "Pump, piping, power, and monitoring components delivered to your utility room or mechanical pad.",
+        "timeline": "Project span: 5-7 days",
+        "deliverables": [
+          "Submersible pump sizing, wiring, and controller install",
+          "Insulated supply line trenched to structure with backfill restoration",
+          "Pressure tank, filtration stack, and smart monitoring setup",
+          "Commissioning checklist with homeowner handoff kit"
+        ],
+        "cornerCases": [
+          "Existing interior plumbing may need dielectric isolation",
+          "Frost-depth deeper than 1.2 m requires heat trace or vaults",
+          "Solar or off-grid loads add battery planning and backup storage"
+        ]
+      }
+    },
+    "scenarios": {
+      "kicker": "Where it shines",
+      "title": "Real-world scenarios we solve weekly",
+      "summary": "These engagements come up constantly in Latvia and the Baltics, so we built repeatable playbooks for each.",
+      "list": {
+        "rockyTerrain": {
+          "title": "Rocky, uneven parcels",
+          "body": "When soil reports read like granite poetry, we bring rigs that chew through layered geology without tearing up the yard.",
+          "bullets": [
+            "Pre-rig site mats keep slopes intact and prevent rutting",
+            "Percussion plus rotary heads handle mixed till and boulders",
+            "Real-time telemetry logs depth, torque, and pressure"
+          ]
+        },
+        "seasonalUsage": {
+          "title": "Seasonal homes and cabins",
+          "body": "Designed for properties that sit dormant part of the year but must deliver potable water the moment you arrive.",
+          "bullets": [
+            "Freeze-proof routing keeps lines pressurized all winter",
+            "Smart controllers auto-cycle pumps during off-season",
+            "Remote alerts ping caretakers before anything freezes"
+          ]
+        },
+        "retrofit": {
+          "title": "Retrofit of legacy wells",
+          "body": "Inherited wells or DIY installs get modernized with proper casing, monitoring, and safe discharge.",
+          "bullets": [
+            "Downhole camera inspections reveal collapsed liners",
+            "Sleeving and sanitary sealing stop surface intrusion",
+            "Tie-in manifolds integrate with interior plumbing"
+          ]
+        }
+      }
+    },
+    "cta": {
+      "kicker": "Ready to scope it?",
+      "title": "Share your parcel and water goals",
+      "summary": "Send a cadastral pin, drone photo, or utility room snapshot and we respond with a custom activation plan.",
+      "button": "Plan my borehole",
+      "hint": "No auto-responders—an engineer writes back within one business day."
     }
   },
   "CleanWater": {
@@ -150,6 +263,67 @@
         "emailInvalid": "Enter a valid email address",
         "phoneRequired": "Phone number is required",
         "phoneInvalid": "Enter a valid phone number"
+      }
+    }
+  },
+  "Footer": {
+    "kicker": "Beyond the borehole",
+    "title": {
+      "line1": "Futureproof water access",
+      "line2": "for every property"
+    },
+    "summary": "From hydro-geologic scouting to maintenance schedules, URB keeps private water systems stable and beautiful.",
+    "stats": {
+      "projects": {
+        "value": "320+",
+        "label": "Water projects delivered"
+      },
+      "depth": {
+        "value": "310 m",
+        "label": "Deepest engineered borehole"
+      },
+      "response": {
+        "value": "<24h",
+        "label": "Average response time"
+      }
+    },
+    "nav": {
+      "compass": {
+        "title": "Navigate"
+      },
+      "services": {
+        "title": "Services",
+        "links": {
+          "drilling": "Precision boreholes",
+          "survey": "Hydro-geologic survey",
+          "maintenance": "Pump & system care"
+        }
+      },
+      "resources": {
+        "title": "Resources",
+        "links": {
+          "process": "Clean-water blueprint",
+          "pricing": "Transparent pricing",
+          "warranty": "Warranty & care plan"
+        }
+      }
+    },
+    "contact": {
+      "title": "Let’s map your water access",
+      "summary": "Share a parcel pin or construction plan and we’ll outline the next steps instantly.",
+      "phoneLabel": "Hotline",
+      "emailLabel": "Project inbox",
+      "buttons": {
+        "schedule": "Book inspection",
+        "contact": "Visit contact page"
+      }
+    },
+    "legal": {
+      "rights": "© {year} URB Drilling. All rights reserved.",
+      "address": "Ropažu nov., Stopiņu pag., Saurieši, \"Lejas Akmeņkalni\", LV-2118",
+      "links": {
+        "privacy": "Privacy & data",
+        "terms": "Terms of service"
       }
     }
   },
