@@ -4,8 +4,7 @@ import Image from "next/image";
 import styles from "@/components/Banner/Banner.module.scss";
 import { ScreenType } from "@/types/deviceType";
 import { useTranslations } from "next-intl";
-import RedirectTo from "@/ui/redirect";
-import Link from "next/link";
+import RedirectTo from "@/ui/actions/redirect";
 
 export default function Banner({ screen }: { screen: ScreenType }) {
   const t = useTranslations("Banner");
@@ -23,31 +22,33 @@ export default function Banner({ screen }: { screen: ScreenType }) {
       <div className={styles.content}>
         <h1 className={styles.title}>{t("title")}</h1>
         {screen === "mobile" ? (
-          <div className={styles.actions} aria-label="Quick actions">
-            <RedirectTo href="/prices" label={t("prices")} />
-            <RedirectTo href="/contact" label={t("contact")} />
+          <div className={styles.mobileActions} aria-label="Quick actions">
+            <div className={styles.mobileAction}>
+              <RedirectTo className="banner" href="#strength" label={t("strength")} />
+            </div>
+            <div className={styles.mobileAction}>
+              <RedirectTo className="banner" href="#prices" label={t("prices")} />
+            </div>
+            <div className={styles.mobileAction}>
+              <RedirectTo className="banner" href="#contact" label={t("contact")} />
+            </div>
+            <div className={styles.mobileAction}>
+              <RedirectTo className="banner" href="#offers" label={t("offers")} />
+            </div>
           </div>
         ) : (
           <div className={styles.actions} aria-label="Quick actions">
             <div className={styles.action}>
-              <Link href="#strength" className={styles.actionButton}>
-                {t("strength")}
-              </Link>
+              <RedirectTo className="banner" href="#strength" label={t("strength")} />
             </div>
             <div className={styles.action}>
-              <Link href="#price" className={styles.actionButton}>
-                {t("prices")}
-              </Link>
+              <RedirectTo className="banner" href="#price" label={t("prices")} />
             </div>
             <div className={styles.action}>
-              <Link href="#contact" className={styles.actionButton}>
-                {t("contact")}
-              </Link>
+              <RedirectTo className="banner" href="#contact" label={t("contact")} />
             </div>
             <div className={styles.action}>
-              <Link href="#offers" className={styles.actionButton}>
-                {t("offers")}
-              </Link>
+              <RedirectTo className="banner" href="#offers" label={t("offers")} />
             </div>
           </div>
         )}

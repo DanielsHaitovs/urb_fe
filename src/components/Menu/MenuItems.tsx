@@ -1,12 +1,19 @@
 "use client";
 
 import Link from "next/link";
-import styles from "./MenuItems.module.scss";
+import styles from "@/components/Menu/MenuItems.module.scss";
 import Image from "next/image";
 import { ScreenType } from "@/types/deviceType";
-import { X } from "lucide-react";
+import { Mail, Phone, X } from "lucide-react";
 import { useEffect } from "react";
 import { useTranslations } from "next-intl";
+import { LocaleToggleButton } from "@/components/Language/LocaleToggleButton";
+import {
+  CONTACT_EMAIL,
+  CONTACT_EMAIL_HREF,
+  CONTACT_PHONE_DISPLAY,
+  CONTACT_PHONE_HREF,
+} from "@/lib/contactDetails";
 
 export const menuItemsList = [
   { id: "about" },
@@ -58,17 +65,19 @@ export function MenuItems({ screen, isOpen, setOpen }: Props) {
   return (
     <div className={styles.modal} style={{ display: isOpen ? 'flex' : 'none' }}>
       <div className={styles.topContent}>
-          <div className={styles.close} onClick={() => setOpen(false)}>
+        <div className={styles.contentHeader} >
+            <div className={styles.close} onClick={() => setOpen(false)}>
             <X size={24} />
           </div>
           <div className={styles.brand}>
-            <Link href="/">
+            <Link href="/" onClick={() => setOpen(false)}>
               <Image src={"/logo.png"} className={styles.logo} alt="URB" width={60} height={60} />
             </Link>
           </div>
           <div className={styles.language}>
-              EN
+            <LocaleToggleButton />
           </div>
+        </div>
       </div>
       <div className={styles.content}>
         <ul className={styles.items}>
@@ -81,6 +90,16 @@ export function MenuItems({ screen, isOpen, setOpen }: Props) {
             </li>
           ))}
         </ul>
+        <div className={styles.actions}>
+          <Link className={styles.phone} href={CONTACT_PHONE_HREF} aria-label={`Call URB at ${CONTACT_PHONE_DISPLAY}`}>
+            <Phone size={18} aria-hidden="true" />
+            <span>{t("call")}</span>
+          </Link>
+          <Link className={styles.mailTo} href={CONTACT_EMAIL_HREF} aria-label={`Email URB at ${CONTACT_EMAIL}`}>
+            <Mail size={18} aria-hidden="true" />
+            <span>{t("email")}</span>
+          </Link>
+        </div>
       </div>
     </div>
   )

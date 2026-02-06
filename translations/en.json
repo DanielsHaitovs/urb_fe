@@ -1,11 +1,11 @@
 {
   "TopBanner": {
-    "title": "Hello world!",
+    "title": "Get a detailed commercial offer within 24H",
     "address": "Ropažu nov., Stopiņu pag., Saurieši, \"Lejas Akmeņkalni\", LV-2118"
   },
   "Banner": {
     "title": "Professional borehole drilling to full completion",
-    "contact": "Contact us",
+    "contact": "Contact us within 24H",
     "strength": "Our Strength",
     "offers": "Our Offers",
     "prices": "Prices"
@@ -29,11 +29,137 @@
       }
     }
   },
+  "Strength": {
+    "subTitle": "Our Strength",
+    "title": "Why choose us",
+    "summary": "We offer full-service solutions for borehole drilling, ensuring high quality and reliability.",
+    "projects": {
+      "title": "Successful Projects",
+      "body": "We have completed over 100 successful borehole drilling projects across various industries."
+    },
+    "deep": {
+      "title": "Deep Expertise",
+      "body": "Our team has extensive experience in drilling deep boreholes, ensuring optimal results for our clients."
+    },
+    "warranty": {
+      "title": "Comprehensive Warranty",
+      "body": "We stand behind our work with a comprehensive warranty, giving our clients peace of mind."
+    }
+  },
+  "DailySolutions": {
+    "kicker": "Daily solutions",
+    "title": {
+      "line1": "Modern drilling solutions",
+      "line2": "Delivering reliable",
+      "line3": "Water supply for your home"
+    },
+    "summary": "Three signature services ensure a seamless flow—from precision drilling to dedicated upkeep and turnkey installation.",
+    "cards": {
+      "drilling": {
+        "title": "Water well drilling",
+        "body": "Reliable, efficient drilling engineered to secure a stable water source for every property."
+      },
+      "maintenance": {
+        "title": "Well maintenance",
+        "body": "Full-spectrum flushing and pumping keep wells performing at peak output for years."
+      },
+      "installation": {
+        "title": "Full installation",
+        "body": "Food-grade casing, pump mounting, and filtered piping installed all the way to your home."
+      }
+    }
+  },
+  "CleanWater": {
+    "kicker": "Quality solutions partner",
+    "title": {
+      "line1": "QUALITY SOLUTIONS PARTNER",
+      "line2": "Naturally clean water",
+      "line3": "For your property"
+    },
+    "summary": "Tailored engineering, transparent pricing, and guaranteed service keep pure water flowing with confidence.",
+    "options": {
+      "custom": {
+        "title": "Tailored solutions",
+        "body": "We adapt to your needs with the latest, eco-friendly technology for efficient water extraction.",
+        "bullets": [
+          "Adapt to every surface and terrain",
+          "Deploy modern technology and equipment",
+          "Minimal impact on the surrounding area"
+        ]
+      },
+      "pricing": {
+        "title": "Transparent pricing",
+        "body": "Clear budgets without hidden fees ensure trust throughout the project.",
+        "bullets": [
+          "Upfront quote: €2300 up to 30 meters",
+          "€70 per meter beyond 30 m",
+          "No hidden payments"
+        ]
+      },
+      "warranty": {
+        "title": "Guaranteed care",
+        "body": "Rely on our two-year warranty covering service and materials for lasting peace of mind.",
+        "bullets": [
+          "2-year functionality guarantee",
+          "Certified, food-grade materials",
+          "Savings versus delivered water"
+        ]
+      }
+    }
+  },
+  "ContactCTA": {
+    "kicker": "Need reassurance?",
+    "title": {
+      "line1": "Second thoughts about getting water on your property?",
+      "line2": "We can help - let's start with a precise site study."
+    },
+    "summary": "Choose the fastest way to reach our drilling team.",
+    "actions": {
+      "call": {
+        "label": "Call us",
+        "helper": "Talk with an engineer immediately",
+        "aria": "Call URB at {phone}"
+      },
+      "mail": {
+        "label": "Mail us",
+        "helper": "Send project data or maps anytime",
+        "aria": "Email URB at {email}"
+      },
+      "schedule": {
+        "label": "Schedule the consultation now",
+        "helper": "Pick a time that fits your build plan",
+        "aria": "Open the consultation form"
+      }
+    },
+    "form": {
+      "title": "Book a site check-in",
+      "subtitle": "Share your contacts and ideal timing. We respond within one business day.",
+      "fields": {
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone",
+        "message": "Message (optional)"
+      },
+      "buttons": {
+        "send": "Send request",
+        "close": "Close"
+      },
+      "success": "Thanks! We will contact you shortly.",
+      "errors": {
+        "emailRequired": "Email is required",
+        "emailInvalid": "Enter a valid email address",
+        "phoneRequired": "Phone number is required",
+        "phoneInvalid": "Enter a valid phone number"
+      }
+    }
+  },
   "MenuItems": {
     "main": "Home",
     "about": "About Urb",
     "strength": "Our Strength",
     "offers": "Our Offers",
-    "prices": "Prices"
+    "prices": "Prices",
+    "call": "Call us",
+    "email": "Email us"
   }
 }

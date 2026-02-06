@@ -33,23 +33,139 @@
   flex-wrap: wrap;
   flex-direction: row;
   margin-top: 1.5rem;
+  gap: clamp(16px, 2vw, 28px);
+  position: relative;
 }
 
 .action {
-  padding: 0 5px;
+  position: relative;
   display: flex;
   align-items: center;
-  text-align: center;
   justify-content: center;
-  background-color: #0070f3;
+  text-align: center;
   word-break: break-word;
   color: white;
-  border-radius: 4px;
+  border-radius: 28px;
   text-decoration: none;
-  font-weight: 500;
-  transition: background-color 0.2s ease-in-out;
-  min-width: 110px;
-  max-width: 110px;
+  font-weight: 600;
+  min-width: 115px;
+  max-width: 115px;
+  min-height: 115px;
+  max-height: 115px;
+  background: rgba(6, 10, 26, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 18px 40px rgba(1, 6, 18, 0.75);
+  backdrop-filter: blur(18px);
+  overflow: hidden;
+  transition: transform 250ms ease, box-shadow 250ms ease, border-color 250ms ease;
+  isolation: isolate;
+}
+
+.action::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, rgba(90, 176, 255, 0.8), rgba(0, 112, 243, 0.4));
+  opacity: 0.6;
+  filter: blur(0px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.action::after {
+  content: "";
+  position: absolute;
+  inset: 10px;
+  border-radius: 20px;
+  background: radial-gradient(circle at 30% 30%, rgba(147, 199, 255, 0.15), transparent 65%);
+  opacity: 0.7;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.action :global(.banner) {
+  position: relative;
+  z-index: 1;
+}
+
+.action:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 50px rgba(2, 8, 22, 0.9);
+  border-color: rgba(90, 176, 255, 0.6);
+}
+
+.action:focus-within {
+  outline: 2px solid rgba(147, 199, 255, 0.9);
+  outline-offset: 4px;
+}
+
+.mobileActions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+  text-align: center;
+  justify-items: center;
+  gap: 4px;
+  width: 100%;
+  max-width: 260px;
+  padding: 0;
+  margin: 16px auto 0;
+}
+
+.mobileAction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 42px;
+  border-radius: 18px;
+  background: rgba(4, 9, 22, 0.74);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 18px 40px rgba(1, 6, 18, 0.6);
+  padding: 4px 6px;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(14px);
+  transition: transform 240ms ease, box-shadow 240ms ease, border-color 240ms ease;
+}
+.mobileAction:hover {
+  transform: translateY(-4px);
+  border-color: rgba(90, 176, 255, 0.45);
+  box-shadow: 0 22px 44px rgba(2, 8, 20, 0.8);
+}
+
+.mobileAction::before {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  border-radius: 18px;
+  background: radial-gradient(circle at 30% 20%, rgba(147, 199, 255, 0.15), transparent 60%);
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.mobileAction :global(.banner) {
+  position: relative;
+  z-index: 1;
+  font-size: 0.68rem;
+  letter-spacing: 0.09em;
+}
+  // font-size: 0.68rem;
+  // letter-spacing: 0.09em;
+
+@media (min-width: 430px) {
+  .mobileActions {
+    max-width: 360px;
+    margin: 20px auto 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .mobileActions {
+    grid-template-columns: 1fr;
+    max-width: 280px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -68,20 +184,16 @@
   
   .actions {
     gap: 20px;
-    width: 50%;
+    width: 48%;
   }
 
   .action {
-    min-width: 110px;
-    max-width: 110px;
-    min-height: 110px;
-    max-height: 110px;
+    min-width: 115px;
+    max-width: 115px;
+    min-height: 115px;
+    max-height: 115px;
   }
 
-  .actions .action:nth-child(1),
-  .actions .action:nth-child(3) {
-    margin-right: 30px;
-  }
 }
 
 @media (min-width: 993px) {
@@ -100,14 +212,10 @@
   }
 
   .action {
-    min-width: 150px;
-    max-width: 150px;
-    min-height: 150px;
-    max-height: 150px;
+    min-width: 155px;
+    max-width: 155px;
+    min-height: 155px;
+    max-height: 155px;
   }
 
-  .actions .action:nth-child(1),
-  .actions .action:nth-child(3) {
-    margin-right: 30px;
-  }
 }
