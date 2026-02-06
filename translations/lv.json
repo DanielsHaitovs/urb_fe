@@ -69,6 +69,119 @@
       }
     }
   },
+  "OffersPage": {
+    "kicker": "Piedāvājumu katalogs",
+    "bannerTitle": "Pielāgoti urbuma piedāvājumi",
+    "title": {
+      "line1": "Ikdienas urbuma risinājumi",
+      "line2": "Pārveidoti pilnos piegādes scenārijos"
+    },
+    "summary": "Paplašinām sākumlapas trīs pakalpojumus par pilnām programmām ar grafikiem, piegādēm un izaicinājumiem, kurus jau zinām kā risināt.",
+    "note": "Vajag individuālu komplektu? Kombinējiet soļus un mēs 24 stundu laikā ieskicēsim maršrutu.",
+    "badge": {
+      "top": "Vidējais termiņš",
+      "bottom": "17 dienas līdz ūdenim"
+    },
+    "supportBadge": {
+      "top": "Atbalsts 24/7",
+      "bottom": "Inženieris dežūrā"
+    },
+    "labels": {
+      "deliverables": "Darbi, ko paveicam",
+      "cornerCases": "Stūra gadījumi, kuriem gatavojamies"
+    },
+    "services": {
+      "drilling": {
+        "title": "Precīzās urbuma programma",
+        "description": "Atļaujas, urbšana un testēšana uz vietas, lai iegūtu sanitāru un ilgmūžīgu ūdens avotu jūsu īpašumam.",
+        "timeline": "Darba logs: 10-14 dienas",
+        "deliverables": [
+          "Hidroģeoloģiska pastaiga un atļauju kopsavilkums",
+          "Apvalkots urbums līdz 30 m ar pārtikas plastmasas caurulēm",
+          "Sanitāra blīvēšana un 4 stundu sūknēšanas tests",
+          "Divu gadu mehāniskā garantija ar pirmo apkopes vizīti"
+        ],
+        "cornerCases": [
+          "Grants vai granīta slāņi prasa divkāršo rotācijas iekārtu",
+          "Brauktuves šaurākas par 2.7 m nozīmē kāpurķēžu tehniku vai klāju",
+          "Septicu vai drenāžu tuvums pieprasa vismaz 15 m distanci un laboratorijas pārbaudes"
+        ]
+      },
+      "maintenance": {
+        "title": "Plūsmas aizsardzības plāns",
+        "description": "Plānotas skalošanas, sūkņu diagnostika un filtru nomaiņa, lai ražība saglabātos visu gadu.",
+        "timeline": "Vizītes ilgums: 4-6 stundas",
+        "deliverables": [
+          "Visas sistēmas skalošana un hlorēšana",
+          "Sūkņu veiktspējas diagnostika ar telemetrijas datiem",
+          "Filtru materiāla maiņa un nogulšņu izcelšana",
+          "Aktualizēts apkopes protokols garantijas turpinājumam"
+        ],
+        "cornerCases": [
+          "Ūdens ar augstu dzelzi jāskalo vairākos posmos, lai izvairītos no traipiem",
+          "Pamestas akas tuvumā var piesārņot un jāaizslēdz",
+          "Sezonālā izslēgšana prasa glikola iepildi, lai pasargātu caurules"
+        ]
+      },
+      "installation": {
+        "title": "Pilna instalācijas pakete",
+        "description": "Sūknis, cauruļvadi, elektroinstalācija un monitorings līdz jūsu tehniskajai telpai vai laukuma skapim.",
+        "timeline": "Projekta ilgums: 5-7 dienas",
+        "deliverables": [
+          "Iegremdējamā sūkņa izvēle, elektroinstalācija un kontrolieris",
+          "Siltināts pievads tranšejā ar atjaunotu uzbērumu",
+          "Spiedtvertne, filtri un viedā uzraudzība",
+          "Nodošanas protokols ar īpašnieka instrukciju"
+        ],
+        "cornerCases": [
+          "Esošā iekšējā santehnika var prasīt dielektrisko atdalīšanu",
+          "Sasaluma zona dziļāka par 1.2 m nozīmē apsildi vai akas šahtas",
+          "Saules vai off-grid sistēmas prasa bateriju un rezerves plānu"
+        ]
+      }
+    },
+    "scenarios": {
+      "kicker": "Kur tas strādā vislabāk",
+      "title": "Situācijas, kuras risinām ik nedēļu",
+      "summary": "Šādi projekti atkārtojas Latvijā un Baltijā, tāpēc esam izveidojuši pārbaudītus soļus katram gadījumam.",
+      "list": {
+        "rockyTerrain": {
+          "title": "Akmainas vai reljefainas vietas",
+          "body": "Ja grunts ziņojums izklausās pēc granīta, izvēlamies tehniku, kas tiek galā ar slāņiem, nebojājot pagalmu.",
+          "bullets": [
+            "Pirms tehnikas uzstādām paklājus, lai pasargātu nogāzes",
+            "Trieciena un rotācijas galvas tiek galā ar jauktu grunti",
+            "Reāllaika telemetrija fiksē dziļumu, griezes un spiedienu"
+          ]
+        },
+        "seasonalUsage": {
+          "title": "Sezonālas mājas un vasarnīcas",
+          "body": "Sistēmas, kas ziemā stāv dīkstāvē, bet atgriežoties tūlīt sniedz dzeramo ūdeni.",
+          "bullets": [
+            "Pret sasalšanu izolēti maršruti uztur spiedienu visu ziemu",
+            "Viedie kontrolieri automatizē sūkņu apgriezienus sezonas laikā",
+            "Attālināti brīdinājumi informē pirms sasalšanas riskiem"
+          ]
+        },
+        "retrofit": {
+          "title": "Veco aku modernizācija",
+          "body": "Pārņemti vai pašbūvēti urbumi iegūst jaunu apvalku, monitoringu un drošu padevi.",
+          "bullets": [
+            "Video inspekcija atklāj sabrukušus apvalkus",
+            "Jaunas čaulas un sanitārā blīvēšana bloķē piesārņojumu",
+            "Sadalītāji un kolektori sasaista jaunos sūkņus ar iekštelpu tīkliem"
+          ]
+        }
+      }
+    },
+    "cta": {
+      "kicker": "Gatavi sākt?",
+      "title": "Padalieties ar kadastru un ūdens mērķiem",
+      "summary": "Sūtiet kadastra punktu, drona foto vai tehniskās telpas attēlu, un 24h laikā atbildēsim ar plānu.",
+      "button": "Ieplānot manu urbumu",
+      "hint": "Atbild īsts inženieris – ne automatisks bots."
+    }
+  },
   "CleanWater": {
     "kicker": "KVALITĀTES RISINĀJUMU PARTNERIS",
     "title": {
