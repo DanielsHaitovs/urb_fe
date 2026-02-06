@@ -29,6 +29,23 @@
       }
     }
   },
+  "Strength": {
+    "subTitle": "Our Strength",
+    "title": "Why choose us",
+    "summary": "We offer full-service solutions for borehole drilling, ensuring high quality and reliability.",
+    "projects": {
+      "title": "Successful Projects",
+      "body": "We have completed over 100 successful borehole drilling projects across various industries."
+    },
+    "deep": {
+      "title": "Deep Expertise",
+      "body": "Our team has extensive experience in drilling deep boreholes, ensuring optimal results for our clients."
+    },
+    "warranty": {
+      "title": "Comprehensive Warranty",
+      "body": "We stand behind our work with a comprehensive warranty, giving our clients peace of mind."
+    }
+  },
   "MenuItems": {
     "main": "Home",
     "about": "About Urb",

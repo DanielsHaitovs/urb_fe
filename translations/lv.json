@@ -29,6 +29,23 @@
       }
     }
   },
+  "Strength": {
+    "subTitle": "Mūsu stiprums",
+    "title": "Kāpēc izvēlēties mūs",
+    "summary": "Mēs piedāvājam pilna servisa risinājumus urbšanas darbiem, nodrošinot augstu kvalitāti un uzticamību.",
+    "projects": {
+      "title": "Veiksmīgi projekti",
+      "body": "Mēs esam veiksmīgi pabeiguši vairāk nekā 100 urbšanas projektu dažādās nozarēs."
+    },
+    "deep": {
+      "title": "Dziļa ekspertīze",
+      "body": "Mūsu komanda ir guvusi plašu pieredzi dzilu urbumu veikšanā, nodrošinot optimālus rezultātus mūsu klientiem."
+    },
+    "warranty": {
+      "title": "Visaptveroša garantija",
+      "body": "Mēs stāvam aiz mūsu darba ar visaptverošu garantiju, sniedzot mūsu klientiem mieru."
+    }
+  },
   "MenuItems": {
     "main": "Galvenā",
     "about": "Par Urb",
