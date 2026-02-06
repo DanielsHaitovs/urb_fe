@@ -107,6 +107,31 @@
       }
     }
   },
+  "ContactCTA": {
+    "kicker": "Vajag pārliecību?",
+    "title": {
+      "line1": "Māc šaubas, vai jūsu īpašumā var iegūt ūdeni?",
+      "line2": "Mēs varam palīdzēt! Sāksim ar rūpīgu teritorijas izpēti."
+    },
+    "summary": "Izvēlieties ērtāko veidu saziņai ar mūsu komandu.",
+    "actions": {
+      "call": {
+        "label": "Zvaniet mums",
+        "helper": "Runājiet ar inženieri uzreiz",
+        "aria": "Zvaniet URB pa {phone}"
+      },
+      "mail": {
+        "label": "Rakstiet mums",
+        "helper": "Sūtiet projektu vai situācijas plānu jebkurā laikā",
+        "aria": "Rakstiet URB uz {email}"
+      },
+      "schedule": {
+        "label": "Piesakiet konsultāciju tūlīt",
+        "helper": "Izvēlieties sev ērtu laiku detalizētai konsultācijai",
+        "aria": "Atvērt konsultācijas pieteikumu"
+      }
+    }
+  },
   "MenuItems": {
     "main": "Galvenā",
     "about": "Par Urb",

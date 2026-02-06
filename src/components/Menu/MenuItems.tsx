@@ -8,6 +8,12 @@ import { Mail, Phone, X } from "lucide-react";
 import { useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { LocaleToggleButton } from "@/components/Language/LocaleToggleButton";
+import {
+  CONTACT_EMAIL,
+  CONTACT_EMAIL_HREF,
+  CONTACT_PHONE_DISPLAY,
+  CONTACT_PHONE_HREF,
+} from "@/lib/contactDetails";
 
 export const menuItemsList = [
   { id: "about" },
@@ -15,10 +21,6 @@ export const menuItemsList = [
   { id: "offers" },
   { id: "prices" },
 ];
-
-const CONTACT_PHONE = "+37120000000";
-const CONTACT_PHONE_DISPLAY = "+371 20 000 000";
-const CONTACT_EMAIL = "info@urb.lv";
 
 type Props = {
   screen: ScreenType;
@@ -89,11 +91,11 @@ export function MenuItems({ screen, isOpen, setOpen }: Props) {
           ))}
         </ul>
         <div className={styles.actions}>
-          <Link className={styles.phone} href={"tel:" + CONTACT_PHONE} aria-label={`Call URB at ${CONTACT_PHONE_DISPLAY}`}>
+          <Link className={styles.phone} href={CONTACT_PHONE_HREF} aria-label={`Call URB at ${CONTACT_PHONE_DISPLAY}`}>
             <Phone size={18} aria-hidden="true" />
             <span>{t("call")}</span>
           </Link>
-          <Link className={styles.mailTo} href={"mailto:" + CONTACT_EMAIL} aria-label={`Email URB at ${CONTACT_EMAIL}`}>
+          <Link className={styles.mailTo} href={CONTACT_EMAIL_HREF} aria-label={`Email URB at ${CONTACT_EMAIL}`}>
             <Mail size={18} aria-hidden="true" />
             <span>{t("email")}</span>
           </Link>

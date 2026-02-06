@@ -3,6 +3,7 @@
 import styles from "@/app/(main)/HomePage.module.scss";
 import CleanWater from "@/components/Clean/Clean";
 import DailySolutions from "@/components/Solutions/Solutions";
+import ContactCTA from "@/components/ContactCTA/ContactCTA";
 import Strength from "@/components/Strength/Strength";
 import { useScreenSize } from "@/providers/ScreenTypeProvider";
 
@@ -18,20 +19,11 @@ export default function Home() {
       <section id="daily-solutions" className={styles.section}>
         <DailySolutions screen={screen} />
       </section>
-      <section id="prices" className={styles.section}>
+      <section id="clean-water" className={styles.section}>
         <CleanWater screen={screen} />
       </section>
-      <section id="offers" className={styles.section}>
-        <div>
-          offers
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </div>
-      </section>
       <section id="contact" className={styles.section}>
-        <div>
-          contact
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </div>
+        <ContactCTA screen={screen} />
       </section>
     </main>
   );

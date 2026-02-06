@@ -107,6 +107,31 @@
       }
     }
   },
+  "ContactCTA": {
+    "kicker": "Need reassurance?",
+    "title": {
+      "line1": "Second thoughts about getting water on your property?",
+      "line2": "We can help - let's start with a precise site study."
+    },
+    "summary": "Choose the fastest way to reach our drilling team.",
+    "actions": {
+      "call": {
+        "label": "Call us",
+        "helper": "Talk with an engineer immediately",
+        "aria": "Call URB at {phone}"
+      },
+      "mail": {
+        "label": "Mail us",
+        "helper": "Send project data or maps anytime",
+        "aria": "Email URB at {email}"
+      },
+      "schedule": {
+        "label": "Schedule the consultation now",
+        "helper": "Pick a time that fits your build plan",
+        "aria": "Open the consultation form"
+      }
+    }
+  },
   "MenuItems": {
     "main": "Home",
     "about": "About Urb",
