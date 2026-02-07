@@ -4,7 +4,7 @@ import type { ChangeEvent, FormEventHandler } from "react";
 import { useCallback, useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { CalendarClock, Mail, Phone, X } from "lucide-react";
-import styles from "./ContactCTA.module.scss";
+import styles from "@/components/ContactCTA/ContactCTA.module.scss";
 import { CONTACT_EMAIL, CONTACT_PHONE_DISPLAY } from "@/lib/contactDetails";
 import { ScreenType } from "@/types/deviceType";
 
