@@ -9,7 +9,6 @@
 .hero {
   display: flex;
   flex-wrap: wrap;
-  align-items: stretch;
   gap: clamp(24px, 4vw, 40px);
   background: linear-gradient(140deg, rgba(20, 60, 140, 0.32), rgba(9, 20, 40, 0.72));
   border-radius: 32px;
@@ -21,6 +20,7 @@
 .heroCopy {
   flex: 1 1 360px;
   display: flex;
+  width: 100%;
   flex-direction: column;
   gap: 12px;
 }
@@ -35,7 +35,7 @@
 
 .title {
   margin: 0;
-  font-size: clamp(2.4rem, 6vw, 3.8rem);
+  font-size: clamp(1.8rem, 6vw, 3.8rem);
   line-height: 1.05;
   display: flex;
   flex-direction: column;
@@ -175,7 +175,6 @@
 
 .detailGroup ul {
   margin: 0;
-  padding-left: 18px;
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -189,6 +188,7 @@
   border: 1px solid rgba(255, 255, 255, 0.08);
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 24px;
 }
 
@@ -203,8 +203,11 @@
 }
 
 .scenarioGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  // display: grid;
+  // grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 18px;
 }
 
@@ -228,7 +231,6 @@
 
 .scenarioCard ul {
   margin: 0;
-  padding-left: 18px;
   color: rgba(236, 243, 255, 0.9);
   display: flex;
   flex-direction: column;
@@ -298,9 +300,5 @@
     margin-right: 0;
     align-self: stretch;
     min-width: 0;
-  }
-
-  .heroBadge {
-    width: 100%;
   }
 }

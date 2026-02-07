@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { useTranslations } from "next-intl";
-import styles from "./OffersPage.module.scss";
+import styles from "@/app/offers/OffersPage.module.scss";
 
 const serviceIds = ["drilling", "maintenance", "installation"] as const;
 const scenarioIds = ["rockyTerrain", "seasonalUsage", "retrofit"] as const;

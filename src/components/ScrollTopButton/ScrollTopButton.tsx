@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { ArrowUp } from "lucide-react";
-import styles from "./ScrollTopButton.module.scss";
+import styles from "@/components/ScrollTopButton/ScrollTopButton.module.scss";
 
 export function ScrollTopButton() {
   const [isVisible, setIsVisible] = useState(false);

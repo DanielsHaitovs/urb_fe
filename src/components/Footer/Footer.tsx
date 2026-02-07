@@ -3,18 +3,12 @@
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { ArrowUpRight } from "lucide-react";
-import styles from "./Footer.module.scss";
+import styles from "@/components/Footer/Footer.module.scss";
 
 const serviceLinks = [
   { id: "drilling", href: "/#daily-solutions", labelKey: "nav.services.links.drilling" },
   { id: "survey", href: "/#clean-water", labelKey: "nav.services.links.survey" },
   { id: "maintenance", href: "/#daily-solutions", labelKey: "nav.services.links.maintenance" },
-] as const;
-
-const resourceLinks = [
-  { id: "process", href: "/#clean-water", labelKey: "nav.resources.links.process" },
-  { id: "pricing", href: "/#clean-water", labelKey: "nav.resources.links.pricing" },
-  { id: "warranty", href: "/#clean-water", labelKey: "nav.resources.links.warranty" },
 ] as const;
 
 export default function Footer() {
