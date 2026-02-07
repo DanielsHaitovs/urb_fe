@@ -542,5 +542,216 @@
         "answer": "Absolutely. Heated rigs, frost mats, and insulated manifolds keep the schedule moving even below zero."
       }
     }
+  },
+  "MaintenancePage": {
+    "hero": {
+      "kicker": "Flow protection",
+      "title": {
+        "line1": "White-glove maintenance",
+        "line2": "For relentless water uptime"
+      },
+      "summary": "Engineers flush, sanitize, tune telemetry, and upgrade components so your wells deliver investor-grade reliability without babysitting.",
+      "detail": "Concierge scheduling adapts to occupancy, lab reporting satisfies ESG goals, and emergency crews mobilize in under four hours.",
+      "actions": {
+        "primary": "Book a maintenance audit",
+        "secondary": "Download care plans"
+      },
+      "badge": {
+        "title": "99.2% uptime across serviced wells",
+        "body": "Emergency dispatch under 4 hours"
+      },
+      "chips": [
+        "Telemetry logs",
+        "Seasonalization",
+        "Lab-certified chemistry"
+      ]
+    },
+    "metrics": {
+      "uptime": {
+        "value": "99.2%",
+        "label": "Average uptime"
+      },
+      "response": {
+        "value": "<4 h",
+        "label": "Emergency response"
+      },
+      "wells": {
+        "value": "870+",
+        "label": "Systems under care"
+      }
+    },
+    "features": {
+      "kicker": "What we cover",
+      "title": "Maintenance that thinks four steps ahead",
+      "summary": "Each visit is a full-system reset - hydraulic performance, chemistry, telemetry, and seasonal resilience handled in one pass.",
+      "flush": {
+        "title": "Deep flush & debris extraction",
+        "body": "Dual-pump flushing clears iron, sand, and biofilm without stressing casing or landscaping.",
+        "bullets": [
+          "Reverse-flow purge ejects sand and scale",
+          "Shock chlorination neutralizes biofilm",
+          "Surface cleanup leaves paving spotless"
+        ]
+      },
+      "diagnostics": {
+        "title": "Pump diagnostics & load tuning",
+        "body": "Telemetry probes benchmark pressure, amp draw, and vibration to predict failures weeks ahead.",
+        "bullets": [
+          "Thermal cameras catch hot bearings",
+          "Real-time amp charts tune controllers",
+          "Automated alerts push to your phone"
+        ]
+      },
+      "water": {
+        "title": "Water wellness reporting",
+        "body": "On-site lab kits verify potability, trace metals, and mineral balance with clear recommendations.",
+        "bullets": [
+          "15-parameter chemistry scan",
+          "Lab PDFs ready for ESG audits",
+          "Filter media tailored to results"
+        ]
+      },
+      "seasonal": {
+        "title": "Seasonal hardening",
+        "body": "We winterize, restart, and insulate infrastructure around your occupancy calendar.",
+        "bullets": [
+          "Glycol purges protect lines",
+          "Heat tracing plus insulation checks",
+          "Spring restart playbook included"
+        ]
+      }
+    },
+    "program": {
+      "kicker": "Care program",
+      "title": "Five phases to recalibrate and harden your system",
+      "summary": "The same documented sequence keeps every visit transparent for owners, boards, and operators.",
+      "steps": {
+        "inspect": {
+          "title": "Arrival & telemetry capture",
+          "body": "We log baseline flow, static level, and electrical load before making changes."
+        },
+        "sanitize": {
+          "title": "Flush, sanitize, and de-scale",
+          "body": "Dual-pump flushing, chlorination, and debris extraction reset hydraulic performance."
+        },
+        "upgrade": {
+          "title": "On-the-spot upgrades",
+          "body": "Filters, seals, injectors, and controllers swap out from stocked service vans."
+        },
+        "monitor": {
+          "title": "Smart monitoring sync",
+          "body": "Telemetry gateways upload trends, alarms are reprogrammed, and owners regain access."
+        },
+        "report": {
+          "title": "Executive-ready reporting",
+          "body": "You receive lab results, before/after telemetry, and next-step recommendations within 24h."
+        }
+      }
+    },
+    "plans": {
+      "kicker": "Choose your focus",
+      "title": "Maintenance plans matched to the way you use water",
+      "summary": "Pick seasonal visits or monthly concierge care - both include telemetry logs, lab chemistry, and guaranteed response windows.",
+      "seasonal": {
+        "title": "Seasonal",
+        "summary": "Deep preparation before and after peak occupancy.",
+        "price": "2x / year",
+        "note": "Ideal for private estates and retreats.",
+        "items": [
+          "Full-system diagnostics + pressure balancing",
+          "Filter replacements and chemistry calibration",
+          "Winterization + de-winterization sequence",
+          "Priority rapid-response slotting"
+        ]
+      },
+      "continuous": {
+        "title": "Continuous",
+        "summary": "Concierge monitoring and optimization every month.",
+        "price": "12x / year",
+        "note": "Best for resorts, developments, and utilities.",
+        "items": [
+          "Monthly micro-diagnostics and yield adjustments",
+          "Predictive part replacement before failures",
+          "Water stewardship reports for stakeholders",
+          "On-call engineer + quarterly strategy reviews"
+        ]
+      }
+    },
+    "care": {
+      "kicker": "Assurance layer",
+      "title": "Coverage only a dedicated crew can promise",
+      "summary": "Once you're on our roster, specialized teams stay on standby for chemistry incidents, telemetry anomalies, or stakeholder reporting.",
+      "note": "Standby clients receive priority routing, encrypted reporting, and the engineer who wrote the plan on speed dial.",
+      "cta": "Book the standby team",
+      "stats": {
+        "coverage": {
+          "value": "24/7",
+          "label": "Live monitoring"
+        },
+        "sla": {
+          "value": "<4 h",
+          "label": "On-site SLA"
+        },
+        "lab": {
+          "value": "ISO 17025",
+          "label": "Lab accreditation"
+        }
+      },
+      "cards": {
+        "emergency": {
+          "title": "Emergency flush & rescue",
+          "body": "When a well suddenly drops pressure or pulls color, we deploy dual-pump purge rigs with containment.",
+          "bullets": [
+            "Rapid turbidity + bacteria testing",
+            "Temporary bypass keeps water online",
+            "Crew arrives with pre-authorized parts"
+          ]
+        },
+        "chemistry": {
+          "title": "Chemistry & compliance investigations",
+          "body": "We coordinate certified labs, regulators, and remediation so stakeholder updates stay calm.",
+          "bullets": [
+            "Chain-of-custody sampling kits",
+            "Root-cause analysis with visuals",
+            "Corrective action roadmap"
+          ]
+        },
+        "monitoring": {
+          "title": "Continuous telemetry & automation",
+          "body": "Sensors stream data to our control room for predictive maintenance and remote fixes.",
+          "bullets": [
+            "Encrypted gateways + dual SIM failover",
+            "AI alerts tuned to your aquifer",
+            "Remote valve + pump commands"
+          ]
+        }
+      }
+    },
+    "faq": {
+      "kicker": "Still curious?",
+      "title": "Maintenance questions we answer weekly",
+      "items": {
+        "eligibility": {
+          "question": "Do you service wells you didn't build?",
+          "answer": "Yes. We begin with a diagnostic audit, document existing hardware, and onboard the system into our monitoring stack."
+        },
+        "timeline": {
+          "question": "How fast can the first visit happen?",
+          "answer": "After the audit we can schedule a full maintenance window within 5 business days, or sooner for emergency enrollments."
+        },
+        "lab": {
+          "question": "Are lab samples included or extra?",
+          "answer": "One comprehensive chemistry panel is included per visit; additional parameters or rush processing are billed at lab rates."
+        },
+        "contract": {
+          "question": "Do plans require multi-year contracts?",
+          "answer": "Seasonal plans run 12 months at a time, while continuous care can be signed for 12 or 24 months with fixed pricing."
+        },
+        "downtime": {
+          "question": "Will our site lose water during service?",
+          "answer": "We stage temporary bypass tanks and throttled pumping so homes, hotels, or plants keep running while we work."
+        }
+      }
+    }
   }
 }

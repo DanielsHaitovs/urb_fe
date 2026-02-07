@@ -1,18 +1,22 @@
-import styles from "@/app/offers/OffersPage.module.scss";
-import WorkflowShowcase from "@/components/WorkflowShowcase/WorkflowShowcase";
-import Daily from "@/components/Solutions/Daily";
-import Service from "@/components/Service/Service";
-import Scenarios from "@/components/Scenarios/Scenarios";
+import styles from "@/app/offers/maintenance/Maintenance.module.scss";
 import RequestPlan from "@/components/ContactCTA/RequestPlan";
 import { ScrollTopButton } from "@/components/ScrollTopButton/ScrollTopButton";
+import MaintanenceHero from "@/components/Service/Maintanence/Hero";
+import MaintanenceHighlights from "@/components/Service/Maintanence/Highlights";
+import MaintanenceProgram from "@/components/Service/Maintanence/Program";
+import MaintanencePlans from "@/components/Service/Maintanence/Plans";
+import MaintanenceCare from "@/components/Service/Maintanence/Care";
+import MaintanenceFaq from "@/components/Service/Maintanence/Faq";
 
-export default function OffersPage() {
+export default function MaintenancePage() {
   return (
     <main className={styles.page}>
-      <Daily />
-      <WorkflowShowcase />
-      <Service />
-      <Scenarios />
+      <MaintanenceHero />
+      <MaintanenceHighlights />
+      <MaintanenceProgram />
+      <MaintanencePlans />
+      <MaintanenceCare />
+      <MaintanenceFaq />
       <RequestPlan />
       <ScrollTopButton />
     </main>
