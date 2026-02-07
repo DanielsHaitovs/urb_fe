@@ -359,5 +359,188 @@
     "prices": "Cenas",
     "call": "Zvaniet",
     "email": "Rakstiet"
+  },
+  "DrillingPage": {
+    "hero": {
+      "kicker": "Precīza urbšana",
+      "title": {
+        "line1": "Inženierēti urbumi",
+        "line2": "Mūsdienīgai privātai ūdenapgādei"
+      },
+      "summary": "Vienā komandā pieslēdzam topogrāfus, urbšanas tehniku un monitoringu, lai katrs urbums top ātrāk, tīrāk un gatavs automatizācijai.",
+      "detail": "No priežu mežiem līdz akmeņainām smiltīm – mēs kārtojam atļaujas, loģistiku un nodošanu, kamēr jūs redzat progresu kopīgā panelī.",
+      "actions": {
+        "primary": "Pieteikt apsekojumu",
+        "secondary": "Apskatīt procesu"
+      },
+      "badge": {
+        "title": "Divu gadu meistarības garantija",
+        "body": "Materiāli, blīvēšana un pirmā apkope iekļauta"
+      },
+      "gallery": {
+        "rig": "Kāpurtanku rotācijas iekārta",
+        "pit": "Pārtikas klases apvalks",
+        "install": "Sūknis, elektrība, telemetrija"
+      }
+    },
+    "metrics": {
+      "depth": {
+        "value": "310 m",
+        "label": "Dziļākais objekts"
+      },
+      "response": {
+        "value": "<24 h",
+        "label": "Sagatavošana uz vietas"
+      },
+      "clients": {
+        "value": "320+",
+        "label": "Apkalpotie īpašumi"
+      },
+      "warranty": {
+        "value": "2 gadi",
+        "label": "Garantija"
+      }
+    },
+    "features": {
+      "kicker": "Ko pārņemam mēs",
+      "title": "Precizitātes slāņi katrā urbumā",
+      "summary": "Hidroģeoloģija, tīra tehnika un atsaucīgs serviss kopā nodrošina mierīgu ūdens piegādi gadu desmitiem.",
+      "survey": {
+        "title": "Aizraušanās ar izpēti",
+        "body": "Kartējam ūdensnesējus, komunikācijas un kaimiņus pirms tehnika pieskaras zemei.",
+        "bullets": [
+          "Parcela apsekojums ar dziļuma prognozi",
+          "Komunikāciju un servitūtu pārklājumi",
+          "Sezonālo apjomu modelēšana"
+        ]
+      },
+      "hardware": {
+        "title": "Augstākās klases aprīkojums",
+        "body": "Pārtikas plastmasas apvalki, Eiropas sūkņi un nerūsējošas kolektoru līnijas iztur Baltijas ziemas.",
+        "bullets": [
+          "Divkāršā rotācijas iekārta jauktai ģeoloģijai",
+          "Sertificēti polietilēna apvalki",
+          "Filtrācija un telemetrija"
+        ]
+      },
+      "compliance": {
+        "title": "Atbilstības vairogs",
+        "body": "Noformējam atļaujas, laboratorijas paraugus un urbuma žurnālus, lai iestādes apstiprina nekavējoties.",
+        "bullets": [
+          "Pilns juridiskais fails",
+          "Ūdens kvalitātes analīzes",
+          "As-built dokumentācija"
+        ]
+      },
+      "aftercare": {
+        "title": "Pēcapkope iekļauta",
+        "body": "Attālināta uzraudzība, apkopes atgādinājumi un dežūrējošs inženieris 24/7.",
+        "bullets": [
+          "Telemetrijas brīdinājumi",
+          "Sezonālās skalošanas programmas",
+          "Garantijas koordinators"
+        ]
+      }
+    },
+    "process": {
+      "kicker": "Pieci soļi",
+      "title": "Mūsu urbšanas horeogrāfija",
+      "summary": "Katram projektam ir pārskatāms grafiks ar laikiem, brigādēm un kvalitātes kontrolēm.",
+      "steps": {
+        "study": {
+          "title": "Objekta izpēte",
+          "body": "Biroja modelēšana + lauka zondēšana, informējot kaimiņus."
+        },
+        "mobilize": {
+          "title": "Mobilizācija",
+          "body": "Segkonstrukcijas rigam, vides aizsardzība un loģistika pa minūtēm."
+        },
+        "drill": {
+          "title": "Urbšanas logs",
+          "body": "Rotācijas-trieciena metode ar tiešsaistes datiem par dziļumu un griezes momentu."
+        },
+        "seal": {
+          "title": "Blīvēšana un testi",
+          "body": "Apvalks, sanitārā injekcija un vairāku stundu sūkņu tests ar analīzēm."
+        },
+        "handoff": {
+          "title": "Nodošana iekštelpās",
+          "body": "Sūknis, spiediena tvertne un monitors pieslēgts jūsu tehniskajā telpā ar dokumentiem."
+        }
+      }
+    },
+    "gallery": {
+      "kicker": "Lauka telemetrija",
+      "title": "Dati pierāda stabilitāti",
+      "summary": "Pēc katras vizītes nosūtām darba atskaiti, lai redzētu urbuma sniegumu.",
+      "pumps": {
+        "title": "Kalibrēti sūkņi",
+        "value": "640"
+      },
+      "runtime": {
+        "title": "Uptime vidēji",
+        "value": "99,2%"
+      },
+      "seal": {
+        "title": "Sanitārā blīvēšana",
+        "value": "100%"
+      }
+    },
+    "pricing": {
+      "kicker": "Caurspīdīgas cenas",
+      "title": "Divi skaidri finansēšanas modeļi",
+      "summary": "Piedāvājumā iekļauta loģistika, atļaujas un gala aprīkojums. Bez negaidītiem rēķiniem.",
+      "base": {
+        "title": "Bāzes programma",
+        "summary": "Ideāli līdz 30 metriem ar standarta smilšu vai māla slāņiem.",
+        "price": "€2 300",
+        "note": "Iekļauta mobilizācija, pirmā skalošana un dokumenti.",
+        "items": [
+          "Līdz 30 m rotācijas urbšana",
+          "Pārtikas apvalks + blīvēšana",
+          "Sūkņa izvēle un uzstādīšana",
+          "Telemetrijai gatavs elektro tīkls"
+        ]
+      },
+      "beyond": {
+        "title": "Virsm 30 m",
+        "summary": "Prognozējama cena dziļākiem akviferiem vai sarežģītai ģeoloģijai.",
+        "price": "€70 / m",
+        "note": "Maksājums tikai par apstiprinātajiem papildu metriem.",
+        "items": [
+          "Divkāršā rotācijas iekārta",
+          "Papildu apvalki un blīves",
+          "Pagarināti sūkņa testi",
+          "Laboratorijas un loģistikas izmaksas"
+        ]
+      }
+    },
+    "guarantee": {
+      "kicker": "Miers galvā",
+      "title": "Vairāku slāņu garantija",
+      "summary": "Reģistrējam katra komponenta sērijas numuru, servisa laiku un ķīmiju, lai palīdzība būtu acumirklī.",
+      "body": "Ja vajag padomu naktī, inženieris nolasa telemetriju un attālināti vada risinājumu vai izsūta brigādi.",
+      "cta": "Sarunāt ar inženieri"
+    },
+    "faq": {
+      "kicker": "Biežākie jautājumi",
+      "title": "Viss par urbumu",
+      "prep": {
+        "question": "Kā sagatavot objektu?",
+        "answer": "Nodrošiniet 3 m piekļuvi tehnikai un elektropieslēgumu, mēs nepieciešamības gadījumā uzklājam aizsargklājus."
+      },
+      "timeline": {
+        "question": "Kāds ir grafiks?",
+        "answer": "Izpēte un atļaujas 3–5 dienas, urbšana aptuveni nedēļa, nodošana vēl 2–3 dienas atkarībā no reljefa."
+      },
+      "docs": {
+        "question": "Vai sagatavojat dokumentus?",
+        "answer": "Jā, iesniedzam atļaujas, analīzes un urbuma žurnālu, lai pašvaldība nekavējas."
+      },
+      "winter": {
+        "question": "Vai urbjat ziemā?",
+        "answer": "Protams. Apsildāma tehnika, pretapledojuma paklāji un izolēti kolektori notur grafiku arī salā."
+      }
+    }
   }
 }

@@ -359,5 +359,188 @@
     "prices": "Prices",
     "call": "Call us",
     "email": "Email us"
+  },
+  "DrillingPage": {
+    "hero": {
+      "kicker": "Precision drilling",
+      "title": {
+        "line1": "Engineered boreholes",
+        "line2": "For modern private water"
+      },
+      "summary": "We mobilize surveyors, rigs, and monitoring tech as one squad so every borehole arrives faster, cleaner, and ready for long-term automation.",
+      "detail": "From pine forests to rocky clay, we orchestrate permits, logistics, and finishing touches while you follow progress in a single shared dashboard.",
+      "actions": {
+        "primary": "Book a site inspection",
+        "secondary": "See the full process"
+      },
+      "badge": {
+        "title": "Two-year craftsmanship guarantee",
+        "body": "Materials, sealing, and first service included"
+      },
+      "gallery": {
+        "rig": "Tracked rotary rig",
+        "pit": "Food-grade casing",
+        "install": "Pump, power, telemetry"
+      }
+    },
+    "metrics": {
+      "depth": {
+        "value": "310 m",
+        "label": "Deepest commissioned"
+      },
+      "response": {
+        "value": "<24 h",
+        "label": "Site readiness"
+      },
+      "clients": {
+        "value": "320+",
+        "label": "Owners served"
+      },
+      "warranty": {
+        "value": "2 years",
+        "label": "Warranty and support"
+      }
+    },
+    "features": {
+      "kicker": "What we handle",
+      "title": "Layers of precision in every borehole",
+      "summary": "Hydro-geologic science, clean hardware, and responsive care stack together so your private water stays calm for decades.",
+      "survey": {
+        "title": "Survey obsessed",
+        "body": "We map aquifers, heritage lines, and neighbors before a single track touches your soil.",
+        "bullets": [
+          "Parcel walk-through with depth prognosis",
+          "Utility + easement overlays",
+          "Seasonal volume modeling"
+        ]
+      },
+      "hardware": {
+        "title": "Tier-one hardware",
+        "body": "Food-grade casing, European pumps, and stainless manifolds endure Baltic winters.",
+        "bullets": [
+          "Dual-rotary rig for mixed geology",
+          "Certified polyethylene casing",
+          "In-line filtration and telemetry"
+        ]
+      },
+      "compliance": {
+        "title": "Compliance shield",
+        "body": "We file permits, lab samples, and bore logs so regulators sign off instantly.",
+        "bullets": [
+          "Full legal dossier",
+          "Water quality lab set",
+          "As-built documentation"
+        ]
+      },
+      "aftercare": {
+        "title": "Aftercare built-in",
+        "body": "Remote monitoring, maintenance reminders, and hotline support sit on standby 24/7.",
+        "bullets": [
+          "Telemetry alerts",
+          "Seasonal flush packages",
+          "Warranty concierge"
+        ]
+      }
+    },
+    "process": {
+      "kicker": "Five precise moves",
+      "title": "Our drilling choreography",
+      "summary": "Every project gets a transparent plan with timestamps, crew assignments, and quality gates.",
+      "steps": {
+        "study": {
+          "title": "Site study",
+          "body": "Desktop hydro model plus on-site soil probing with neighbors notified."
+        },
+        "mobilize": {
+          "title": "Mobilization",
+          "body": "Rig pads, environmental protection, and logistics booked down to the minute."
+        },
+        "drill": {
+          "title": "Drilling window",
+          "body": "Rotary-percussion boring with live telemetry on depth, torque, and aquifer response."
+        },
+        "seal": {
+          "title": "Sealing + testing",
+          "body": "Food-grade casing, sanitary grout, and multi-hour pump tests with lab samples."
+        },
+        "handoff": {
+          "title": "Interior handoff",
+          "body": "Pump, pressure stack, and smart monitor tied into your utility room with documentation."
+        }
+      }
+    },
+    "gallery": {
+      "kicker": "Field telemetry",
+      "title": "Live data proves the difference",
+      "summary": "Our crews export runtime summaries after every visit so you know exactly how the well performs.",
+      "pumps": {
+        "title": "Pumps calibrated",
+        "value": "640"
+      },
+      "runtime": {
+        "title": "Average uptime",
+        "value": "99.2%"
+      },
+      "seal": {
+        "title": "Sanitary seals",
+        "value": "100%"
+      }
+    },
+    "pricing": {
+      "kicker": "Transparent pricing",
+      "title": "Two clear ways to fund your borehole",
+      "summary": "Every quote includes logistics, permitting, and finishing hardware. No surprise invoices mid-dig.",
+      "base": {
+        "title": "Base program",
+        "summary": "Ideal for parcels up to 30 meters with standard sand or clay layers.",
+        "price": "€2 300",
+        "note": "Includes mobility, first flush, and documentation.",
+        "items": [
+          "Up to 30 m rotary drilling",
+          "Food-grade casing + grout",
+          "Pump sizing + install",
+          "Telemetry-ready wiring"
+        ]
+      },
+      "beyond": {
+        "title": "Beyond 30 m",
+        "summary": "Add predictable pricing for deeper aquifers or complex geology.",
+        "price": "€70 / m",
+        "note": "Billed only for verified meters beyond the base depth.",
+        "items": [
+          "Dual-rotary rig upgrade",
+          "Additional casing + sealing",
+          "Extended pump testing",
+          "Lab reporting + logistics"
+        ]
+      }
+    },
+    "guarantee": {
+      "kicker": "Peace of mind",
+      "title": "Multi-layer warranty and support",
+      "summary": "We track every component’s serial number, service timestamp, and chemical exposure so support is instant.",
+      "body": "Need reassurance at 2 AM? An engineer reads your telemetry and guides the fix remotely or dispatches a crew.",
+      "cta": "Talk with engineering"
+    },
+    "faq": {
+      "kicker": "Questions",
+      "title": "Borehole basics answered",
+      "prep": {
+        "question": "How do I prepare the parcel?",
+        "answer": "Clear a 3 m path for the rig, share power access, and we install temporary ground protection if needed."
+      },
+      "timeline": {
+        "question": "What is the project timeline?",
+        "answer": "Survey + permits take 3-5 days, drilling averages one week, and finishing another 2-3 days depending on terrain."
+      },
+      "docs": {
+        "question": "Do you handle documentation?",
+        "answer": "Yes, we submit permit packs, lab samples, and final bore logs so municipalities can archive the project instantly."
+      },
+      "winter": {
+        "question": "Can you drill in winter?",
+        "answer": "Absolutely. Heated rigs, frost mats, and insulated manifolds keep the schedule moving even below zero."
+      }
+    }
   }
 }
