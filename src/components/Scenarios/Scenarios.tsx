@@ -4,8 +4,8 @@ import styles from "@/components/Scenarios/Scenarios.module.scss";
 const scenarioIds = ["rockyTerrain", "seasonalUsage", "retrofit"] as const;
 
 export default function Scenarios() {
-const t = useTranslations("OffersPage");
-      const scenarios = scenarioIds.map((id) => ({
+  const t = useTranslations("OffersPage");
+  const scenarios = scenarioIds.map((id) => ({
     id,
     title: t(`scenarios.list.${id}.title`),
     body: t(`scenarios.list.${id}.body`),

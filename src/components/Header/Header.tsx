@@ -8,14 +8,14 @@ import { useScreenSize } from "@/providers/ScreenTypeProvider";
 
 type HeaderProps = {
   banner?: boolean;
-  showActions?: boolean;
   bannerTitle?: string;
+  actions?: { label: string; href: string }[];
 };
 
 export default function Header({
   banner = false,
-  showActions = true,
   bannerTitle,
+  actions
 }: HeaderProps) {
   const screen = useScreenSize();
 
@@ -26,7 +26,7 @@ export default function Header({
         <Menu screen={screen} />
       </div>
       {banner && (
-        <Banner screen={screen} showActions={showActions} title={bannerTitle} />
+        <Banner screen={screen} title={bannerTitle} actions={actions} />
       )}
     </header>
   );
