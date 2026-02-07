@@ -1,0 +1,115 @@
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(24px, 4vw, 40px);
+  background: linear-gradient(140deg, rgba(20, 60, 140, 0.32), rgba(9, 20, 40, 0.72));
+  border-radius: 32px;
+  padding: clamp(24px, 4vw, 48px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 30px 80px rgba(4, 10, 30, 0.45);
+}
+
+.heroCopy {
+  flex: 1 1 360px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.kicker {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  font-size: 0.78rem;
+  color: rgba(145, 216, 255, 0.9);
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(1.8rem, 6vw, 3.8rem);
+  line-height: 1.05;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.accent {
+  color: #8fd3ff;
+}
+
+.summary {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: rgba(224, 234, 255, 0.92);
+}
+
+.note {
+  margin: 0;
+  font-size: 0.95rem;
+  color: rgba(189, 205, 237, 0.9);
+}
+
+
+.heroBadges {
+  flex: 1 1 300px;
+  min-width: 240px;
+  width: 100%;
+  max-width: 520px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  justify-items: stretch;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heroBadge {
+  border-radius: 28px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: rgba(196, 212, 247, 0.85);
+}
+
+.heroBadge strong {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.supportBadge {
+  background: rgba(31, 215, 175, 0.12);
+  border-color: rgba(136, 255, 227, 0.4);
+  color: rgba(164, 255, 238, 0.95);
+}
+
+.serviceGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: clamp(20px, 3vw, 32px);
+}
+
+@media (max-width: 640px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .heroBadges {
+    grid-template-columns: 1fr;
+    max-width: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    align-self: stretch;
+    min-width: 0;
+  }
+}
