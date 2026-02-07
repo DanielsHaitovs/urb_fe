@@ -50,7 +50,7 @@ export function MenuItems({ screen, isOpen, setOpen }: Props) {
           </li>
           {menuItemsList.map((section) => (
             <li key={section.id} className={styles.item}>
-              <Link href={`#${section.id}`} onClick={() => setOpen(false)}>{t(section.id)}</Link>
+              <Link href={`/${section.id}`} onClick={() => setOpen(false)}>{t(section.id)}</Link>
             </li>
           ))}
         </ul>
@@ -86,7 +86,7 @@ export function MenuItems({ screen, isOpen, setOpen }: Props) {
           </li>
           {menuItemsList.map((section) => (
             <li key={section.id} className={styles.item}>
-              <Link href={`#${section.id}`} onClick={() => setOpen(false)}>{t(section.id)}</Link>
+              <Link href={`/${section.id}`} onClick={() => setOpen(false)}>{t(section.id)}</Link>
             </li>
           ))}
         </ul>

@@ -174,6 +174,30 @@
         }
       }
     },
+    "workflow": {
+      "kicker": "Iepazīstieties ar procesu",
+      "title": "Kā mēs izveidojam jūsu ideālo ūdens avotu",
+      "subtitle": "4 pārdomātos soļos",
+      "summary": "No pirmās vietas apskates līdz gala kvalitātes kontrolei katru etapu uzturam caurskatāmu un ātru.",
+      "steps": {
+        "consultation": {
+          "title": "Konsultācija",
+          "description": "Vietas apskate, hidro piezīmes un piekļuves plānošana tieši jūsu īpašumam."
+        },
+        "planning": {
+          "title": "Plānošana",
+          "description": "Individuāls urbšanas maršruts ar loģistiku, tehnikas izvēli un atļaujām."
+        },
+        "drilling": {
+          "title": "Urbšana",
+          "description": "Mūsdienīgas kāpurķēžu iekārtas izveido tīru urbumu ar minimālu ietekmi uz teritoriju."
+        },
+        "quality": {
+          "title": "Kvalitātes kontrole",
+          "description": "Aprīkojuma nodošana, ūdens paraugi un 24 mēnešu garantijas aktivizācija."
+        }
+      }
+    },
     "cta": {
       "kicker": "Gatavi sākt?",
       "title": "Padalieties ar kadastru un ūdens mērķiem",
