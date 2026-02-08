@@ -1,6 +1,9 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
 import styles from "@/components/About/Testimonials.module.scss";
 
 type Testimonial = {
@@ -15,28 +18,51 @@ export default function AboutTestimonials() {
   const testimonials = t.raw("items") as Testimonial[];
 
   return (
-    <section className={styles.section}>
-      <div className={styles.header}>
+    <section className={styles.main}>
+      <div className={styles.content}>
         <p className={styles.kicker}>{t("kicker")}</p>
-        <div>
-          <h2>{t("title")}</h2>
-          <p>{t("summary")}</p>
+        <div className={styles.title}>
+          <span>{t("title")}</span>
+          <span className={styles.summary}>{t("summary")}</span>
         </div>
       </div>
-      <div className={styles.grid}>
+      <Swiper
+        modules={[Autoplay]}
+        spaceBetween={24}
+        slidesPerView={1.2}
+        centeredSlides={true}
+        loop={true}
+        speed={600}
+        autoplay={{
+          delay: 1000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        }}
+        breakpoints={{
+          600: {
+            slidesPerView: 2.5,
+          },
+          1024: {
+            slidesPerView: 3.25,
+          },
+        }}
+        className={styles.slider}
+      >
         {testimonials.map((testimonial) => (
-          <article key={`${testimonial.name}-${testimonial.location}`} className={styles.card}>
-            <p className={styles.quote}>“{testimonial.quote}”</p>
-            <div className={styles.meta}>
-              <div>
-                <strong>{testimonial.name}</strong>
-                <span>{testimonial.location}</span>
+          <SwiperSlide key={`${testimonial.name}-${testimonial.location}`}>
+            <article className={styles.card}>
+              <p className={styles.quote}>“{testimonial.quote}”</p>
+              <div className={styles.meta}>
+                <div>
+                  <strong>{testimonial.name}</strong>
+                  <span>{testimonial.location}</span>
+                </div>
+                <span className={styles.tag}>{testimonial.tag}</span>
               </div>
-              <span className={styles.tag}>{testimonial.tag}</span>
-            </div>
-          </article>
+            </article>
+          </SwiperSlide>
         ))}
-      </div>
+      </Swiper>
     </section>
   );
 }

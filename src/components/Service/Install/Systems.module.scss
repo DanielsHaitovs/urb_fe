@@ -14,7 +14,6 @@
 
 .title {
   @include tokens.title;
-  word-break: break-all
 }
 
 .summary {
@@ -22,10 +21,7 @@
 }
 
 .grid {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 18px;
+  @include tokens.list;
 }
 
 .card {

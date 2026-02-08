@@ -59,6 +59,7 @@
 }
 
 .stats {
+  width: 100%;
   position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -131,5 +132,19 @@
   100% {
     opacity: 0.6;
     transform: scale(0.95);
+  }
+}
+
+@media (min-width: 768px) {
+  .main {
+    flex-direction: row;
+  }
+
+  .content {
+    width: 50%;
+  }
+
+  .stats {
+    width: 50%;
   }
 }

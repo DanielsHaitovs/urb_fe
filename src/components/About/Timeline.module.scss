@@ -1,36 +1,26 @@
 @use "@/styles/variables.module.scss" as tokens;
-
-.section {
-  margin-top: clamp(40px, 7vw, 120px);
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.main {
+  @include tokens.mainGradient;
 }
 
-.header {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.content {
+  @include tokens.content;
 }
 
 .kicker {
   @include tokens.kicker;
 }
 
-.header h2 {
-  margin: 0;
-  font-size: clamp(2rem, 4vw, 3rem);
+.title {
+  @include tokens.title;
 }
 
-.header p {
-  margin: 0;
-  color: rgba(211, 224, 247, 0.85);
+.summary {
+  @include tokens.summary;
 }
 
 .list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  @include tokens.list;
 }
 
 .step {
@@ -39,15 +29,10 @@
   border-radius: 32px;
   border: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(9, 12, 32, 0.9);
-  display: grid;
-  grid-template-columns: 120px 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 18px;
-}
-
-@media (max-width: 700px) {
-  .step {
-    grid-template-columns: 1fr;
-  }
+  width: 100%;
 }
 
 .step::before {
@@ -93,4 +78,10 @@
 .metrics p {
   margin-top: 4px;
   color: rgba(201, 214, 239, 0.9);
+}
+
+@media (min-width: 768px) {
+  .step {
+    width: calc(50% - 60px);
+  }
 }

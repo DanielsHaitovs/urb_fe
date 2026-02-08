@@ -1,31 +1,27 @@
 @use "@/styles/variables.module.scss" as tokens;
 
-.section {
-  margin-top: clamp(32px, 6vw, 100px);
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.main {
+  @include tokens.mainGradient;
+}
+
+.content {
+  @include tokens.content;
 }
 
 .kicker {
   @include tokens.kicker;
+  margin-right: auto;
 }
 
-.header {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.title {
+  @include tokens.title;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
 }
 
-.header h2 {
-  margin: 0;
-  font-size: clamp(2rem, 4vw, 3.2rem);
-}
-
-.header p {
-  margin: 0;
-  color: rgba(215, 228, 247, 0.9);
-  max-width: 720px;
+.summary {
+  @include tokens.summary;
 }
 
 .grid {
@@ -76,4 +72,14 @@
 
 .card li::marker {
   color: #67e3ff;
+}
+
+@media (min-width: 768px) {
+  .content {
+    flex-direction: row;
+  }
+
+  .grid {
+    margin: 0 auto;
+  }
 }

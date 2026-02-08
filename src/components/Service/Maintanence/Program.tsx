@@ -14,13 +14,15 @@ export default function MaintanenceProgram() {
   }));
 
   return (
-    <section className={styles.section}>
-      <div>
+    <section className={styles.main}>
+      <div className={styles.content}>
         <p className={styles.kicker}>{t("program.kicker")}</p>
-        <h2>{t("program.title")}</h2>
-        <p>{t("program.summary")}</p>
+        <h1 className={styles.title}>
+          <span>{t("program.title")}</span>
+          <span className={styles.summary}>{t("program.summary")}</span>
+        </h1>
       </div>
-      <div className={styles.timeline}>
+      <div className={styles.list}>
         {steps.map((step) => (
           <article key={step.id} className={styles.card}>
             <div className={styles.cardHeader}>

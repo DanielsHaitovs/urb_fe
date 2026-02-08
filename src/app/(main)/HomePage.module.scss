@@ -1,17 +1,13 @@
+@use "@/styles/variables.module.scss" as tokens;
+
 .page {
-  padding: clamp(2rem, 6vw, 5rem) clamp(1.5rem, 6vw, 6rem);
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-  color: #f5f7ff;
-  justify-content: center;
-  position: relative;
+  @include tokens.page;
 }
 
 .section {
   scroll-margin-top: 120px;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 10px;
   min-height: 40vh;
 }

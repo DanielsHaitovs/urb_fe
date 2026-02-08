@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import { useTranslations } from "next-intl";
+import AboutTestimonials from "@/components/About/Testimonials";
 
 export default function HomePageLayout({
   children,
@@ -22,6 +23,7 @@ export default function HomePageLayout({
     <>
       <Header banner={true} actions={actions} bannerTitle={title} />
       {children}
+      <AboutTestimonials />
       <Footer />
     </>
   );

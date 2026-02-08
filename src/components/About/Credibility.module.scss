@@ -1,26 +1,11 @@
 @use "@/styles/variables.module.scss" as tokens;
 
-.section {
-  display: grid;
-  grid-template-columns: minmax(0, 2fr) minmax(240px, 1fr);
-  gap: clamp(24px, 4vw, 48px);
-  padding: clamp(32px, 5vw, 64px);
-  margin-top: clamp(32px, 6vw, 96px);
-  border-radius: 48px;
-  border: 1px solid rgba(255, 255, 255, 0.07);
-  background: rgba(255, 255, 255, 0.02);
+.main {
+    @include tokens.main;
 }
 
-@media (max-width: 960px) {
-  .section {
-    grid-template-columns: 1fr;
-  }
-}
-
-.body {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+.content {
+  @include tokens.content;
 }
 
 .kicker {
@@ -33,9 +18,11 @@
 }
 
 .summary {
-  margin: 0;
-  font-size: 1.05rem;
-  color: rgba(223, 232, 247, 0.9);
+  @include tokens.summary;
+}
+
+.title {
+  @include tokens.title;
 }
 
 .commitment {
@@ -94,6 +81,7 @@
   flex-direction: column;
   gap: 16px;
   color: #1a1000;
+  width: 100%;
 }
 
 .factsHeader {

@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import { getTranslations } from "next-intl/server";
+import AboutTestimonials from "@/components/About/Testimonials";
 
 export default async function AboutLayout({
   children,
@@ -24,6 +25,7 @@ export default async function AboutLayout({
     <>
       <Header banner={true} bannerTitle={bannerTitle} actions={actions} />
       {children}
+      <AboutTestimonials />
       <Footer />
     </>
   );

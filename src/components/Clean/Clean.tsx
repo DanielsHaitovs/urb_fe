@@ -31,13 +31,11 @@ export default function CleanWater({ screen }: { screen: ScreenType }) {
   );
 
   return (
-    <section className={styles.section} aria-labelledby="clean-heading" data-screen={screen}>
-      <div className={styles.liquidGlow} aria-hidden="true" />
-      <div className={styles.gridVeil} aria-hidden="true" />
+    <section className={styles.main} aria-labelledby="clean-heading" data-screen={screen}>
       <div className={styles.inner}>
         <div className={styles.hero}>
           <span className={styles.kicker}>{t("kicker")}</span>
-          <h2 id="clean-heading">
+          <h2 className={styles.title} id="clean-heading">
             <span>{t("title.line1")}</span>
             <span>{t("title.line2")}</span>
             <span className={styles.highlight}>{t("title.line3")}</span>

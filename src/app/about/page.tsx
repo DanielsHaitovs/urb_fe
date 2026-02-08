@@ -19,7 +19,7 @@ export default function AboutPage() {
       <AboutCredibility />
       <AboutCapabilities />
       <AboutTimeline />
-      <AboutTestimonials />
+      {/* <AboutTestimonials /> */}
       <ContactCTA screen={screen} />
       <ScrollTopButton />
     </main>
