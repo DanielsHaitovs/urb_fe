@@ -1,38 +1,19 @@
-.workflow {
-  border-radius: 40px;
-  padding: clamp(32px, 5vw, 72px);
-  background: radial-gradient(circle at 20% -10%, rgba(100, 194, 255, 0.32), transparent 45%),
-    radial-gradient(circle at 80% 0%, rgba(164, 120, 255, 0.3), transparent 50%),
-    #050915;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  display: flex;
-  flex-direction: column;
-  gap: clamp(24px, 4vw, 48px);
-  color: #f9fbff;
-  box-shadow: 0 30px 90px rgba(1, 4, 16, 0.65);
+@use "@/styles/variables.module.scss" as tokens;
+
+.main {
+  @include tokens.mainDark;
 }
 
-.header {
-  max-width: 720px;
-  margin: 0 auto;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+.content {
+  @include tokens.content;
 }
 
 .kicker {
-  margin: 0;
-  text-transform: uppercase;
-  letter-spacing: 0.36em;
-  font-size: 0.78rem;
-  color: rgba(143, 211, 255, 0.9);
+  @include tokens.kicker;
 }
 
 .title {
-  margin: 0;
-  font-size: clamp(2rem, 5vw, 3.4rem);
-  line-height: 1.05;
+  @include tokens.title;
 }
 
 .subtitle {
@@ -44,9 +25,7 @@
 }
 
 .summary {
-  margin: 0;
-  color: rgba(219, 229, 255, 0.9);
-  line-height: 1.6;
+  @include tokens.summary;
 }
 
 .stepGrid {
@@ -54,8 +33,6 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    width: 90%;
-    margin: 0 auto;
     gap: clamp(18px, 3vw, 32px);
 }
 
@@ -69,7 +46,7 @@
   flex-direction: column;
   gap: 14px;
   min-height: 100%;
-  width: 40%;
+  width: 100%;
 }
 
 .stepCard::after {
@@ -134,12 +111,14 @@
   }
 }
 
-@media (max-width: 993px) {
-    .stepGrid {
-        width: 100%;
-    }
-
+@media (min-width: 768px) {
     .stepCard {
-        width: 100%;
+        width: calc(50% - 67px);
+    }
+}
+
+@media (min-width: 1440px) {
+    .stepCard {
+        width: calc(25% - 75px);
     }
 }

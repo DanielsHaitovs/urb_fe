@@ -1,0 +1,140 @@
+@use "@/styles/variables.module.scss" as tokens;
+
+.main {
+    @include tokens.mainGradient;
+}
+
+.content {
+    @include tokens.content;
+    width: 100%;
+}
+
+.kicker {
+  @include tokens.kicker;
+}
+
+.title {
+  @include tokens.title;
+  word-break: break-all;
+}
+
+.accent {
+  color: #a6edff;
+}
+
+.summary {
+  @include tokens.summary;
+}
+
+.note {
+  margin: 0;
+  color: rgba(196, 212, 238, 0.9);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.primaryButton,
+.secondaryButton {
+  border-radius: 999px;
+  padding: 14px 28px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.primaryButton {
+  background: linear-gradient(120deg, #5ce1ec, #ffa8d4);
+  color: #041026;
+  box-shadow: 0 25px 65px rgba(92, 225, 236, 0.35);
+}
+
+.secondaryButton {
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #f7fbff;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.primaryButton:hover,
+.secondaryButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 30px 70px rgba(5, 10, 28, 0.45);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 24px;
+  border-radius: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(4, 10, 28, 0.78);
+}
+
+.badge p {
+  margin: 0;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  color: rgba(198, 214, 240, 0.85);
+}
+
+.badge strong {
+  margin: 0;
+  font-size: 1.15rem;
+  color: #ecf7ff;
+}
+
+.metrics {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.metricCard {
+  border-radius: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  width: 100%;
+}
+
+.metricCard strong {
+  margin: 0;
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 640px) {
+  .main {
+    padding: 28px;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) {
+    .metricCard {
+        width: calc(33% - 49px);
+    }
+}

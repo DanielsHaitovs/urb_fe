@@ -1,61 +1,31 @@
-.hero {
-  display: flex;
-  flex-wrap: wrap;
-  gap: clamp(24px, 5vw, 48px);
-  background: linear-gradient(135deg, rgba(15, 40, 95, 0.9), rgba(5, 10, 32, 0.8));
-  border-radius: 40px;
-  padding: clamp(28px, 5vw, 56px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 40px 120px rgba(0, 0, 0, 0.45);
-  position: relative;
+@use "@/styles/variables.module.scss" as tokens;
+
+.main {
+  @include tokens.main;
 }
 
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.08), transparent 40%),
-    radial-gradient(circle at 80% 0%, rgba(255, 114, 85, 0.2), transparent 45%);
-  opacity: 0.45;
+.main::after {
+  @include tokens.mainBlicks;
 }
 
-.heroCopy {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 16px;
-  position: relative;
-  width: 100%;
-  z-index: 1;
+.content {
+  @include tokens.content;
 }
 
 .kicker {
-  margin: 0;
-  text-transform: uppercase;
-  letter-spacing: 0.4em;
-  font-size: 0.78rem;
-  color: rgba(139, 197, 255, 0.85);
+  @include tokens.kicker;
 }
 
 .title {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  font-size: clamp(1.8rem, 6vw, 4rem);
-  line-height: 1.05;
+  @include tokens.title;
 }
 
 .accent {
-  color: #9fe2ff;
+  @include tokens.accent;
 }
 
 .summary {
-  margin: 0;
-  color: rgba(226, 236, 255, 0.96);
-  font-size: 1.1rem;
-  line-height: 1.7;
+  @include tokens.summary;
 }
 
 .note {
@@ -164,22 +134,7 @@
   }
 }
 
-@media (max-width: 900px) {
-  .heroBadge {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .hero {
-    padding: 28px;
-  }
-}
-
 @media (max-width: 640px) {
-  .hero {
-    flex-direction: column;
-  }
-
   .heroActions {
     flex-direction: column;
   }

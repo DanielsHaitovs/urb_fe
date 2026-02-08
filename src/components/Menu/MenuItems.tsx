@@ -17,7 +17,6 @@ import {
 
 export const menuItemsList = [
   { id: "about" },
-  { id: "strength" },
   { id: "offers" },
   { id: "prices" },
 ];

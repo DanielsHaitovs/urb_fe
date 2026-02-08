@@ -1,0 +1,318 @@
+@use "@/styles/variables.module.scss" as tokens;
+
+.main {
+  @include tokens.mainDark;
+}
+
+.content {
+    @include tokens.content;
+    width: 100%;
+}
+
+.kicker {
+  @include tokens.kicker;
+}
+
+.title {
+  @include tokens.title;
+}
+
+.summary {
+  @include tokens.summary;
+}
+
+.layout {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+}
+
+.form,
+.result {
+  border-radius: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+}
+
+.depthField span,
+.locationField span,
+.form legend {
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  color: rgba(199, 212, 236, 0.85);
+}
+
+.addOnsField span {
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  color: rgba(199, 212, 236, 0.85);
+}
+
+.addOnsField p,
+.locationField p {
+  margin: 6px 0 0;
+  font-size: 0.9rem;
+  color: rgba(205, 220, 244, 0.78);
+}
+
+.addOnsField {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.depthInputs {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.depthInputs input[type="range"] {
+  flex: 1;
+  accent-color: #ffa8d4;
+}
+
+.depthInputs input[type="number"] {
+  width: 80px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 8px 10px;
+  color: #f8fbff;
+}
+
+.serviceField {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.radioCard {
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 14px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.radioCard input {
+  accent-color: #5ce1ec;
+}
+
+.radioCard strong {
+  display: block;
+  font-size: 1rem;
+}
+
+.radioCard p {
+  margin: 2px 0 0;
+  color: rgba(205, 220, 244, 0.85);
+}
+
+.checkboxGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+}
+
+.checkboxCard {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 12px;
+  align-items: center;
+  padding: 14px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+  cursor: pointer;
+  position: relative;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.checkboxCard input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.checkboxCard strong {
+  display: block;
+}
+
+.checkboxCard p {
+  margin: 4px 0 0;
+  color: rgba(205, 220, 244, 0.75);
+}
+
+.checkboxCard span {
+  font-weight: 600;
+  color: #f8fbff;
+}
+
+.checkboxCard[data-selected="true"] {
+  border-color: rgba(92, 225, 236, 0.8);
+  background: linear-gradient(120deg, rgba(92, 225, 236, 0.12), rgba(255, 168, 212, 0.12));
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.checkboxCard[data-selected="true"] span {
+  color: #041026;
+}
+
+.locationField {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.customSelect {
+  position: relative;
+}
+
+.selectTrigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 14px 18px;
+  color: #f1f6ff;
+  cursor: pointer;
+  gap: 16px;
+}
+
+.selectTrigger div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.selectTrigger span {
+  margin-top: 4px;
+  font-size: 0.9rem;
+  color: rgba(206, 222, 247, 0.8);
+}
+
+.dropdownList {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(3, 8, 26, 0.96);
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5);
+  padding: 8px;
+  z-index: 5;
+}
+
+.dropdownList button {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  border: none;
+  background: transparent;
+  color: #f2f8ff;
+  padding: 12px;
+  border-radius: 14px;
+}
+
+.dropdownList button[aria-selected="true"] {
+  background: linear-gradient(120deg, rgba(92, 225, 236, 0.25), rgba(255, 168, 212, 0.2));
+}
+
+.dropdownList button:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.cta {
+  border: none;
+  border-radius: 999px;
+  padding: 12px 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  background: linear-gradient(120deg, #5ce1ec, #ffa8d4);
+  color: #041026;
+  cursor: pointer;
+}
+
+.result {
+  background: radial-gradient(circle at 30% 0%, rgba(84, 190, 255, 0.15), transparent 45%),
+    rgba(255, 255, 255, 0.02);
+}
+
+.resultLabel {
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.74rem;
+  color: rgba(197, 210, 236, 0.85);
+}
+
+.result strong {
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.resultSummary {
+  margin: 0;
+  color: rgba(206, 222, 247, 0.92);
+}
+
+.addOnsSummary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 6px 0 10px;
+}
+
+.addOnsSummary span {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  color: #041026;
+  background: linear-gradient(120deg, rgba(92, 225, 236, 0.9), rgba(255, 168, 212, 0.9));
+}
+
+.result ul {
+  margin: 0;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: rgba(225, 234, 255, 0.85);
+}
+
+.footnote {
+  margin: 0;
+  font-size: 0.85rem;
+  color: rgba(190, 205, 232, 0.85);
+}
+
+@media (min-width: 768px) {  
+  .form,
+  .result {
+    width: calc(50% - 60px);
+  }
+}

@@ -15,8 +15,8 @@ export default function Drill() {
     }));
 
     return (
-        <section className={styles.hero}>
-            <div className={styles.heroCopy}>
+        <section className={styles.main}>
+            <div className={styles.content}>
                 <p className={styles.kicker}>{t("hero.kicker")}</p>
                 <h1 className={styles.title}>
                     <span>{t("hero.title.line1")}</span>
