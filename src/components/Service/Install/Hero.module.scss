@@ -15,6 +15,7 @@
 
 .content {
   @include tokens.content;
+  width: 100%;
 }
 
 .kicker {
