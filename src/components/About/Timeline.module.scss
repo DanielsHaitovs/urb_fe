@@ -1,0 +1,96 @@
+@use "@/styles/variables.module.scss" as tokens;
+
+.section {
+  margin-top: clamp(40px, 7vw, 120px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.kicker {
+  @include tokens.kicker;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.header p {
+  margin: 0;
+  color: rgba(211, 224, 247, 0.85);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.step {
+  position: relative;
+  padding: 24px;
+  border-radius: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(9, 12, 32, 0.9);
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 18px;
+}
+
+@media (max-width: 700px) {
+  .step {
+    grid-template-columns: 1fr;
+  }
+}
+
+.step::before {
+  content: attr(data-index);
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 0.05);
+  font-weight: 700;
+}
+
+.year {
+  font-size: 1.2rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.step h3 {
+  margin: 0 0 8px;
+  font-size: 1.5rem;
+}
+
+.step p {
+  margin: 0;
+  color: rgba(209, 222, 244, 0.88);
+}
+
+.metrics {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.metrics span {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #67e3ff;
+}
+
+.metrics p {
+  margin-top: 4px;
+  color: rgba(201, 214, 239, 0.9);
+}

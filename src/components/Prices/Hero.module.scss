@@ -1,26 +1,12 @@
 @use "@/styles/variables.module.scss" as tokens;
 
-.hero {
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: clamp(24px, 4vw, 48px);
-  padding: clamp(32px, 6vw, 78px);
-  border-radius: 54px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: radial-gradient(circle at 10% 10%, rgba(118, 189, 255, 0.35), transparent 45%),
-    radial-gradient(circle at 80% 0%, rgba(255, 174, 139, 0.25), transparent 55%),
-    linear-gradient(140deg, rgba(5, 10, 28, 0.98), rgba(10, 18, 48, 0.9));
-  box-shadow: 0 50px 140px rgba(0, 0, 0, 0.55);
-  overflow: hidden;
+.main {
+    @include tokens.mainGradient;
 }
 
-.copy {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
+.content {
+    @include tokens.content;
+    width: 100%;
 }
 
 .kicker {
@@ -28,12 +14,8 @@
 }
 
 .title {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  font-size: clamp(2.4rem, 6vw, 4rem);
-  line-height: 1.04;
+  @include tokens.title;
+  word-break: break-all;
 }
 
 .accent {
@@ -116,7 +98,8 @@
   position: relative;
   z-index: 1;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 12px;
 }
 
@@ -131,6 +114,7 @@
   letter-spacing: 0.18em;
   text-transform: uppercase;
   font-size: 0.75rem;
+  width: 100%;
 }
 
 .metricCard strong {
@@ -140,11 +124,17 @@
 }
 
 @media (max-width: 640px) {
-  .hero {
+  .main {
     padding: 28px;
   }
 
   .actions {
     flex-direction: column;
   }
+}
+
+@media (min-width: 768px) {
+    .metricCard {
+        width: calc(33% - 49px);
+    }
 }

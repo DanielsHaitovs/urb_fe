@@ -36,13 +36,13 @@ const workflow = {
   const { kicker, title, subtitle, summary: description, steps, } = workflow;
 
   return (
-    <section className={styles.workflow} aria-label={title}>
-      <header className={styles.header}>
+    <section className={styles.main} aria-label={title}>
+      <div className={styles.content}>
         <p className={styles.kicker}>{kicker}</p>
         <h2 className={styles.title}>{title}</h2>
         {subtitle ? <p className={styles.subtitle}>{subtitle}</p> : null}
         {description ? <p className={styles.summary}>{description}</p> : null}
-      </header>
+      </div>
 
       <div className={styles.stepGrid}>
         {steps.map((step, index) => {

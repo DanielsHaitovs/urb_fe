@@ -1,17 +1,20 @@
+"use client";
+
 import styles from "@/app/prices/PricesPage.module.scss";
-import RequestPlan from "@/components/ContactCTA/RequestPlan";
 import { ScrollTopButton } from "@/components/ScrollTopButton/ScrollTopButton";
 import PricesCalculator from "@/components/Prices/Calculator";
-import PricesFaq from "@/components/Prices/Faq";
 import PricesHero from "@/components/Prices/Hero";
+import ContactCTA from "@/components/ContactCTA/ContactCTA";
+import { useScreenSize } from "@/providers/ScreenTypeProvider";
 
 export default function PricesPage() {
+  const screen = useScreenSize();
+  
   return (
     <main className={styles.page}>
       <PricesHero />
       <PricesCalculator />
-      <PricesFaq />
-      <RequestPlan />
+      <ContactCTA screen={screen} />
       <ScrollTopButton />
     </main>
   );

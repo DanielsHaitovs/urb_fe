@@ -1,0 +1,135 @@
+@use "@/styles/variables.module.scss" as tokens;
+
+.main {
+    @include tokens.mainGradient;
+}
+
+.content {
+    @include tokens.content;
+}
+
+.kicker {
+  @include tokens.kicker;
+}
+
+.accent {
+    @include tokens.accent;
+}
+
+.title {
+    @include tokens.title;
+}
+
+.summary {
+    @include tokens.summary;
+}
+
+.detail {
+  margin: 0;
+  color: rgba(211, 224, 248, 0.85);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.primary,
+.secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 24px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+}
+
+.primary {
+  background: linear-gradient(120deg, #5ce1ec, #ffa8d4);
+  color: #041026;
+}
+
+.secondary {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: rgba(233, 243, 255, 0.92);
+}
+
+.stats {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.statCard {
+  position: relative;
+  border-radius: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(10, 16, 40, 0.85);
+  padding: 20px;
+  animation: float 6s ease-in-out infinite;
+}
+
+.statCard:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+.statCard:nth-child(3) {
+  animation-delay: 1.2s;
+}
+
+.value {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  color: #67e3ff;
+}
+
+.label {
+  margin: 6px 0 0;
+  font-weight: 600;
+}
+
+.helper {
+  margin: 4px 0 0;
+  color: rgba(207, 220, 245, 0.85);
+}
+
+.ring {
+  position: absolute;
+  inset: 10% 15%;
+  border-radius: 50%;
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  animation: pulse 8s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+    transform: scale(0.95);
+  }
+  50% {
+    opacity: 0.2;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 0.6;
+    transform: scale(0.95);
+  }
+}

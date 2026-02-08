@@ -41,7 +41,7 @@ const currencyFormatter = new Intl.NumberFormat("lv-LV", {
 
 export default function PricesCalculator() {
   const t = useTranslations("PricesPage");
-  const [depth, setDepth] = useState(40);
+  const [depth, setDepth] = useState(30);
   const [location, setLocation] = useState<LocationId>(locationOptions[0].id);
   const [selectedExtras, setSelectedExtras] = useState<ExtraServiceId[]>([]);
   const [locationOpen, setLocationOpen] = useState(false);
@@ -97,12 +97,14 @@ export default function PricesCalculator() {
   };
 
   return (
-    <section id="calculator" className={styles.section}>
-      <header>
+    <section id="calculator" className={styles.main}>
+      <div className={styles.content}>
         <p className={styles.kicker}>{t("calculator.kicker")}</p>
-        <h2>{t("calculator.title")}</h2>
-        <p>{t("calculator.summary")}</p>
-      </header>
+        <h1 className={styles.title}>
+            <span>{t("calculator.title")}</span>
+            <span className={styles.summary}>{t("calculator.summary")}</span>
+        </h1>
+      </div>
       <div className={styles.layout}>
         <form className={styles.form}>
           <label className={styles.depthField}>
@@ -244,7 +246,6 @@ export default function PricesCalculator() {
               })}
             </li>
           </ul>
-          <p className={styles.footnote}>{t("calculator.footnote")}</p>
         </div>
       </div>
     </section>

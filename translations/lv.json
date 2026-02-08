@@ -11,22 +11,209 @@
     "cleanWater": "Dabiski tīrs ūdens"
   },
   "AboutPage": {
-    "kicker": "Par Urb",
-    "title": "Veidojam iesaistosas pilsetas pieredzes",
-    "summary": "Apvienojam arhitekturu, interaktivos medijus un tehnologijas, lai publiska telpa klutu rotaliga.",
-    "highlights": {
-      "mission": {
-        "title": "Musu misija",
-        "body": "Radam pielagojamu infrastrukturu, kas aicina iedzivotajus atklat pilsetu no jauna."
+    "bannerTitle": "Iepazīstiet komandu, kas inženierē jūsu ūdens nākotni",
+    "hero": {
+      "kicker": "Ūdens inženieru studija",
+      "title": {
+        "line1": "Miljonu vērtīga disciplīna",
+        "line2": "pielietota privātām akām"
       },
-      "team": {
-        "title": "Komanda",
-        "body": "Arhitekti, makslinieki un inzenieri strada plecu pie pleca, lai saglabatu cilvecisku sajutu."
+      "summary": "Hidroģeologi, lauka brigādes un industriālie dizaineri kustas kā viena vienība, lai sarežģīti zemes gabali īpašniekiem šķistu viegli.",
+      "detail": "No attālām vasarnīcām līdz kūrortu ciematiem mēs atvedam tādu pašu instrumentāciju, caurspīdīgus atskaites datus un concierge servisu.",
+      "actions": {
+        "primary": "Iepazīt vadību",
+        "secondary": "Skatīt piegādes plānojumus"
       },
-      "impact": {
-        "title": "Ietekme",
-        "body": "Instalacijas darbojas 12 pilsetas visapkart pasaulei."
+      "stats": {
+        "projects": {
+          "value": "320+",
+          "label": "nodotas sistēmas",
+          "helper": "Telemetrijas žurnāli un laboratorijas sertifikāti arhīvā"
+        },
+        "crews": {
+          "value": "6 amata grupas",
+          "label": "disciplīnas uz objekta",
+          "helper": "Urbšana, tranšejas, elektriķi, apdare, QA un serviss"
+        },
+        "uptime": {
+          "value": "99,2%",
+          "label": "vidējais darbspējas laiks",
+          "helper": "Apkopes plāni ar 24/7 uzraudzību"
+        }
       }
+    },
+    "credibility": {
+      "kicker": "Uzticams partneris",
+      "title": "Ūdens aku urbšanas eksperti",
+      "summary": "Esam specializēts urbšanas uzņēmums, kas privātmāju īpašniekiem visā Latvijā piegādā pielāgotus risinājumus.",
+      "commitment": "Garantējam caurspīdīgu cenu un ilgtermiņa servisu katrai aktivizācijai. Ja ģeoloģija bloķē uzstādīšanu, jums nekas nav jāmaksā.",
+      "bullets": [
+        "Kompaktā tehnika sargā kaimiņus un ainavu.",
+        "Atļaujas, telemetrija un dokumentācija tiek kārtota iekšēji.",
+        "Bez slēptām izmaksām vai negaidītiem papilddarbiem."
+      ],
+      "certificatesTitle": "Sertifikāti un akreditācijas",
+      "certificates": [
+        "ISO 9001 kvalitātes sistēma",
+        "ISO 14001 vides pārvaldība",
+        "ISO 45001 darba drošība",
+        "Latvijas urbšanas licence LV-254",
+        "Valsts akreditēts LATMET ūdens laboratorijas partneris",
+        "Baltijas ilgtspējīgas būvniecības hartas parakstītājs"
+      ],
+      "factsTitle": "Fakti par Urb",
+      "facts": [
+        {
+          "value": "200+",
+          "label": "projekti visos reģionos",
+          "body": "Veiksmīgi urbumi katrā novadā bez neatrisinātām garantijām."
+        },
+        {
+          "value": "50 km",
+          "label": "kopējais urbuma dziļums",
+          "body": "Parāda mūsu brigāžu un tehnikas kapacitāti."
+        },
+        {
+          "value": "2 gadi",
+          "label": "visaptveroša garantija",
+          "body": "Katrs komplekts ietver dokumentētu apkopi un dedikētu atbalstu."
+        }
+      ]
+    },
+    "capabilities": {
+      "kicker": "Lauka līderība",
+      "title": "Kompetences visai ūdens ceļam",
+      "summary": "Inženieri, amatnieki un datu speciālisti veido vienu atbildīgu komandu, lai vienmēr zinātu, kas un kāpēc strādā jūsu objektā.",
+      "cards": [
+        {
+          "title": "Hidro dizaina studija",
+          "body": "Topogrāfi, GIS analītiķi un atļauju speciālisti izplāno scenāriju pirms tehnika pieskaras zemes gabalam.",
+          "bullets": [
+            "Zemes skenējumi ar dziļuma prognozi un riska slāņiem",
+            "Atļauju pakas apstiprinām vidēji 72h laikā",
+            "Kaimiņi informēti ar precīziem loģistikas logiem"
+          ]
+        },
+        {
+          "title": "Pilna uzstādīšanas laboratorija",
+          "body": "Mehāniķi, elektriķi un apdares meistari koordinēti rada žurnālvērtas tehniskās telpas.",
+          "bullets": [
+            "Pulverkrāsas kolektori ar skaidriem marķējumiem",
+            "Siltinātas tranšejas atjaunojam tajā pašā dienā",
+            "Viedie monitoringa skapji ieregulēti uz vietas"
+          ]
+        },
+        {
+          "title": "Mūža ekspluatācijas centrs",
+          "body": "Apkopes komandas vēro telemetriju, veic ķīmijas testus un izsauc servisu pirms īpašnieks pamana izmaiņas.",
+          "bullets": [
+            "24/7 uzraudzība ar prognozējošiem brīdinājumiem",
+            "Mobilās laboratorijas dzelzs, cietības un baktēriju testiem",
+            "Garantēti reaģēšanas logi zem četrām stundām"
+          ]
+        }
+      ]
+    },
+    "timeline": {
+      "kicker": "Etapi",
+      "title": "Desmitgade fanātisku uzlabojumu",
+      "summary": "Katrs posms pievienoja jaunu disciplīnu, lai vairāk rezultāta paliktu mūsu pārziņā.",
+      "steps": [
+        {
+          "year": "2010",
+          "title": "Ģimenes urbšanas iekārta un telemetrijas pilotprojekti",
+          "body": "Sākām ar vienu dubultās rotācijas iekārtu un fiksējām dziļumu, griezes momentu un plūsmu katram urbumam.",
+          "metrics": [
+            {"value": "12", "label": "piloti gadā"},
+            {"value": "0", "label": "neveiktas pēcurbuma pārbaudes"}
+          ]
+        },
+        {
+          "year": "2016",
+          "title": "Pilnas uzstādīšanas brigādes",
+          "body": "Elektriķi, tranšeju komandas un apdares meistari pievienojās, lai klientam būtu viens atbildīgais.",
+          "metrics": [
+            {"value": "5-7 dienas", "label": "vidējais montāžas logs"},
+            {"value": "15%", "label": "grafika ieguvums ar prefabrikāciju"}
+          ]
+        },
+        {
+          "year": "2023",
+          "title": "Prediktīvās apkopes programma",
+          "body": "Visas sistēmas savienojām ar vadības centru, apvienojot telemetriju un laboratorijas ķīmiju proaktīvam servisam.",
+          "metrics": [
+            {"value": "99,2%", "label": "darbspēja uzturētajos objektos"},
+            {"value": "<4 h", "label": "garantēts neatliekamais izsaukums"}
+          ]
+        }
+      ]
+    },
+    "testimonials": {
+      "kicker": "Klientu atsauksmes",
+      "title": "Īpašnieki, kas uz Urb paļaujas ik nedēļu",
+      "summary": "Desmit svaigas piezīmes no māju, kūrortu un attīstītāju klientiem, kuri uztic mums savu ūdeni.",
+      "items": [
+        {
+          "name": "Daina & Mārtiņš",
+          "location": "Garkalnes īpašums",
+          "quote": "Brigāde pabeidza urbumu un telpas mezglus, nebojājot mūsu pieaudzēto dārzu.",
+          "tag": "Urbšana"
+        },
+        {
+          "name": "Jānis V.",
+          "location": "Cēsu īpašums",
+          "quote": "Telemetrija brīdināja pirms sala un komanda vienā vizītē ziemas režīmā sagatavoja sistēmu.",
+          "tag": "Apkope"
+        },
+        {
+          "name": "Ilze Petroviča",
+          "location": "Jūrmalas viesu nams",
+          "quote": "Tehniskā telpa izskatās kā dizaina projekts—pulverkrāsas kolektori un perfekts apgaismojums.",
+          "tag": "Uzstādīšana"
+        },
+        {
+          "name": "Roberts P.",
+          "location": "Ādažu ražotne",
+          "quote": "Urb nokārtoja atļaujas, laboratoriju un dokumentus, lai investori varētu dot zaļo gaismu.",
+          "tag": "Atbilstība"
+        },
+        {
+          "name": "Līga & Andris",
+          "location": "Siguldas nogāze",
+          "quote": "Maršrutu pārvietoja apkārt granītam bez kavējumiem un katru dienu atstāja piezīmes.",
+          "tag": "Lauka komanda"
+        },
+        {
+          "name": "Hotel A13",
+          "location": "Vidzeme piekraste",
+          "quote": "24/7 uzraudzība mūs izglāba svētku brīvdienās, kad spiediens kritās—situāciju atrisināja attālināti.",
+          "tag": "Monitorings"
+        },
+        {
+          "name": "Edgars K.",
+          "location": "Āgenskalna māja",
+          "quote": "Cenas palika spēkā arī pēc filtru papildinājumiem projekta vidū.",
+          "tag": "Cenu politika"
+        },
+        {
+          "name": "Sarmīte",
+          "location": "Rojas novads",
+          "quote": "Dokumenti atnāca ar QR kodiem, griezes datiem un laboratorijas sertifikātiem—iespaidīga disciplīna.",
+          "tag": "QA"
+        },
+        {
+          "name": "Laura A.",
+          "location": "Ogres atpūtas nams",
+          "quote": "Montāžas komanda pasargāja koka grīdas, marķēja katru vārstu un nodeva foto albumu.",
+          "tag": "Apdare"
+        },
+        {
+          "name": "Baltic Cabins",
+          "location": "Latgales kūrorts",
+          "quote": "Tagad barojam trīsdesmit kabīnes ar Urb sistēmu un redzam patēriņu reāllaikā pa blokiem.",
+          "tag": "Mērogošana"
+        }
+      ]
     }
   },
   "Strength": {

@@ -15,8 +15,8 @@ export default function PricesHero() {
   }));
 
   return (
-    <header className={styles.hero}>
-      <div className={styles.copy}>
+    <header className={styles.main}>
+      <div className={styles.content}>
         <p className={styles.kicker}>{t("hero.kicker")}</p>
         <h1 className={styles.title}>
           <span>{t("hero.title.line1")}</span>
@@ -29,10 +29,6 @@ export default function PricesHero() {
             <span>{t("hero.actions.primary")}</span>
             <ArrowUpRight size={18} aria-hidden="true" />
           </Link>
-          <a href="#calculator" className={styles.secondaryButton}>
-            <span>{t("hero.actions.secondary")}</span>
-            <FileDown size={18} aria-hidden="true" />
-          </a>
         </div>
         <div className={styles.badge}>
           <ShieldCheck size={30} aria-hidden="true" />

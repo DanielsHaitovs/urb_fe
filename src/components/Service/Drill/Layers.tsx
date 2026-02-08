@@ -15,8 +15,8 @@ export default function DrillLayers() {
     }));
     
     return (
-        <section className={styles.featureSection}>
-            <div className={styles.featureCopy}>
+        <section className={styles.main}>
+            <div className={styles.content}>
                 <p className={styles.kicker}>{t("features.kicker")}</p>
                 <h2 className={styles.title}>{t("features.title")}</h2>
                 <p>{t("features.summary")}</p>
