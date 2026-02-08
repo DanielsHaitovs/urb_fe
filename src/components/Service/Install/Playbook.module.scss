@@ -1,0 +1,77 @@
+@use "@/styles/variables.module.scss" as tokens;
+
+.main {
+    @include tokens.mainGradient;
+}
+
+.content {
+  @include tokens.content;
+}
+
+.kicker {
+  @include tokens.kicker;
+}
+
+.title {
+  @include tokens.title;
+  word-break: break-all;
+}
+
+.summary {
+  @include tokens.summary;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.card {
+  position: relative;
+  padding: 28px;
+  border-radius: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+  width: 100%;
+  overflow: hidden;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  border-radius: inherit;
+  border: 1px dashed rgba(255, 255, 255, 0.08);
+  pointer-events: none;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.cardHeader span {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.cardHeader h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.card p {
+  margin: 0;
+  color: rgba(204, 218, 241, 0.88);
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: calc(33% - 66px);
+  }
+}

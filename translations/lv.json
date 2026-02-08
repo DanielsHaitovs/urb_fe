@@ -753,5 +753,229 @@
         }
       }
     }
+  },
+  "InstallationPage": {
+    "hero": {
+      "kicker": "Pilna instalācija",
+      "title": {
+        "line1": "Ūdens piegāde visai mājai",
+        "line2": "izstrādāta kā viena sistēma"
+      },
+      "summary": "Paņemam urbumu, kas jums jau ir (vai ko tikko izurbām), un uzbūvējam klusu, efektīvu iekšējo mezglu viesnīcas līmeņa ūdenim katrā punktā.",
+      "detail": "Elektriķi, tranšeju brigāde, apdares meistari un nodošanas inženieri strādā vienā 5–7 dienu grafikā, lai jums nebūtu jāmin, kurš atbrauks nākamais.",
+      "actions": {
+        "primary": "Ieplānot instalācijas apsekojumu",
+        "secondary": "Skatīt piegādes"
+      },
+      "badge": {
+        "title": "Luksusa tehniskās telpas",
+        "body": "Pulverkrāsoti kolektori, marķētas caurules, sakārtota elektroinstalācija"
+      },
+      "chips": [
+        "Pārtikas plastmasas pieslēgums",
+        "Klusais hidro mezgls",
+        "Viedais monitorings"
+      ],
+      "gallery": {
+        "primary": "Tehniskās telpas nodošana",
+        "trench": "Siltinātas tranšejas un izolācija",
+        "panel": "Vadības panelis un telemetrija"
+      }
+    },
+    "metrics": {
+      "handoff": {
+        "value": "48 h",
+        "label": "Iekštelpu nodošana"
+      },
+      "checks": {
+        "value": "120+",
+        "label": "Kvalitātes pārbaudes"
+      },
+      "crew": {
+        "value": "6 amati",
+        "label": "Speciālisti brigādē"
+      }
+    },
+    "systems": {
+      "kicker": "Piegādātās sistēmas",
+      "title": "Viss starp aku un krānu, uzstādīts eleganti",
+      "summary": "Katrs komplekts ietver atlasītu aprīkojumu, tīru trasi un dokumentāciju, lai īpašnieks saņemtu žurnāla cienīgu tehnisko telpu.",
+      "footer": "Visi materiāli ir pārtikas klase un atbilst ES dzeramā ūdens standartiem.",
+      "cards": {
+        "pump": {
+          "title": "Sūkņa un elektro mezgls",
+          "body": "Pareizi izvēlēts iegremdējamais sūknis, kabeļi un mīkstā starta vadība tieši jūsu slodzēm.",
+          "items": [
+            "Eiropas iegremdējamais sūknis ar nerūsējošu pacēlāju",
+            "Atsevišķs automāts, pārsprieguma aizsardzība un mīkstais starts",
+            "Noslēpti kabelu kanāli ar marķētu vadu"
+          ]
+        },
+        "hydronics": {
+          "title": "Hidro mugurkauls",
+          "body": "Siltināts pievads, rezerves apsildes kabelis un spiedtvertne klusai darbībai.",
+          "items": [
+            "Iepriekš siltināta tranšeja ar apsildes kabeļa iespējām",
+            "Pulverkrāsoti kolektori, spiedtvertne un manometri",
+            "Drenāžas vārsti un paraugu punkti apkopei"
+          ]
+        },
+        "monitoring": {
+          "title": "Monitorings un vadība",
+          "body": "Drošs skapis ar telemetriju, noplūdes sensoriem un attāliem brīdinājumiem, kas pieslēdzas mūsu servisam.",
+          "items": [
+            "IP klases vadības panelis ar skārienekrānu",
+            "Noplūdes, plūsmas un spiediena sensori ar tiešsaistes datiem",
+            "Attālināta programmaparatūras un lietotnes konfigurācija"
+          ]
+        },
+        "finish": {
+          "title": "Iekšējā apdare",
+          "body": "Tehniskās telpas tiek fotografētas, marķētas un atstātas tīrākas nekā sākumā.",
+          "items": [
+            "Pielāgotas montāžas plāksnes un apgaismojums katrai ierīcei",
+            "Cauruļu un vārstu marķējumi latviešu un angļu valodā",
+            "Nodošanas dosjē ar QR kodiem un kontrolsarakstu"
+          ]
+        }
+      }
+    },
+    "playbook": {
+      "kicker": "Nodošanas plāns",
+      "title": "Pieci cieši saplānoti instalācijas etapi",
+      "summary": "Skaidri etapi informē bez īpašuma slēgšanas — lielākā daļa klientu visu laiku paliek uz vietas.",
+      "steps": {
+        "intake": {
+          "title": "Iebraukšana un sagatavošana",
+          "body": "Uzmēram telpu, apstiprinām slodzes, skenējam esošās caurules un iezīmējam tranšeju."
+        },
+        "utility": {
+          "title": "Āra komunikāciju sagatavošana",
+          "body": "Brigāde izrok un siltina pievadus, ieklāj kabeļu caurules un tajā pašā dienā atjauno labiekārtojumu."
+        },
+        "piping": {
+          "title": "Iekšējais hidro mugurkauls",
+          "body": "Spiedtvertne, kolektori, filtri un monitoringa skapis tiek salikti ar klienta apstiprinātiem maketiem."
+        },
+        "commission": {
+          "title": "Iedarbināšana un pārbaudes",
+          "body": "Elektriķi pieslēdz sūkni un vadību, mēs izvadām gaisu, iestādam spiedienus un noregulējam automatiku."
+        },
+        "handoff": {
+          "title": "Nodrošinājums īpašniekam",
+          "body": "Izrunājam katru vārstu, nododam dokumentus un uzņemam profesionālas fotogrāfijas."
+        }
+      }
+    },
+    "showcase": {
+      "kicker": "Pierādījums",
+      "title": "Instalācijas, kas izskatās pēc individuāla dizaina",
+      "summary": "Pašlaik realizēto māju, vasarnīcu un boutique viesnīcu piemēri.",
+      "bullets": [
+        "Kabeļi paslēpti pulverkrāsotos kanālos.",
+        "Siltinātas tranšejas aizbērtas un apzaļumotas tajā pašā dienā.",
+        "Vadības skapji marķēti, nofotografēti un pievienoti īpašnieka portālam."
+      ],
+      "stats": {
+        "finish": {
+          "value": "48 h",
+          "label": "Iekštelpu pabeigšanas logs"
+        },
+        "crew": {
+          "value": "6 meist.",
+          "label": "Meistari uz vietas dienā"
+        },
+        "callouts": {
+          "value": "<1%",
+          "label": "Pēc nodošanas izsaukumi"
+        }
+      },
+      "gallery": {
+        "utility": {
+          "title": "Tehniskās telpas scenogrāfija",
+          "caption": "Spiedtvertne, filtri un kolektori rindojas uz akustiskām sienām."
+        },
+        "trench": {
+          "title": "Saudzīga tranšeja",
+          "caption": "Siltinātas caurules, apsilde un brīdinājuma lente pirms aizbēršanas."
+        },
+        "panel": {
+          "title": "Viedais vadības skapis",
+          "caption": "Drošs skapis ar telemetriju, trauksmēm un attālinātu piekļuvi."
+        }
+      }
+    },
+    "assurance": {
+      "kicker": "Drošības slānis",
+      "title": "Paliekam uz zvana ilgi pēc pēdējās skrūves",
+      "summary": "Dokumentācija, monitorings un brigādes gatavība uzreiz pāriet prognozējamā ekspluatācijā.",
+      "cta": "Pieteikt nodošanas brigādi",
+      "note": "Iekļauta pirmā gada monitoringa sinhronizācija un prioritārs izsaukums.",
+      "stats": {
+        "warranty": {
+          "value": "24 mēn.",
+          "label": "Instalācijas garantija"
+        },
+        "response": {
+          "value": "<4 h",
+          "label": "Prioritātes reakcija"
+        },
+        "inspections": {
+          "value": "3 vizītes",
+          "label": "Pēcnodošanas apskates"
+        }
+      },
+      "pillars": {
+        "monitoring": {
+          "title": "Pastāvīgs monitorings",
+          "body": "Sensori no pirmās dienas sūta datus mūsu kontroles telpai, tāpēc anomālijas uzzinām mēs, nevis jūs.",
+          "bullets": [
+            "Telemetrijas vārteja nokonfigurēta un pārbaudīta",
+            "Noplūdes un spiediena trauksmes tiek sūtītas īpašniekiem",
+            "Attālināti programmaparatūras atjauninājumi"
+          ]
+        },
+        "quality": {
+          "title": "Dokumentēta kvalitāte",
+          "body": "Fiksējam pievilkšanas momentus, fotogrāfijas un seriālos numurus, lai jebkura nākamā apkope būtu informēta.",
+          "bullets": [
+            "Foto albums un QR marķējumi",
+            "Seriālu reģistrs katrai ierīcei",
+            "Izbūves shēmas un tranšeju dziļumi"
+          ]
+        },
+        "support": {
+          "title": "Premium atbalsts",
+          "body": "Tieša līnija ar inženieri, kurš vadīja instalāciju, plus concierge grafiks.",
+          "bullets": [
+            "Prioritārs kalendārs sezonas darbiem",
+            "Vizīte pirms sezonas pīķa",
+            "Īpašnieka apmācības atkārtojums pēc pieprasījuma"
+          ]
+        }
+      }
+    },
+    "faq": {
+      "kicker": "Vēl jautājumi?",
+      "title": "Atbildes, ko stāstām katru dienu",
+      "items": {
+        "prep": {
+          "question": "Kas nepieciešams pirms darbu sākuma?",
+          "answer": "Atbrīvojiet 1 m platu ceļu uz tehnisko telpu, atsūtiet sadales skapja foto un iezīmējiet saudzējamas zonas dārzā."
+        },
+        "timeline": {
+          "question": "Vai paliksim bez ūdens instalācijas laikā?",
+          "answer": "Pārtraukums nepārsniedz 2 stundas — pagaidu tvertnes uztur virtuves un vannas darbībā."
+        },
+        "power": {
+          "question": "Vai varat strādāt ar ierobežotu elektrību?",
+          "answer": "Jā, atvedam pagaidu sadali un pēc vajadzības pieslēdzam ģeneratoru, ja panelim pietrūkst jaudas."
+        },
+        "finishes": {
+          "question": "Kas sakārto galīgo apdari un uzkopšanu?",
+          "answer": "Mūsu komanda pārkrāso pieskārienu vietas, uzstāda plauktus un atstāj telpu fotogrāfijām gatavu."
+        }
+      }
+    }
   }
 }

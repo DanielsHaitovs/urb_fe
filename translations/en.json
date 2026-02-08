@@ -753,5 +753,229 @@
         }
       }
     }
+  },
+  "InstallationPage": {
+    "hero": {
+      "kicker": "Turnkey installation",
+      "title": {
+        "line1": "Whole-home water delivery",
+        "line2": "engineered as one system"
+      },
+      "summary": "We take the borehole you already own (or we just drilled) and build the quiet, efficient interior stack that delivers hotel-grade water everywhere you need it.",
+      "detail": "Electricians, trench crews, finish carpenters, and commissioning engineers move as one 5-7 day window so you never guess who shows up next.",
+      "actions": {
+        "primary": "Schedule install assessment",
+        "secondary": "See deliverables"
+      },
+      "badge": {
+        "title": "Luxury utility rooms",
+        "body": "Powder-coated manifolds, labeled piping, tidy wiring"
+      },
+      "chips": [
+        "Food-grade casing tie-in",
+        "Silent hydronic stack",
+        "Smart monitoring panel"
+      ],
+      "gallery": {
+        "primary": "Utility room commissioning",
+        "trench": "Heated trenching & insulation",
+        "panel": "Control rack & telemetry"
+      }
+    },
+    "metrics": {
+      "handoff": {
+        "value": "48 h",
+        "label": "Interior handoff"
+      },
+      "checks": {
+        "value": "120+",
+        "label": "Quality checks"
+      },
+      "crew": {
+        "value": "6 crafts",
+        "label": "Specialists on crew"
+      }
+    },
+    "systems": {
+      "kicker": "Systems delivered",
+      "title": "Everything between aquifer and tap, installed beautifully",
+      "summary": "Each package ships with curated hardware, clean routing, and documentation so owners inherit a magazine-ready mechanical room.",
+      "footer": "All materials are food-grade and compliant with EU potable water standards.",
+      "cards": {
+        "pump": {
+          "title": "Pump & power stack",
+          "body": "Right-sized submersible pump, cabling, and soft-start controls tuned to your load profile.",
+          "items": [
+            "European submersible pump with stainless riser",
+            "Dedicated breaker, surge protection, and soft-start",
+            "Concealed cable trays with labeled wiring"
+          ]
+        },
+        "hydronics": {
+          "title": "Hydronic spine",
+          "body": "Insulated supply, back-up heat trace, and pressure tank staged for whisper-quiet operation.",
+          "items": [
+            "Pre-insulated trench with heat trace options",
+            "Powder-coated manifolds, pressure tank, gauges",
+            "Drain valves and sampling ports for maintenance"
+          ]
+        },
+        "monitoring": {
+          "title": "Monitoring & control",
+          "body": "Touch-safe rack with telemetry, leak sensing, and remote alerts that plug into our service desk.",
+          "items": [
+            "IP-rated control panel with touchscreen",
+            "Leak, flow, and pressure sensors streaming live",
+            "Remote firmware and app onboarding"
+          ]
+        },
+        "finish": {
+          "title": "Interior finishes",
+          "body": "Utility rooms photographed, labeled, and left cleaner than we found them.",
+          "items": [
+            "Custom backboards and lighting for every component",
+            "Cable, pipe, and valve labels in Latvian + English",
+            "Commissioning dossier with QR-coded checklist"
+          ]
+        }
+      }
+    },
+    "playbook": {
+      "kicker": "Commissioning playbook",
+      "title": "Five tightly-sequenced installation windows",
+      "summary": "Clear milestones keep you informed without shutting down the property—most owners stay onsite the entire time.",
+      "steps": {
+        "intake": {
+          "title": "Intake & staging day",
+          "body": "We map the utility room, confirm loads, scan existing plumbing, and mark trench routing."
+        },
+        "utility": {
+          "title": "Exterior utility prep",
+          "body": "Crew trenches insulated supply lines, lays conduit, and restores landscaping the same day."
+        },
+        "piping": {
+          "title": "Interior hydronic spine",
+          "body": "Pressure tank, manifolds, filters, and monitoring rack assembled with mockup approvals."
+        },
+        "commission": {
+          "title": "Power-up & commissioning",
+          "body": "Electricians energize pump and controls, we purge air, set pressures, and tune automation."
+        },
+        "handoff": {
+          "title": "Owner handoff",
+          "body": "We walk you through every valve, provide documentation, and capture a polished photo set."
+        }
+      }
+    },
+    "showcase": {
+      "kicker": "Proof of craft",
+      "title": "Installations that look custom-built",
+      "summary": "A gallery of recent completions across homes, cottages, and boutique resorts.",
+      "bullets": [
+        "Cable routing hidden inside powder-coated channels.",
+        "Insulated trenches backfilled and landscaped the same day.",
+        "Control racks labeled, photographed, and stored in the owner portal."
+      ],
+      "stats": {
+        "finish": {
+          "value": "48 h",
+          "label": "Interior completion window"
+        },
+        "crew": {
+          "value": "6 pros",
+          "label": "Trades onsite per day"
+        },
+        "callouts": {
+          "value": "<1%",
+          "label": "Post-handoff callouts"
+        }
+      },
+      "gallery": {
+        "utility": {
+          "title": "Utility room staging",
+          "caption": "Pressure tank, filters, and manifolds align against acoustic panels."
+        },
+        "trench": {
+          "title": "Low-impact trenching",
+          "caption": "Insulated piping, heat trace, and warning tape before restoration."
+        },
+        "panel": {
+          "title": "Smart control rack",
+          "caption": "Touch-safe cabinet with telemetry, alerts, and remote access."
+        }
+      }
+    },
+    "assurance": {
+      "kicker": "Assurance layer",
+      "title": "We stay on-call long after the last panel is tightened",
+      "summary": "Documentation, monitoring, and crew availability shift you straight into predictable operations.",
+      "cta": "Book the commissioning crew",
+      "note": "Includes year-one monitoring sync and emergency response priority.",
+      "stats": {
+        "warranty": {
+          "value": "24 mo",
+          "label": "Installation warranty"
+        },
+        "response": {
+          "value": "<4 h",
+          "label": "Priority support window"
+        },
+        "inspections": {
+          "value": "3 visits",
+          "label": "Post-install inspections"
+        }
+      },
+      "pillars": {
+        "monitoring": {
+          "title": "Always-on monitoring",
+          "body": "Sensors stream to our control room from day one so anomalies trigger us, not you.",
+          "bullets": [
+            "Telemetry gateway configured and tested",
+            "Leak and pressure alerts routed to owners",
+            "Remote firmware updates included"
+          ]
+        },
+        "quality": {
+          "title": "Documented quality",
+          "body": "We log torque specs, photos, and serials so any future service has the full history.",
+          "bullets": [
+            "Photo book and QR-coded labels",
+            "Serial registry for every component",
+            "As-built schematics and trench depths"
+          ]
+        },
+        "support": {
+          "title": "White-glove support",
+          "body": "Direct line to the engineer who led the install plus concierge scheduling.",
+          "bullets": [
+            "Preferred scheduling calendar",
+            "On-site refresh before peak season",
+            "Owner training refresh on demand"
+          ]
+        }
+      }
+    },
+    "faq": {
+      "kicker": "Still wondering?",
+      "title": "Installation clarity we repeat daily",
+      "items": {
+        "prep": {
+          "question": "What do you need from us before work starts?",
+          "answer": "Clear a 1 m path to the utility room, share utility panel photos, and mark any fragile landscaping."
+        },
+        "timeline": {
+          "question": "Will we be without water during install?",
+          "answer": "Downtime stays under 2 hours—temporary bypass tanks keep kitchens and baths live."
+        },
+        "power": {
+          "question": "Can you work with limited electrical service?",
+          "answer": "Yes, we bring temporary load centers and stage generator support if panel capacity is tight."
+        },
+        "finishes": {
+          "question": "Who handles the final finishes and cleanup?",
+          "answer": "Our crew re-paints touch points, reinstalls shelving, and leaves the room photo-ready."
+        }
+      }
+    }
   }
 }
