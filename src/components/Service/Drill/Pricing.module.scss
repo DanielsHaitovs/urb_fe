@@ -9,17 +9,22 @@
     gap: 24px;
 }
 
+.pricingCopy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
 .kicker {
   margin: 0;
   text-transform: uppercase;
   letter-spacing: 0.4em;
   font-size: 0.78rem;
   color: rgba(139, 197, 255, 0.85);
-}
-
-.pricingSection h2 {
-  margin: 8px 0;
-  font-size: clamp(2rem, 4vw, 3rem);
 }
 
 .title {
@@ -29,11 +34,6 @@
   gap: 6px;
   font-size: clamp(1.8rem, 6vw, 4rem);
   line-height: 1.05;
-}
-
-.pricingSection p {
-  margin: 0;
-  color: rgba(225, 232, 252, 0.88);
 }
 
 .pricingGrid {

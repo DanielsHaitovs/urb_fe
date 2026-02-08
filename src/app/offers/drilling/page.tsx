@@ -4,7 +4,6 @@ import { ScrollTopButton } from "@/components/ScrollTopButton/ScrollTopButton";
 import Drill from "@/components/Service/Drill/Drill";
 import DrillLayers from "@/components/Service/Drill/Layers";
 import DrillPricing from "@/components/Service/Drill/Pricing";
-import DrillGuarantee from "@/components/Service/Drill/Guarantee";
 import DrillFaq from "@/components/Service/Drill/Faq";
 
 export default function DrillingPage() {
@@ -13,7 +12,7 @@ export default function DrillingPage() {
       <Drill />
       <DrillLayers />
       <DrillPricing />
-      <DrillGuarantee />
+      {/* <DrillGuarantee /> */}
       <DrillFaq />
       <RequestPlan />
       <ScrollTopButton />

@@ -1,3 +1,75 @@
 .primaryColor {
   color: #0070f3;
 }
+
+@mixin kicker {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  font-size: 0.78rem;
+  color: rgba(139, 197, 255, 0.85);
+}
+
+@mixin title {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  line-height: 1.05;
+}
+
+@mixin summary {
+  margin: 0;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: rgba(229, 237, 255, 0.98);
+}
+
+@mixin content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+@mixin main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(24px, 4vw, 48px);
+  padding: clamp(32px, 6vw, 72px);
+  border-radius: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(150deg, rgba(10, 19, 52, 0.96), rgba(5, 7, 23, 0.95));
+  box-shadow: 0 40px 120px rgba(0, 0, 0, 0.55);
+  overflow: hidden;
+}
+
+@mixin mainGradient {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(24px, 4vw, 48px);
+  padding: clamp(32px, 6vw, 72px);
+  border-radius: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: radial-gradient(circle at 10% 10%, rgba(98, 191, 255, 0.35), transparent 55%),
+    radial-gradient(circle at 80% 20%, rgba(255, 166, 137, 0.25), transparent 60%),
+    linear-gradient(140deg, rgba(4, 10, 30, 0.98), rgba(7, 18, 52, 0.92));
+  box-shadow: 0 45px 140px rgba(2, 6, 22, 0.6);
+  overflow: hidden;
+}
+
+@mixin page {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(32px, 4vw, 56px);
+  padding: clamp(32px, 6vw, 72px) clamp(16px, 6vw, 80px) clamp(48px, 8vw, 96px);
+  color: #eef3ff;
+}

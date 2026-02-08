@@ -9,6 +9,10 @@
   gap: 24px;
 }
 
+.scenarioCopy {
+  width: 100%;
+}
+
 .scenarioCopy h2 {
   margin: 8px 0;
   font-size: clamp(1.8rem, 4vw, 2.6rem);
@@ -23,6 +27,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 18px;
 }
 
@@ -32,6 +38,7 @@
   border: 1px solid rgba(255, 255, 255, 0.12);
   background: rgba(255, 255, 255, 0.02);
   min-height: 100%;
+  width: 100%;
 }
 
 .scenarioCard h3 {
@@ -50,4 +57,10 @@
   display: flex;
   flex-direction: column;
   gap: 6px;
+}
+
+@media (min-width: 792px) {
+  .scenarioCard {
+    width: calc(25% - 12px);
+  }
 }

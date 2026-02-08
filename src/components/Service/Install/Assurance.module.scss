@@ -1,0 +1,110 @@
+@use "@/styles/variables.module.scss" as tokens;
+
+.main {
+    @include tokens.mainGradient;
+}
+
+.content {
+  @include tokens.content;
+  width: 100%;
+}
+
+.kicker {
+  @include tokens.kicker;
+}
+
+.title {
+  @include tokens.title;
+  word-break: break-all;
+}
+
+.summary {
+  @include tokens.summary;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.stats article {
+  flex: 1;
+  min-width: 140px;
+  padding: 16px 18px;
+  border-radius: 26px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.stats strong {
+  font-size: 1.5rem;
+  display: block;
+}
+
+.stats span {
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+}
+
+.ctaRow {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.primaryButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  background: linear-gradient(120deg, #5ce1ec, #ffa8d4);
+  color: #041026;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 20px 50px rgba(92, 225, 236, 0.35);
+}
+
+.ctaRow p {
+  margin: 0;
+  color: rgba(200, 214, 236, 0.9);
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.card {
+  flex: 1;
+  min-width: 220px;
+  padding: 24px;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card h3 {
+  margin: 0;
+}
+
+.card p {
+  margin: 0;
+  color: rgba(210, 225, 245, 0.9);
+}
+
+.card ul {
+  margin: 0;
+  padding-left: 18px;
+  color: rgba(226, 236, 255, 0.85);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}

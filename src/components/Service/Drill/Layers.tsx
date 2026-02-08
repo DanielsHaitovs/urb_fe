@@ -16,11 +16,11 @@ export default function DrillLayers() {
     
     return (
         <section className={styles.featureSection}>
-            <header>
+            <div className={styles.featureCopy}>
                 <p className={styles.kicker}>{t("features.kicker")}</p>
-                <h2>{t("features.title")}</h2>
+                <h2 className={styles.title}>{t("features.title")}</h2>
                 <p>{t("features.summary")}</p>
-            </header>
+            </div>
             <div className={styles.featureGrid}>
                 {features.map((feature, index) => (
                     <article key={feature.id} className={styles.featureCard}>
