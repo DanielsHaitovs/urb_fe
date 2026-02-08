@@ -22,11 +22,13 @@ export default function AboutCredibility() {
   }, [certificates]);
 
   return (
-    <section className={styles.section}>
-      <div className={styles.body}>
+    <section className={styles.main}>
+      <div className={styles.content}>
         <p className={styles.kicker}>{t("kicker")}</p>
-        <h2>{t("title")}</h2>
-        <p className={styles.summary}>{t("summary")}</p>
+        <h1 className={styles.title}>
+          <span>{t("title")}</span>
+          <span className={styles.summary}>{t("summary")}</span>
+        </h1>
         <p className={styles.commitment}>{t("commitment")}</p>
         <ul className={styles.bullets}>
           {bullets.map((item) => (

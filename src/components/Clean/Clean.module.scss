@@ -1,45 +1,7 @@
-.section {
-	position: relative;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	box-sizing: border-box;
-	padding: clamp(32px, 5vw, 72px);
-	border-radius: 56px;
-	overflow: hidden;
-	background:
-		radial-gradient(circle at 12% 0%, rgba(90, 176, 255, 0.45), transparent 55%),
-		radial-gradient(circle at 90% 8%, rgba(0, 112, 243, 0.35), transparent 50%),
-		#01050f;
-	border: 1px solid rgba(255, 255, 255, 0.08);
-	box-shadow: 0 50px 140px rgba(3, 10, 32, 0.8);
-	color: #f5f9ff;
-	isolation: isolate;
-}
+@use "@/styles/variables.module.scss" as tokens;
 
-.liquidGlow,
-.gridVeil {
-	position: absolute;
-	inset: 0;
-	pointer-events: none;
-	z-index: 0;
-}
-
-.liquidGlow {
-	background: radial-gradient(circle at 20% 40%, rgba(90, 176, 255, 0.3), transparent 60%),
-		radial-gradient(circle at 70% 20%, rgba(53, 160, 255, 0.25), transparent 55%),
-		radial-gradient(circle at 50% 90%, rgba(0, 112, 243, 0.2), transparent 55%);
-	filter: blur(120px);
-	animation: breathe 18s ease-in-out infinite alternate;
-}
-
-.gridVeil {
-	background:
-		linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px) 0 0 / 160px 160px,
-		linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px) 0 0 / 160px 160px;
-	opacity: 0.35;
-	mix-blend-mode: screen;
-	animation: shimmer 14s linear infinite;
+.main {
+	@include tokens.mainDark;
 }
 
 .inner {
@@ -58,27 +20,12 @@
 }
 
 .kicker {
-	text-transform: uppercase;
-	letter-spacing: 0.32em;
-	font-size: 0.78rem;
-	align-self: flex-start;
-	padding: 6px 16px;
-	border-radius: 999px;
-	border: 1px solid rgba(255, 255, 255, 0.2);
-	background: rgba(255, 255, 255, 0.08);
-	color: rgba(244, 248, 255, 0.85);
-	backdrop-filter: blur(12px);
+	@include tokens.kicker;
 }
 
-.hero h2 {
-	margin: 0;
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
-	font-size: clamp(1.6rem, 4vw, 3.3rem);
-	line-height: 1.05;
+.title {
+	@include tokens.title;
 }
-
 
 .highlight {
 	width: fit-content;
@@ -91,9 +38,7 @@
 }
 
 .summary {
-	margin: 0;
-	font-size: 1.08rem;
-	color: rgba(238, 244, 255, 0.88);
+	@include tokens.summary;
 }
 
 

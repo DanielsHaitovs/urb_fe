@@ -1,41 +1,27 @@
-.section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-  padding: clamp(28px, 5vw, 56px);
-  border-radius: 40px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: linear-gradient(145deg, rgba(5, 18, 52, 0.92), rgba(1, 8, 24, 0.94));
-  box-shadow: 0 30px 90px rgba(1, 4, 16, 0.6);
+@use "@/styles/variables.module.scss" as tokens;
+
+.main {
+    @include tokens.main;
 }
 
-.section h2 {
-  margin: 8px 0;
-  font-size: clamp(2rem, 4vw, 3rem);
-}
-
-.section p {
-  margin: 0;
-  color: rgba(223, 232, 255, 0.9);
+.content {
+  @include tokens.content;
 }
 
 .kicker {
-  margin: 0;
-  text-transform: uppercase;
-  letter-spacing: 0.38em;
-  font-size: 0.78rem;
-  color: rgba(146, 212, 255, 0.92);
+  @include tokens.kicker;
 }
 
-.grid {
-  display: flex;
-  justify-content: row;
-  flex-wrap: wrap;
-  // display: grid;
-  // grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
+.title {
+  @include tokens.title;
+}
+
+.summary {
+  @include tokens.summary;
+}
+
+.list {
+  @include tokens.list;
 }
 
 .card {
@@ -79,15 +65,8 @@
   color: rgba(229, 240, 255, 0.85);
 }
 
-
-@media (min-width: 768px) AND (max-width: 1024px) {
+@media (min-width: 768px) {
   .card {
-    width: calc(50% - 58px);
-  }
-}
-
-@media (min-width: 1025px) {
-  .card {
-    width: calc(25% - 62px);
+    width: calc(50% - 60px);
   }
 }

@@ -14,11 +14,9 @@ export default function MaintanenceHero() {
     label: t(`metrics.${id}.label`),
   }));
 
-  const chips = (t.raw("hero.chips") as string[]) ?? [];
-
   return (
-    <section className={styles.hero}>
-      <div className={styles.heroCopy}>
+    <section className={styles.main}>
+      <div className={styles.content}>
         <p className={styles.kicker}>{t("hero.kicker")}</p>
         <h1 className={styles.title}>
           <span>{t("hero.title.line1")}</span>
@@ -38,11 +36,6 @@ export default function MaintanenceHero() {
               <strong>{t("hero.badge.body")}</strong>
             </div>
           </div>
-        </div>
-        <div className={styles.heroChips}>
-          {chips.map((chip) => (
-            <span key={chip}>{chip}</span>
-          ))}
         </div>
       </div>
       <div className={styles.metrics}>

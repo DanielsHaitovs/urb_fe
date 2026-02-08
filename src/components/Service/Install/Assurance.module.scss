@@ -15,7 +15,6 @@
 
 .title {
   @include tokens.title;
-  word-break: break-all;
 }
 
 .summary {
@@ -23,9 +22,7 @@
 }
 
 .stats {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
+  @include tokens.list;
 }
 
 .stats article {

@@ -1,63 +1,27 @@
-.hero {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: clamp(20px, 4vw, 32px);
-  padding: clamp(32px, 5vw, 56px);
-  border-radius: 44px;
-  background: radial-gradient(circle at 10% 20%, rgba(114, 178, 255, 0.24), transparent 45%),
-    radial-gradient(circle at 80% 10%, rgba(255, 166, 116, 0.18), transparent 50%),
-    linear-gradient(135deg, rgba(3, 12, 38, 0.95), rgba(7, 20, 58, 0.85));
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 40px 120px rgba(2, 4, 15, 0.65);
-  overflow: hidden;
+@use "@/styles/variables.module.scss" as tokens;
+
+.main {
+    @include tokens.mainGradient;
 }
 
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background: radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.08), transparent 50%);
-  opacity: 0.4;
-}
-
-.heroCopy {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  position: relative;
-  z-index: 1;
+.content {
+  @include tokens.content;
 }
 
 .kicker {
-  margin: 0;
-  text-transform: uppercase;
-  letter-spacing: 0.4em;
-  font-size: 0.78rem;
-  color: rgba(146, 212, 255, 0.92);
+  @include tokens.kicker;
 }
 
 .title {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  font-size: clamp(2.2rem, 6vw, 3.8rem);
-  line-height: 1.04;
-}
-
-.accent {
-  color: #a3e8ff;
+  @include tokens.title;
 }
 
 .summary {
-  margin: 0;
-  color: rgba(228, 237, 255, 0.95);
-  font-size: 1.1rem;
-  line-height: 1.6;
+  @include tokens.summary;
+}
+
+.accent {
+  @include tokens.accent;
 }
 
 .note {
@@ -66,9 +30,7 @@
 }
 
 .heroActions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
+  @include tokens.list;
 }
 
 .primaryButton,
@@ -147,12 +109,8 @@
 }
 
 .metrics {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 12px;
-  position: relative;
-  z-index: 1;
+  @include tokens.list;
+  width: 100%;
 }
 
 .metricCard {
@@ -205,10 +163,6 @@
 
 @media (min-width: 768px) {
   .metricCard {
-    width: calc(33% - 44px);
-  }
-
-  .heroChips span {
-    width: calc(33% - 35px);
+    width: calc(33% - 50px);
   }
 }

@@ -16,13 +16,15 @@ export default function MaintanenceHighlights() {
   }));
 
   return (
-    <section className={styles.section}>
-      <div>
+    <section className={styles.main}>
+      <div className={styles.content}>
         <p className={styles.kicker}>{t("features.kicker")}</p>
-        <h2>{t("features.title")}</h2>
-        <p>{t("features.summary")}</p>
+        <h1 className={styles.title}>
+          <span>{t("features.title")}</span>
+          <span className={styles.summary}>{t("features.summary")}</span>
+        </h1>
       </div>
-      <div className={styles.grid}>
+      <div className={styles.list}>
         {features.map((feature, index) => (
           <article key={feature.id} className={styles.card}>
             <div className={styles.icon}>{icons[index % icons.length]}</div>

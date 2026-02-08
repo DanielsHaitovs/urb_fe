@@ -13,13 +13,15 @@ export default function Scenarios() {
   }));
 
   return (
-      <section className={styles.scenarioSection}>
-        <div className={styles.scenarioCopy}>
+      <section className={styles.main}>
+        <div className={styles.content}>
           <p className={styles.kicker}>{t("scenarios.kicker")}</p>
-          <h2>{t("scenarios.title")}</h2>
-          <p>{t("scenarios.summary")}</p>
+          <h1 className={styles.title}>
+            <span>{t("scenarios.title")}</span>
+            <span className={styles.summary}>{t("scenarios.summary")}</span>
+          </h1>
         </div>
-        <div className={styles.scenarioGrid}>
+        <div className={styles.list}>
           {scenarios.map((scenario) => (
             <article key={scenario.id} className={styles.scenarioCard}>
               <h3>{scenario.title}</h3>

@@ -13,12 +13,14 @@ export default function MaintanenceFaq() {
   }));
 
   return (
-    <section className={styles.section}>
-      <header>
+    <section className={styles.main}>
+      <div className={styles.content}>
         <p className={styles.kicker}>{t("faq.kicker")}</p>
-        <h2>{t("faq.title")}</h2>
-      </header>
-      <div className={styles.grid}>
+        <h1 className={styles.title}>
+          <span>{t("faq.title")}</span>
+        </h1>
+      </div >
+      <div className={styles.list}>
         {faqs.map((faq) => (
           <article key={faq.id} className={styles.card}>
             <h3>{faq.question}</h3>

@@ -15,13 +15,15 @@ export default function DrillPricing() {
         items: (t.raw(`pricing.${id}.items`) as string[]) ?? [],
     }));
     return (
-        <section className={styles.pricingSection}>
-            <div className={styles.pricingCopy}>
+        <section className={styles.main}>
+            <div className={styles.content}>
                 <p className={styles.kicker}>{t("pricing.kicker")}</p>
-                <h2 className={styles.title}>{t("pricing.title")}</h2>
-                <p>{t("pricing.summary")}</p>
+                <h1 className={styles.title}>
+                    <span>{t("pricing.title")}</span>
+                    <span className={styles.summary}>{t("pricing.summary")}</span>
+                </h1>
             </div>
-            <div className={styles.pricingGrid}>
+            <div className={styles.list}>
             {pricing.map((plan) => (
                 <article key={plan.id} className={styles.pricingCard}>
                     <div className={styles.pricingHead}>

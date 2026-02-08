@@ -71,7 +71,7 @@ export default function Strength({ screen }: { screen: ScreenType }) {
   return (
     <section
       ref={sectionRef}
-      className={styles.section}
+      className={styles.main}
       aria-labelledby="strength-heading"
       data-screen={screen}
     >
@@ -80,8 +80,10 @@ export default function Strength({ screen }: { screen: ScreenType }) {
       <div className={styles.inner}>
         <header className={styles.header}>
           <span className={styles.kicker}>{t("subTitle")}</span>
-          <h2 id="strength-heading">{t("title")}</h2>
-          <p>{t("summary")}</p>
+              <h1 className={styles.title}>
+                <span id="strength-heading">{t("title")}</span>
+                <span className={styles.summary}>{t("summary")}</span>
+              </h1>
         </header>
         <div className={styles.stats}>
           {stats.map((stat, index) => (
