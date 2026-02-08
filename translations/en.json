@@ -977,5 +977,220 @@
         }
       }
     }
+  },
+  "PricesPage": {
+    "bannerTitle": "Transparent pricing, no surprises",
+    "services": {
+      "drilling": {
+        "title": "Precision borehole program"
+      },
+      "maintenance": {
+        "title": "Flow protection care plan"
+      },
+      "installation": {
+        "title": "Turnkey installation stack"
+      }
+    },
+    "hero": {
+      "kicker": "Pricing & budgeting",
+      "title": {
+        "line1": "Investment-grade water",
+        "line2": "with predictable budgets"
+      },
+      "summary": "Every quote arrives with line-item clarity – rig mobilization, interior hardware, and commissioning support are documented before anyone breaks ground.",
+      "note": "Need financing or phased delivery? We lock pricing for 60 days while the paperwork moves forward.",
+      "actions": {
+        "primary": "Book pricing consult",
+        "secondary": "Download rate card"
+      },
+      "badge": {
+        "title": "Paperwork-ready",
+        "body": "Detailed BOQ + Gantt export in 24h"
+      },
+      "metrics": {
+        "packages": {
+          "value": "€2 300",
+          "label": "Base drilling program"
+        },
+        "timeline": {
+          "value": "17 days",
+          "label": "Average door-to-water"
+        },
+        "savings": {
+          "value": "11%",
+          "label": "Clients saved vs. tanker"
+        }
+      }
+    },
+    "matrix": {
+      "kicker": "Transparent bundles",
+      "title": "Three signature programs, zero hidden line items",
+      "summary": "Pick the scope that matches your project. Each bundle ships with documentation, warranty, and concierge coordination.",
+      "tiers": {
+        "drilling": {
+          "title": "Precision drilling",
+          "summary": "Mobilization, borehole, food-grade casing, and multi-hour pump testing.",
+          "price": "€2 300",
+          "timeline": "10-14 days",
+          "bullets": [
+            "Up to 30 m depth included",
+            "Permitting + lab samples",
+            "Telemetry-ready wiring"
+          ]
+        },
+        "installation": {
+          "title": "Turnkey installation",
+          "summary": "Pump, insulated trenching, interior manifolds, and smart monitoring.",
+          "price": "from €4 200",
+          "timeline": "5-7 days",
+          "bullets": [
+            "Powder-coated utility wall",
+            "Heat-trace + insulation",
+            "Owner training + dossier"
+          ]
+        },
+        "maintenance": {
+          "title": "Concierge care",
+          "summary": "Seasonal flushing, chemistry, telemetry tuning, and emergency response.",
+          "price": "from €900 / visit",
+          "timeline": "4-6 hours",
+          "bullets": [
+            "ISO lab reporting",
+            "Telemetry monitoring",
+            "<4 h rapid dispatch"
+          ]
+        }
+      }
+    },
+    "calculator": {
+      "kicker": "Instant estimator",
+      "title": "Model your project in seconds",
+      "summary": "Adjust depth, scope, and region to see a live estimate that already includes logistics, documentation, and finishing.",
+      "depthLabel": "Set borehole depth (min 30 m)",
+      "serviceLabel": "Select service focus",
+      "addOnsLabel": "Select extra services",
+      "addOnsHint": "Layer reinforcement, flushing, filtration, or prep work on top of the core scope.",
+      "addOnsEmpty": "No extra services selected",
+      "locationLabel": "Location",
+      "locationHint": "Covers crew travel, ferries, and overnight logistics.",
+      "locationIncluded": "Included",
+      "button": "Lock this estimate",
+      "resultLabel": "Projected investment",
+      "resultSummary": "Scope set at {depth} m for the {location} region, ready for permit review.",
+      "footnote": "Estimates include 60-day price hold. VAT added where applicable.",
+      "breakdown": {
+        "base": "Base package: {amount}",
+        "variable": "Depth add-ons: {amount}",
+        "addOns": "Extra services: {amount}",
+        "location": "Regional logistics: {amount}"
+      },
+      "services": {
+        "drilling": {
+          "label": "Drilling",
+          "helper": "Includes permits, borehole, and pump test"
+        },
+        "installation": {
+          "label": "Installation",
+          "helper": "Pump, piping, and interior manifolds"
+        },
+        "maintenance": {
+          "label": "Maintenance",
+          "helper": "Seasonal flush + monitoring"
+        }
+      },
+      "addOns": {
+        "casing": {
+          "label": "Well reinforcement",
+          "helper": "Extra casing and sealing to stabilize the borehole walls"
+        },
+        "flush": {
+          "label": "Borehole flushing",
+          "helper": "High-volume purge that clears debris before installing hardware"
+        },
+        "filter": {
+          "label": "Filter installation",
+          "helper": "Inline filtration stack tuned to your chemistry profile"
+        },
+        "prep": {
+          "label": "Site preparation works",
+          "helper": "Trenching, access pads, and surface protection before crews arrive"
+        }
+      },
+      "locations": {
+        "riga": "Riga & Pieriga",
+        "vidzeme": "Vidzeme",
+        "zemgale": "Zemgale",
+        "kurzeme": "Kurzeme",
+        "latgale": "Latgale"
+      }
+    },
+    "loyalty": {
+      "kicker": "Loyalty program",
+      "title": "Preferred clients unlock concierge economics",
+      "summary": "Bundle installation + care to access faster dispatch, capped rates, and project historian support.",
+      "perks": [
+        "Price hold for 60 days",
+        "Encrypted owner portal",
+        "Direct engineer hotline"
+      ],
+      "stats": {
+        "sites": {
+          "value": "320+",
+          "label": "Sites under agreement"
+        },
+        "response": {
+          "value": "<4 h",
+          "label": "Priority response"
+        },
+        "savings": {
+          "value": "12%",
+          "label": "Average savings"
+        }
+      },
+      "tiers": {
+        "standard": {
+          "title": "Standard retainer",
+          "summary": "Ideal for estates and boutiques that need seasonal prep and annual audits.",
+          "price": "€190 / month",
+          "bullets": [
+            "2 deep-clean visits per year",
+            "Telemetry monitoring lite",
+            "Chemistry reports for ESG"
+          ]
+        },
+        "priority": {
+          "title": "Priority retainer",
+          "summary": "For resorts and developers that require proactive monitoring and instant dispatch.",
+          "price": "€420 / month",
+          "bullets": [
+            "Monthly micro-diagnostics",
+            "24/7 control-room alerts",
+            "Dedicated engineer on call"
+          ]
+        }
+      }
+    },
+    "faq": {
+      "kicker": "Budget clarity",
+      "title": "Pricing questions we answer daily",
+      "items": {
+        "deposit": {
+          "question": "Do you require a deposit?",
+          "answer": "Yes, 30% secures the crew and materials. The remaining balance follows milestone handoffs."
+        },
+        "scope": {
+          "question": "Can we mix and match line items?",
+          "answer": "Absolutely. We routinely split drilling, installation, and care between teams—every quote stays modular."
+        },
+        "changes": {
+          "question": "How do scope changes affect pricing?",
+          "answer": "We issue a transparent change order in the shared portal, including updated Gantt and cost deltas before proceeding."
+        },
+        "financing": {
+          "question": "Do you support leasing or financing?",
+          "answer": "Yes. We partner with Baltic lenders—share your corporate details and we prepare the documents in 48 hours."
+        }
+      }
+    }
   }
 }

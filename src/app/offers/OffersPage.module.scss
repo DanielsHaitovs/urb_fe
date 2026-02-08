@@ -1,7 +1,5 @@
+@use "@/styles/variables.module.scss" as tokens;
+
 .page {
-  display: flex;
-  flex-direction: column;
-  gap: clamp(32px, 4vw, 56px);
-  padding: clamp(32px, 6vw, 72px) clamp(16px, 6vw, 80px) clamp(48px, 8vw, 96px);
-  color: #eef3ff;
+  @include tokens.page;
 }
