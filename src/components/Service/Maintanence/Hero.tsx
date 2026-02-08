@@ -31,10 +31,6 @@ export default function MaintanenceHero() {
             <span>{t("hero.actions.primary")}</span>
             <ArrowUpRight size={18} aria-hidden="true" />
           </Link>
-          <Link href="#plans" className={styles.secondaryButton}>
-            <span>{t("hero.actions.secondary")}</span>
-            <Download size={18} aria-hidden="true" />
-          </Link>
         </div>
         <div className={styles.heroChips}>
           {chips.map((chip) => (

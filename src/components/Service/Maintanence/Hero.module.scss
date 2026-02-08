@@ -2,6 +2,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: clamp(20px, 4vw, 32px);
   padding: clamp(32px, 5vw, 56px);
   border-radius: 44px;
@@ -143,8 +145,9 @@
 }
 
 .metrics {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 12px;
   position: relative;
   z-index: 1;

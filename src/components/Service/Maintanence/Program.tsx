@@ -23,8 +23,10 @@ export default function MaintanenceProgram() {
       <div className={styles.timeline}>
         {steps.map((step) => (
           <article key={step.id} className={styles.card}>
-            <span className={styles.index}>{step.index.toString().padStart(2, "0")}</span>
-            <h3>{step.title}</h3>
+            <div className={styles.cardHeader}>
+              <h3>{step.title}</h3>
+              <span className={styles.index}>{step.index.toString().padStart(2, "0")}</span>
+            </div>
             <p>{step.body}</p>
           </article>
         ))}
