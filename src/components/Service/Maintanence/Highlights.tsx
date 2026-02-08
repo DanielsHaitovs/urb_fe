@@ -17,11 +17,11 @@ export default function MaintanenceHighlights() {
 
   return (
     <section className={styles.section}>
-      <header>
+      <div>
         <p className={styles.kicker}>{t("features.kicker")}</p>
         <h2>{t("features.title")}</h2>
         <p>{t("features.summary")}</p>
-      </header>
+      </div>
       <div className={styles.grid}>
         {features.map((feature, index) => (
           <article key={feature.id} className={styles.card}>

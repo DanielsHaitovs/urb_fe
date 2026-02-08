@@ -1,3 +1,5 @@
+@use "@/styles/variables.module.scss" as tokens;
+
 .section {
   display: flex;
   flex-direction: column;
@@ -24,16 +26,13 @@
 }
 
 .kicker {
-  margin: 0;
-  text-transform: uppercase;
-  letter-spacing: 0.42em;
-  font-size: 0.78rem;
-  color: rgba(146, 212, 255, 0.92);
+  @include tokens.kicker;
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 18px;
 }
 
@@ -46,6 +45,7 @@
   flex-direction: column;
   gap: 14px;
   min-height: 100%;
+  width: 100%;
 }
 
 .head {
@@ -84,4 +84,10 @@
   margin: 0;
   font-size: 0.85rem;
   color: rgba(190, 208, 235, 0.9);
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: calc(50% - 67px);
+  }
 }

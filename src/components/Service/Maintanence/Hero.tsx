@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowUpRight, Download, ShieldCheck } from "lucide-react";
+import { ArrowUpRight, ShieldCheck } from "lucide-react";
 import { useTranslations } from "next-intl";
 import styles from "@/components/Service/Maintanence/Hero.module.scss";
 
@@ -31,18 +31,18 @@ export default function MaintanenceHero() {
             <span>{t("hero.actions.primary")}</span>
             <ArrowUpRight size={18} aria-hidden="true" />
           </Link>
+          <div className={styles.heroBadge}>
+            <ShieldCheck size={32} aria-hidden="true" />
+            <div>
+              <p>{t("hero.badge.title")}</p>
+              <strong>{t("hero.badge.body")}</strong>
+            </div>
+          </div>
         </div>
         <div className={styles.heroChips}>
           {chips.map((chip) => (
             <span key={chip}>{chip}</span>
           ))}
-        </div>
-      </div>
-      <div className={styles.heroBadge}>
-        <ShieldCheck size={32} aria-hidden="true" />
-        <div>
-          <p>{t("hero.badge.title")}</p>
-          <strong>{t("hero.badge.body")}</strong>
         </div>
       </div>
       <div className={styles.metrics}>

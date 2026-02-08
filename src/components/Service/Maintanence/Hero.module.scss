@@ -104,6 +104,7 @@
 
 .heroChips {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 6px;
@@ -118,6 +119,7 @@
   text-transform: uppercase;
   color: rgba(229, 239, 255, 0.9);
   animation: pulse 6s ease-in-out infinite;
+  width: 100%;
 }
 
 .heroBadge {
@@ -163,6 +165,7 @@
   font-size: 0.75rem;
   display: flex;
   flex-direction: column;
+  width: 100%;
   gap: 6px;
 }
 
@@ -196,7 +199,16 @@
   }
 
   .heroBadge {
-    width: 100%;
     justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .metricCard {
+    width: calc(33% - 44px);
+  }
+
+  .heroChips span {
+    width: calc(33% - 35px);
   }
 }

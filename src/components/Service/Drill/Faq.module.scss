@@ -23,9 +23,12 @@
   font-size: clamp(1.8rem, 6vw, 4rem);
   line-height: 1.05;
 }
+
 .faqGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 14px;
 }
 
@@ -34,6 +37,10 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: rgba(2, 6, 20, 0.75);
   padding: 16px 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  word-break: break-word;
 }
 
 .faqItem summary {
@@ -49,4 +56,10 @@
 .faqItem p {
   margin: 12px 0 0 0;
   color: rgba(205, 216, 239, 0.9);
+}
+
+@media (min-width: 792px) {
+  .faqItem {
+    width: calc(25% - 53px);
+  }
 }

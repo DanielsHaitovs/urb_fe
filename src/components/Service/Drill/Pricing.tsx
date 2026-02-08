@@ -16,25 +16,25 @@ export default function DrillPricing() {
     }));
     return (
         <section className={styles.pricingSection}>
-            <header>
-            <p className={styles.kicker}>{t("pricing.kicker")}</p>
-            <h2>{t("pricing.title")}</h2>
-            <p>{t("pricing.summary")}</p>
-            </header>
+            <div className={styles.pricingCopy}>
+                <p className={styles.kicker}>{t("pricing.kicker")}</p>
+                <h2 className={styles.title}>{t("pricing.title")}</h2>
+                <p>{t("pricing.summary")}</p>
+            </div>
             <div className={styles.pricingGrid}>
             {pricing.map((plan) => (
                 <article key={plan.id} className={styles.pricingCard}>
-                <div className={styles.pricingHead}>
-                    <p>{plan.title}</p>
-                    <strong>{plan.price}</strong>
-                </div>
-                <p className={styles.pricingSummary}>{plan.summary}</p>
-                <ul>
-                    {plan.items.map((item) => (
-                    <li key={item}>{item}</li>
-                    ))}
-                </ul>
-                <p className={styles.pricingNote}>{plan.note}</p>
+                    <div className={styles.pricingHead}>
+                        <p>{plan.title}</p>
+                        <strong>{plan.price}</strong>
+                    </div>
+                    <p className={styles.pricingSummary}>{plan.summary}</p>
+                    <ul>
+                        {plan.items.map((item) => (
+                        <li key={item}>{item}</li>
+                        ))}
+                    </ul>
+                    <p className={styles.pricingNote}>{plan.note}</p>
                 </article>
             ))}
             </div>

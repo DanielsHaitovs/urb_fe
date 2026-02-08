@@ -1,3 +1,11 @@
 .primaryColor {
   color: #0070f3;
 }
+
+@mixin kicker {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  font-size: 0.78rem;
+  color: rgba(139, 197, 255, 0.85);
+}

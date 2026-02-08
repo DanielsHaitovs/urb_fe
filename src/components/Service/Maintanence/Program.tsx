@@ -15,17 +15,17 @@ export default function MaintanenceProgram() {
 
   return (
     <section className={styles.section}>
-      <header>
+      <div>
         <p className={styles.kicker}>{t("program.kicker")}</p>
         <h2>{t("program.title")}</h2>
         <p>{t("program.summary")}</p>
-      </header>
+      </div>
       <div className={styles.timeline}>
         {steps.map((step) => (
           <article key={step.id} className={styles.card}>
             <div className={styles.cardHeader}>
-              <h3>{step.title}</h3>
               <span className={styles.index}>{step.index.toString().padStart(2, "0")}</span>
+              <h3>{step.title}</h3>
             </div>
             <p>{step.body}</p>
           </article>
