@@ -1,0 +1,93 @@
+@use "@/styles/variables.module.scss" as tokens;
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: clamp(28px, 5vw, 56px);
+  border-radius: 42px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(135deg, rgba(8, 20, 62, 0.92), rgba(5, 12, 35, 0.92));
+  box-shadow: 0 35px 100px rgba(0, 0, 0, 0.55);
+}
+
+.section header {
+  max-width: 680px;
+}
+
+.section h2 {
+  margin: 8px 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.section p {
+  margin: 0;
+  color: rgba(223, 233, 255, 0.9);
+}
+
+.kicker {
+  @include tokens.kicker;
+}
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.card {
+  padding: 28px;
+  border-radius: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-height: 100%;
+  width: 100%;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.head p {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.82rem;
+}
+
+.head strong {
+  font-size: 2.1rem;
+}
+
+.summary {
+  margin: 0;
+  color: rgba(226, 234, 255, 0.9);
+}
+
+.card ul {
+  margin: 0;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: rgba(227, 237, 255, 0.85);
+}
+
+.note {
+  margin: 0;
+  font-size: 0.85rem;
+  color: rgba(190, 208, 235, 0.9);
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: calc(50% - 67px);
+  }
+}

@@ -3,19 +3,15 @@
 import Image from "next/image";
 import styles from "@/components/Banner/Banner.module.scss";
 import { ScreenType } from "@/types/deviceType";
-import { useTranslations } from "next-intl";
 import RedirectTo from "@/ui/actions/redirect";
 
 type BannerProps = {
   screen: ScreenType;
-  showActions?: boolean;
   title?: string;
+  actions?: { label: string; href: string }[];
 };
 
-export default function Banner({ screen, showActions = true, title }: BannerProps) {
-  const t = useTranslations("Banner");
-  const heading = title ?? t("title");
-
+export default function Banner({ screen, title, actions }: BannerProps) {
   return (
     <div className={styles.banner} aria-label="Hero banner">
       <Image
@@ -27,37 +23,23 @@ export default function Banner({ screen, showActions = true, title }: BannerProp
         className={styles.background}
       />
       <div className={styles.content}>
-        <h1 className={styles.title}>{heading}</h1>
-        {showActions &&
+        <h1 className={styles.title}>{title}</h1>
+        {actions?.length &&
           (screen === "mobile" ? (
             <div className={styles.mobileActions} aria-label="Quick actions">
-              <div className={styles.mobileAction}>
-                <RedirectTo className="banner" href="#strength" label={t("strength")} />
-              </div>
-              <div className={styles.mobileAction}>
-                <RedirectTo className="banner" href="#clean-water" label={t("cleanWater")} />
-              </div>
-              <div className={styles.mobileAction}>
-                <RedirectTo className="banner" href="#contact" label={t("contact")} />
-              </div>
-              <div className={styles.mobileAction}>
-                <RedirectTo className="banner" href="#solutions" label={t("offers")} />
-              </div>
+              {actions.map((action) => (
+                <div className={styles.mobileAction} key={action.href}>
+                  <RedirectTo className="banner" href={action.href} label={action.label} />
+                </div>
+              ))}
             </div>
           ) : (
             <div className={styles.actions} aria-label="Quick actions">
-              <div className={styles.action}>
-                <RedirectTo className="banner" href="#strength" label={t("strength")} />
-              </div>
-              <div className={styles.action}>
-                <RedirectTo className="banner" href="#clean-water" label={t("cleanWater")} />
-              </div>
-              <div className={styles.action}>
-                <RedirectTo className="banner" href="#contact" label={t("contact")} />
-              </div>
-              <div className={styles.action}>
-                <RedirectTo className="banner" href="#solutions" label={t("offers")} />
-              </div>
+              {actions.map((action) => (
+                <div className={styles.action} key={action.href}>
+                  <RedirectTo className="banner" href={action.href} label={action.label} />
+                </div>
+              ))}
             </div>
           ))}
       </div>

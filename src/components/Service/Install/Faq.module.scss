@@ -1,0 +1,53 @@
+@use "@/styles/variables.module.scss" as tokens;
+
+.main {
+    @include tokens.mainGradient;
+}
+
+.content {
+  @include tokens.content;
+  width: 100%;
+}
+
+.kicker {
+  @include tokens.kicker;
+}
+
+.title {
+  @include tokens.title;
+  word-break: break-all;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: clamp(16px, 3vw, 28px);
+}
+
+.card {
+  padding: 24px;
+  border-radius: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.card p {
+  margin: 0;
+  color: rgba(207, 222, 244, 0.92);
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: calc(50% - 64px);
+  }
+}

@@ -7,6 +7,7 @@ import ContactCTA from "@/components/ContactCTA/ContactCTA";
 import Strength from "@/components/Strength/Strength";
 import { ScrollTopButton } from "@/components/ScrollTopButton/ScrollTopButton";
 import { useScreenSize } from "@/providers/ScreenTypeProvider";
+import WorkflowShowcase from "@/components/WorkflowShowcase/WorkflowShowcase";
 
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
     <main className={styles.page}>
       <section id="strength" className={styles.section}>
         <Strength screen={screen} />
+        <WorkflowShowcase />
       </section>
       <section id="solutions" className={styles.section}>
         <DailySolutions screen={screen} />

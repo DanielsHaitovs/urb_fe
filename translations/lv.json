@@ -11,22 +11,209 @@
     "cleanWater": "Dabiski tīrs ūdens"
   },
   "AboutPage": {
-    "kicker": "Par Urb",
-    "title": "Veidojam iesaistosas pilsetas pieredzes",
-    "summary": "Apvienojam arhitekturu, interaktivos medijus un tehnologijas, lai publiska telpa klutu rotaliga.",
-    "highlights": {
-      "mission": {
-        "title": "Musu misija",
-        "body": "Radam pielagojamu infrastrukturu, kas aicina iedzivotajus atklat pilsetu no jauna."
+    "bannerTitle": "Iepazīstiet komandu, kas inženierē jūsu ūdens nākotni",
+    "hero": {
+      "kicker": "Ūdens inženieru studija",
+      "title": {
+        "line1": "Miljonu vērtīga disciplīna",
+        "line2": "pielietota privātām akām"
       },
-      "team": {
-        "title": "Komanda",
-        "body": "Arhitekti, makslinieki un inzenieri strada plecu pie pleca, lai saglabatu cilvecisku sajutu."
+      "summary": "Hidroģeologi, lauka brigādes un industriālie dizaineri kustas kā viena vienība, lai sarežģīti zemes gabali īpašniekiem šķistu viegli.",
+      "detail": "No attālām vasarnīcām līdz kūrortu ciematiem mēs atvedam tādu pašu instrumentāciju, caurspīdīgus atskaites datus un concierge servisu.",
+      "actions": {
+        "primary": "Iepazīt vadību",
+        "secondary": "Skatīt piegādes plānojumus"
       },
-      "impact": {
-        "title": "Ietekme",
-        "body": "Instalacijas darbojas 12 pilsetas visapkart pasaulei."
+      "stats": {
+        "projects": {
+          "value": "320+",
+          "label": "nodotas sistēmas",
+          "helper": "Telemetrijas žurnāli un laboratorijas sertifikāti arhīvā"
+        },
+        "crews": {
+          "value": "6 amata grupas",
+          "label": "disciplīnas uz objekta",
+          "helper": "Urbšana, tranšejas, elektriķi, apdare, QA un serviss"
+        },
+        "uptime": {
+          "value": "99,2%",
+          "label": "vidējais darbspējas laiks",
+          "helper": "Apkopes plāni ar 24/7 uzraudzību"
+        }
       }
+    },
+    "credibility": {
+      "kicker": "Uzticams partneris",
+      "title": "Ūdens aku urbšanas eksperti",
+      "summary": "Esam specializēts urbšanas uzņēmums, kas privātmāju īpašniekiem visā Latvijā piegādā pielāgotus risinājumus.",
+      "commitment": "Garantējam caurspīdīgu cenu un ilgtermiņa servisu katrai aktivizācijai. Ja ģeoloģija bloķē uzstādīšanu, jums nekas nav jāmaksā.",
+      "bullets": [
+        "Kompaktā tehnika sargā kaimiņus un ainavu.",
+        "Atļaujas, telemetrija un dokumentācija tiek kārtota iekšēji.",
+        "Bez slēptām izmaksām vai negaidītiem papilddarbiem."
+      ],
+      "certificatesTitle": "Sertifikāti un akreditācijas",
+      "certificates": [
+        "ISO 9001 kvalitātes sistēma",
+        "ISO 14001 vides pārvaldība",
+        "ISO 45001 darba drošība",
+        "Latvijas urbšanas licence LV-254",
+        "Valsts akreditēts LATMET ūdens laboratorijas partneris",
+        "Baltijas ilgtspējīgas būvniecības hartas parakstītājs"
+      ],
+      "factsTitle": "Fakti par Urb",
+      "facts": [
+        {
+          "value": "200+",
+          "label": "projekti visos reģionos",
+          "body": "Veiksmīgi urbumi katrā novadā bez neatrisinātām garantijām."
+        },
+        {
+          "value": "50 km",
+          "label": "kopējais urbuma dziļums",
+          "body": "Parāda mūsu brigāžu un tehnikas kapacitāti."
+        },
+        {
+          "value": "2 gadi",
+          "label": "visaptveroša garantija",
+          "body": "Katrs komplekts ietver dokumentētu apkopi un dedikētu atbalstu."
+        }
+      ]
+    },
+    "capabilities": {
+      "kicker": "Lauka līderība",
+      "title": "Kompetences visai ūdens ceļam",
+      "summary": "Inženieri, amatnieki un datu speciālisti veido vienu atbildīgu komandu, lai vienmēr zinātu, kas un kāpēc strādā jūsu objektā.",
+      "cards": [
+        {
+          "title": "Hidro dizaina studija",
+          "body": "Topogrāfi, GIS analītiķi un atļauju speciālisti izplāno scenāriju pirms tehnika pieskaras zemes gabalam.",
+          "bullets": [
+            "Zemes skenējumi ar dziļuma prognozi un riska slāņiem",
+            "Atļauju pakas apstiprinām vidēji 72h laikā",
+            "Kaimiņi informēti ar precīziem loģistikas logiem"
+          ]
+        },
+        {
+          "title": "Pilna uzstādīšanas laboratorija",
+          "body": "Mehāniķi, elektriķi un apdares meistari koordinēti rada žurnālvērtas tehniskās telpas.",
+          "bullets": [
+            "Pulverkrāsas kolektori ar skaidriem marķējumiem",
+            "Siltinātas tranšejas atjaunojam tajā pašā dienā",
+            "Viedie monitoringa skapji ieregulēti uz vietas"
+          ]
+        },
+        {
+          "title": "Mūža ekspluatācijas centrs",
+          "body": "Apkopes komandas vēro telemetriju, veic ķīmijas testus un izsauc servisu pirms īpašnieks pamana izmaiņas.",
+          "bullets": [
+            "24/7 uzraudzība ar prognozējošiem brīdinājumiem",
+            "Mobilās laboratorijas dzelzs, cietības un baktēriju testiem",
+            "Garantēti reaģēšanas logi zem četrām stundām"
+          ]
+        }
+      ]
+    },
+    "timeline": {
+      "kicker": "Etapi",
+      "title": "Desmitgade fanātisku uzlabojumu",
+      "summary": "Katrs posms pievienoja jaunu disciplīnu, lai vairāk rezultāta paliktu mūsu pārziņā.",
+      "steps": [
+        {
+          "year": "2010",
+          "title": "Ģimenes urbšanas iekārta un telemetrijas pilotprojekti",
+          "body": "Sākām ar vienu dubultās rotācijas iekārtu un fiksējām dziļumu, griezes momentu un plūsmu katram urbumam.",
+          "metrics": [
+            {"value": "12", "label": "piloti gadā"},
+            {"value": "0", "label": "neveiktas pēcurbuma pārbaudes"}
+          ]
+        },
+        {
+          "year": "2016",
+          "title": "Pilnas uzstādīšanas brigādes",
+          "body": "Elektriķi, tranšeju komandas un apdares meistari pievienojās, lai klientam būtu viens atbildīgais.",
+          "metrics": [
+            {"value": "5-7 dienas", "label": "vidējais montāžas logs"},
+            {"value": "15%", "label": "grafika ieguvums ar prefabrikāciju"}
+          ]
+        },
+        {
+          "year": "2023",
+          "title": "Prediktīvās apkopes programma",
+          "body": "Visas sistēmas savienojām ar vadības centru, apvienojot telemetriju un laboratorijas ķīmiju proaktīvam servisam.",
+          "metrics": [
+            {"value": "99,2%", "label": "darbspēja uzturētajos objektos"},
+            {"value": "<4 h", "label": "garantēts neatliekamais izsaukums"}
+          ]
+        }
+      ]
+    },
+    "testimonials": {
+      "kicker": "Klientu atsauksmes",
+      "title": "Īpašnieki, kas uz Urb paļaujas ik nedēļu",
+      "summary": "Desmit svaigas piezīmes no māju, kūrortu un attīstītāju klientiem, kuri uztic mums savu ūdeni.",
+      "items": [
+        {
+          "name": "Daina & Mārtiņš",
+          "location": "Garkalnes īpašums",
+          "quote": "Brigāde pabeidza urbumu un telpas mezglus, nebojājot mūsu pieaudzēto dārzu.",
+          "tag": "Urbšana"
+        },
+        {
+          "name": "Jānis V.",
+          "location": "Cēsu īpašums",
+          "quote": "Telemetrija brīdināja pirms sala un komanda vienā vizītē ziemas režīmā sagatavoja sistēmu.",
+          "tag": "Apkope"
+        },
+        {
+          "name": "Ilze Petroviča",
+          "location": "Jūrmalas viesu nams",
+          "quote": "Tehniskā telpa izskatās kā dizaina projekts—pulverkrāsas kolektori un perfekts apgaismojums.",
+          "tag": "Uzstādīšana"
+        },
+        {
+          "name": "Roberts P.",
+          "location": "Ādažu ražotne",
+          "quote": "Urb nokārtoja atļaujas, laboratoriju un dokumentus, lai investori varētu dot zaļo gaismu.",
+          "tag": "Atbilstība"
+        },
+        {
+          "name": "Līga & Andris",
+          "location": "Siguldas nogāze",
+          "quote": "Maršrutu pārvietoja apkārt granītam bez kavējumiem un katru dienu atstāja piezīmes.",
+          "tag": "Lauka komanda"
+        },
+        {
+          "name": "Hotel A13",
+          "location": "Vidzeme piekraste",
+          "quote": "24/7 uzraudzība mūs izglāba svētku brīvdienās, kad spiediens kritās—situāciju atrisināja attālināti.",
+          "tag": "Monitorings"
+        },
+        {
+          "name": "Edgars K.",
+          "location": "Āgenskalna māja",
+          "quote": "Cenas palika spēkā arī pēc filtru papildinājumiem projekta vidū.",
+          "tag": "Cenu politika"
+        },
+        {
+          "name": "Sarmīte",
+          "location": "Rojas novads",
+          "quote": "Dokumenti atnāca ar QR kodiem, griezes datiem un laboratorijas sertifikātiem—iespaidīga disciplīna.",
+          "tag": "QA"
+        },
+        {
+          "name": "Laura A.",
+          "location": "Ogres atpūtas nams",
+          "quote": "Montāžas komanda pasargāja koka grīdas, marķēja katru vārstu un nodeva foto albumu.",
+          "tag": "Apdare"
+        },
+        {
+          "name": "Baltic Cabins",
+          "location": "Latgales kūrorts",
+          "quote": "Tagad barojam trīsdesmit kabīnes ar Urb sistēmu un redzam patēriņu reāllaikā pa blokiem.",
+          "tag": "Mērogošana"
+        }
+      ]
     }
   },
   "Strength": {
@@ -171,6 +358,30 @@
             "Jaunas čaulas un sanitārā blīvēšana bloķē piesārņojumu",
             "Sadalītāji un kolektori sasaista jaunos sūkņus ar iekštelpu tīkliem"
           ]
+        }
+      }
+    },
+    "workflow": {
+      "kicker": "Iepazīstieties ar procesu",
+      "title": "Kā mēs izveidojam jūsu ideālo ūdens avotu",
+      "subtitle": "4 pārdomātos soļos",
+      "summary": "No pirmās vietas apskates līdz gala kvalitātes kontrolei katru etapu uzturam caurskatāmu un ātru.",
+      "steps": {
+        "consultation": {
+          "title": "Konsultācija",
+          "description": "Vietas apskate, hidro piezīmes un piekļuves plānošana tieši jūsu īpašumam."
+        },
+        "planning": {
+          "title": "Plānošana",
+          "description": "Individuāls urbšanas maršruts ar loģistiku, tehnikas izvēli un atļaujām."
+        },
+        "drilling": {
+          "title": "Urbšana",
+          "description": "Mūsdienīgas kāpurķēžu iekārtas izveido tīru urbumu ar minimālu ietekmi uz teritoriju."
+        },
+        "quality": {
+          "title": "Kvalitātes kontrole",
+          "description": "Aprīkojuma nodošana, ūdens paraugi un 24 mēnešu garantijas aktivizācija."
         }
       }
     },
@@ -335,5 +546,838 @@
     "prices": "Cenas",
     "call": "Zvaniet",
     "email": "Rakstiet"
+  },
+  "DrillingPage": {
+    "hero": {
+      "kicker": "Precīza urbšana",
+      "title": {
+        "line1": "Inženierēti urbumi",
+        "line2": "Mūsdienīgai privātai ūdenapgādei"
+      },
+      "summary": "Vienā komandā pieslēdzam topogrāfus, urbšanas tehniku un monitoringu, lai katrs urbums top ātrāk, tīrāk un gatavs automatizācijai.",
+      "detail": "No priežu mežiem līdz akmeņainām smiltīm – mēs kārtojam atļaujas, loģistiku un nodošanu, kamēr jūs redzat progresu kopīgā panelī.",
+      "actions": {
+        "primary": "Pieteikt apsekojumu",
+        "secondary": "Apskatīt procesu"
+      },
+      "badge": {
+        "title": "Divu gadu meistarības garantija",
+        "body": "Materiāli, blīvēšana un pirmā apkope iekļauta"
+      },
+      "gallery": {
+        "rig": "Kāpurtanku rotācijas iekārta",
+        "pit": "Pārtikas klases apvalks",
+        "install": "Sūknis, elektrība, telemetrija"
+      }
+    },
+    "metrics": {
+      "depth": {
+        "value": "310 m",
+        "label": "Dziļākais objekts"
+      },
+      "response": {
+        "value": "<24 h",
+        "label": "Sagatavošana uz vietas"
+      },
+      "clients": {
+        "value": "320+",
+        "label": "Apkalpotie īpašumi"
+      },
+      "warranty": {
+        "value": "2 gadi",
+        "label": "Garantija"
+      }
+    },
+    "features": {
+      "kicker": "Ko pārņemam mēs",
+      "title": "Precizitātes slāņi katrā urbumā",
+      "summary": "Hidroģeoloģija, tīra tehnika un atsaucīgs serviss kopā nodrošina mierīgu ūdens piegādi gadu desmitiem.",
+      "survey": {
+        "title": "Aizraušanās ar izpēti",
+        "body": "Kartējam ūdensnesējus, komunikācijas un kaimiņus pirms tehnika pieskaras zemei.",
+        "bullets": [
+          "Parcela apsekojums ar dziļuma prognozi",
+          "Komunikāciju un servitūtu pārklājumi",
+          "Sezonālo apjomu modelēšana"
+        ]
+      },
+      "hardware": {
+        "title": "Augstākās klases aprīkojums",
+        "body": "Pārtikas plastmasas apvalki, Eiropas sūkņi un nerūsējošas kolektoru līnijas iztur Baltijas ziemas.",
+        "bullets": [
+          "Divkāršā rotācijas iekārta jauktai ģeoloģijai",
+          "Sertificēti polietilēna apvalki",
+          "Filtrācija un telemetrija"
+        ]
+      },
+      "compliance": {
+        "title": "Atbilstības vairogs",
+        "body": "Noformējam atļaujas, laboratorijas paraugus un urbuma žurnālus, lai iestādes apstiprina nekavējoties.",
+        "bullets": [
+          "Pilns juridiskais fails",
+          "Ūdens kvalitātes analīzes",
+          "As-built dokumentācija"
+        ]
+      },
+      "aftercare": {
+        "title": "Pēcapkope iekļauta",
+        "body": "Attālināta uzraudzība, apkopes atgādinājumi un dežūrējošs inženieris 24/7.",
+        "bullets": [
+          "Telemetrijas brīdinājumi",
+          "Sezonālās skalošanas programmas",
+          "Garantijas koordinators"
+        ]
+      }
+    },
+    "process": {
+      "kicker": "Pieci soļi",
+      "title": "Mūsu urbšanas horeogrāfija",
+      "summary": "Katram projektam ir pārskatāms grafiks ar laikiem, brigādēm un kvalitātes kontrolēm.",
+      "steps": {
+        "study": {
+          "title": "Objekta izpēte",
+          "body": "Biroja modelēšana + lauka zondēšana, informējot kaimiņus."
+        },
+        "mobilize": {
+          "title": "Mobilizācija",
+          "body": "Segkonstrukcijas rigam, vides aizsardzība un loģistika pa minūtēm."
+        },
+        "drill": {
+          "title": "Urbšanas logs",
+          "body": "Rotācijas-trieciena metode ar tiešsaistes datiem par dziļumu un griezes momentu."
+        },
+        "seal": {
+          "title": "Blīvēšana un testi",
+          "body": "Apvalks, sanitārā injekcija un vairāku stundu sūkņu tests ar analīzēm."
+        },
+        "handoff": {
+          "title": "Nodošana iekštelpās",
+          "body": "Sūknis, spiediena tvertne un monitors pieslēgts jūsu tehniskajā telpā ar dokumentiem."
+        }
+      }
+    },
+    "gallery": {
+      "kicker": "Lauka telemetrija",
+      "title": "Dati pierāda stabilitāti",
+      "summary": "Pēc katras vizītes nosūtām darba atskaiti, lai redzētu urbuma sniegumu.",
+      "pumps": {
+        "title": "Kalibrēti sūkņi",
+        "value": "640"
+      },
+      "runtime": {
+        "title": "Uptime vidēji",
+        "value": "99,2%"
+      },
+      "seal": {
+        "title": "Sanitārā blīvēšana",
+        "value": "100%"
+      }
+    },
+    "pricing": {
+      "kicker": "Caurspīdīgas cenas",
+      "title": "Divi skaidri finansēšanas modeļi",
+      "summary": "Piedāvājumā iekļauta loģistika, atļaujas un gala aprīkojums. Bez negaidītiem rēķiniem.",
+      "base": {
+        "title": "Bāzes programma",
+        "summary": "Ideāli līdz 30 metriem ar standarta smilšu vai māla slāņiem.",
+        "price": "€2 300",
+        "note": "Iekļauta mobilizācija, pirmā skalošana un dokumenti.",
+        "items": [
+          "Līdz 30 m rotācijas urbšana",
+          "Pārtikas apvalks + blīvēšana",
+          "Sūkņa izvēle un uzstādīšana",
+          "Telemetrijai gatavs elektro tīkls"
+        ]
+      },
+      "beyond": {
+        "title": "Virsm 30 m",
+        "summary": "Prognozējama cena dziļākiem akviferiem vai sarežģītai ģeoloģijai.",
+        "price": "€70 / m",
+        "note": "Maksājums tikai par apstiprinātajiem papildu metriem.",
+        "items": [
+          "Divkāršā rotācijas iekārta",
+          "Papildu apvalki un blīves",
+          "Pagarināti sūkņa testi",
+          "Laboratorijas un loģistikas izmaksas"
+        ]
+      }
+    },
+    "guarantee": {
+      "kicker": "Miers galvā",
+      "title": "Vairāku slāņu garantija",
+      "summary": "Reģistrējam katra komponenta sērijas numuru, servisa laiku un ķīmiju, lai palīdzība būtu acumirklī.",
+      "body": "Ja vajag padomu naktī, inženieris nolasa telemetriju un attālināti vada risinājumu vai izsūta brigādi.",
+      "cta": "Sarunāt ar inženieri"
+    },
+    "faq": {
+      "kicker": "Biežākie jautājumi",
+      "title": "Viss par urbumu",
+      "prep": {
+        "question": "Kā sagatavot objektu?",
+        "answer": "Nodrošiniet 3 m piekļuvi tehnikai un elektropieslēgumu, mēs nepieciešamības gadījumā uzklājam aizsargklājus."
+      },
+      "timeline": {
+        "question": "Kāds ir grafiks?",
+        "answer": "Izpēte un atļaujas 3–5 dienas, urbšana aptuveni nedēļa, nodošana vēl 2–3 dienas atkarībā no reljefa."
+      },
+      "docs": {
+        "question": "Vai sagatavojat dokumentus?",
+        "answer": "Jā, iesniedzam atļaujas, analīzes un urbuma žurnālu, lai pašvaldība nekavējas."
+      },
+      "winter": {
+        "question": "Vai urbjat ziemā?",
+        "answer": "Protams. Apsildāma tehnika, pretapledojuma paklāji un izolēti kolektori notur grafiku arī salā."
+      }
+    }
+  },
+  "MaintenancePage": {
+    "hero": {
+      "kicker": "Plūsmas aizsardzība",
+      "title": {
+        "line1": "Premium aku apkope",
+        "line2": "Nepārtrauktai ūdens plūsmai"
+      },
+      "summary": "Inženieri skalo, dezinficē, kalibrē telemetriju un atjauno mezglus, lai akas strādātu ar investoru līmeņa uzticamību bez ikdienas pieskatīšanas.",
+      "detail": "Grafiki pielāgojas īpašuma noslogojumam, laboratorijas atskaites izpilda ESG mērķus, bet ārkārtas brigāde izbrauc mazāk nekā 4 stundu laikā.",
+      "actions": {
+        "primary": "Pieteikt apkopes auditu",
+        "secondary": "Lejupielādēt aprūpes plānus"
+      },
+      "badge": {
+        "title": "99,2% darbspējas akām mūsu uzraudzībā",
+        "body": "Ārkārtas izbraukums <4 h"
+      },
+      "chips": [
+        "Telemetrijas žurnāli",
+        "Sezonālā sagatavošana",
+        "Laboratoriski apstiprināta ķīmija"
+      ]
+    },
+    "metrics": {
+      "uptime": {
+        "value": "99,2%",
+        "label": "Vidējais darbspējas laiks"
+      },
+      "response": {
+        "value": "<4 h",
+        "label": "Ārkārtas reaģēšana"
+      },
+      "wells": {
+        "value": "870+",
+        "label": "Sistēmas mūsu aprūpē"
+      }
+    },
+    "features": {
+      "kicker": "Ko pārklājam",
+      "title": "Apkope, kas domā četrus soļus uz priekšu",
+      "summary": "Katrs apmeklējums ir pilna sistēmas atiestatīšana - hidraulika, ķīmija, telemetrija un sezonālā drošība vienā vizītē.",
+      "flush": {
+        "title": "Dziļā skalošana un nogulšņu izcelšana",
+        "body": "Divu sūkņu skalošana izņem dzelzi, smiltis un biofilmu, nebojājot apvalku vai pagalmu.",
+        "bullets": [
+          "Pretplūsmas purge izsit smiltis un kaļķi",
+          "Šoka hlorēšana neitralizē biofilmu",
+          "Virsmas sakopšana neatstāj traipus"
+        ]
+      },
+      "diagnostics": {
+        "title": "Sūkņu diagnostika un slodžu balansēšana",
+        "body": "Telemetrija mēra spiedienu, strāvas patēriņu un vibrācijas, lai prognozētu bojājumus nedēļām uz priekšu.",
+        "bullets": [
+          "Termokameras pamana sakarsušus gultņus",
+          "Tiešsaistes strāvas grafiki pielāgo kontrolierus",
+          "Automātiski brīdinājumi nonāk jūsu telefonā"
+        ]
+      },
+      "water": {
+        "title": "Ūdens kvalitātes pārskati",
+        "body": "Mobilās laboratorijas pārbauda dzeramību, mikroelementus un minerālu balansu ar skaidriem ieteikumiem.",
+        "bullets": [
+          "15 parametru ķīmijas skenējums",
+          "Laboratorijas PDF ESG auditam",
+          "Filtru materiāls pielāgots rezultātiem"
+        ]
+      },
+      "seasonal": {
+        "title": "Sezonālā aizsardzība",
+        "body": "Ziemas konservēšana, atsākšana un izolācija pielāgota jūsu kalendāram.",
+        "bullets": [
+          "Glikola skalošana sargā līnijas",
+          "Silto kabeļu un izolācijas pārbaudes",
+          "Pavasara iedarbināšanas instrukcija"
+        ]
+      }
+    },
+    "program": {
+      "kicker": "Aprūpes programma",
+      "title": "Pieci posmi sistēmas atjaunošanai",
+      "summary": "Dokumentēta secība nodrošina caurspīdību īpašniekiem, apsaimniekotājiem un padomēm.",
+      "steps": {
+        "inspect": {
+          "title": "Ierašanās un telemetrijas fiksācija",
+          "body": "Pirms iejaukšanās fiksējam caurplūdi, statisko līmeni un elektrisko slodzi."
+        },
+        "sanitize": {
+          "title": "Skalošana, dezinfekcija un atkaļķošana",
+          "body": "Divu sūkņu skalošana, hlorēšana un nogulšņu izcelšana atjauno hidrauliku."
+        },
+        "upgrade": {
+          "title": "Komponentu nomaiņa uz vietas",
+          "body": "Filtri, blīvējumi, injektori un kontrolieri nāk no servisbusu krājumiem."
+        },
+        "monitor": {
+          "title": "Viedo sensoru sinhronizācija",
+          "body": "Vārti augšupielādē trendus, pārsaka signālus un atjauno īpašnieka piekļuvi."
+        },
+        "report": {
+          "title": "Atskaites vadībai gatavas",
+          "body": "24 stundu laikā saņemat laboratorijas rezultātus, telemetriju un nākamos soļus."
+        }
+      }
+    },
+    "plans": {
+      "kicker": "Izvēlieties fokusu",
+      "title": "Apkopes plāni atbilstoši ūdens lietojumam",
+      "summary": "Izvēlieties sezonālu vai nepārtrauktu aprūpi - abos ietilpst telemetrija, laboratorija un garantēts reakcijas logs.",
+      "seasonal": {
+        "title": "Sezonāls",
+        "summary": "Dziļa sagatavošana pirms un pēc aktīvās sezonas.",
+        "price": "2x / gadā",
+        "note": "Ideāli privātām rezidencēm un atpūtas īpašumiem.",
+        "items": [
+          "Pilna sistēmas diagnostika + spiedienu balanss",
+          "Filtru maiņa un ķīmijas kalibrācija",
+          "Ziemas konservēšana + pavasara iedarbināšana",
+          "Prioritārs ātrās reakcijas logs"
+        ]
+      },
+      "continuous": {
+        "title": "Nepārtraukts",
+        "summary": "Konsjerža monitorings un optimizācija katru mēnesi.",
+        "price": "12x / gadā",
+        "note": "Labākā izvēle kūrortiem, attīstībām un komunālajiem tīkliem.",
+        "items": [
+          "Mēneša mikrodiagnostika un debita regulēšana",
+          "Prediktīva detaļu nomaiņa pirms defektiem",
+          "Ūdens pārvaldības atskaites investoriem",
+          "Dežūrējošs inženieris + ceturkšņa stratēģija"
+        ]
+      }
+    },
+    "care": {
+      "kicker": "Drošības slānis",
+      "title": "Segums, ko var dot tikai sava brigāde",
+      "summary": "Kad esat mūsu sarakstā, specializētas komandas dežūrē ķīmijas incidentiem, telemetrijas novirzēm un investoru jautājumiem.",
+      "note": "Dežūru klienti saņem prioritāru loģistiku, šifrētas atskaites un tiešo saziņu ar plāna autoru.",
+      "cta": "Rezervēt dežūrējošo komandu",
+      "stats": {
+        "coverage": {
+          "value": "24/7",
+          "label": "Tiešsaistes monitorings"
+        },
+        "sla": {
+          "value": "<4 h",
+          "label": "Ierašanās SLA"
+        },
+        "lab": {
+          "value": "ISO 17025",
+          "label": "Laboratorijas akreditācija"
+        }
+      },
+      "cards": {
+        "emergency": {
+          "title": "Ārkārtas skalošana un glābšana",
+          "body": "Kad aka pēkšņi krīt spiedienu vai maina krāsu, nosūtām divsūkņu purge ar norobežojumu.",
+          "bullets": [
+            "Ātra duļķainības un baktēriju pārbaude",
+            "Pagaidu apvads uztur ūdens padevi",
+            "Brigāde ierodas ar iepriekš saskaņotām detaļām"
+          ]
+        },
+        "chemistry": {
+          "title": "Ķīmijas un atbilstības izmeklēšana",
+          "body": "Koordinējam sertificētas laboratorijas, regulatorus un sanācijas soļus, lai ziņojumi būtu mierīgi.",
+          "bullets": [
+            "Paraugu komplekti ar ķēdes uzskaiti",
+            "Cēloņu analīze ar vizualizācijām",
+            "Korektīvo darbību ceļa karte"
+          ]
+        },
+        "monitoring": {
+          "title": "Nepārtraukta telemetrija un automatizācija",
+          "body": "Sensori straumē datus uz mūsu vadības telpu prognozējamai apkopei un attālinātiem labojumiem.",
+          "bullets": [
+            "Šifrēti vārti ar dubulto SIM rezerves kanālu",
+            "AI brīdinājumi pielāgoti jūsu horizontam",
+            "Attālinātas vārstu un sūkņu komandas"
+          ]
+        }
+      }
+    },
+    "faq": {
+      "kicker": "Joprojām jautājumi?",
+      "title": "Apkopes jautājumi, ko dzirdam katru nedēļu",
+      "items": {
+        "eligibility": {
+          "question": "Vai apkalpojat akas, ko neesat būvējuši?",
+          "answer": "Jā. Sākam ar diagnostikas auditu, fiksējam esošos mezglus un pievienojam sistēmu mūsu monitoringa platformai."
+        },
+        "timeline": {
+          "question": "Cik ātri var notikt pirmais apmeklējums?",
+          "answer": "Pēc audita pilnu apkopes vizīti varam ieplānot 5 darba dienu laikā vai ātrāk steidzamām pieslēgšanām."
+        },
+        "lab": {
+          "question": "Vai laboratorijas analīzes ir iekļautas?",
+          "answer": "Katras vizītes cenā ietilpst viens plašs ķīmijas panelis; papildu parametri vai steidzama apstrāde tiek rēķināta pēc laboratorijas cenrāža."
+        },
+        "contract": {
+          "question": "Vai jāslēdz vairāku gadu līgums?",
+          "answer": "Sezonālie plāni darbojas 12 mēnešus, savukārt nepārtrauktā aprūpe pieejama ar 12 vai 24 mēnešu fiksētu cenu."
+        },
+        "downtime": {
+          "question": "Vai apkalpes laikā paliksim bez ūdens?",
+          "answer": "Uzstādam pagaidu apvadus un regulējam sūkņus, lai mājas, viesnīcas vai ražotnes darbotos arī darba laikā."
+        }
+      }
+    }
+  },
+  "InstallationPage": {
+    "hero": {
+      "kicker": "Pilna instalācija",
+      "title": {
+        "line1": "Ūdens piegāde visai mājai",
+        "line2": "izstrādāta kā viena sistēma"
+      },
+      "summary": "Paņemam urbumu, kas jums jau ir (vai ko tikko izurbām), un uzbūvējam klusu, efektīvu iekšējo mezglu viesnīcas līmeņa ūdenim katrā punktā.",
+      "detail": "Elektriķi, tranšeju brigāde, apdares meistari un nodošanas inženieri strādā vienā 5–7 dienu grafikā, lai jums nebūtu jāmin, kurš atbrauks nākamais.",
+      "actions": {
+        "primary": "Ieplānot instalācijas apsekojumu",
+        "secondary": "Skatīt piegādes"
+      },
+      "badge": {
+        "title": "Luksusa tehniskās telpas",
+        "body": "Pulverkrāsoti kolektori, marķētas caurules, sakārtota elektroinstalācija"
+      },
+      "chips": [
+        "Pārtikas plastmasas pieslēgums",
+        "Klusais hidro mezgls",
+        "Viedais monitorings"
+      ],
+      "gallery": {
+        "primary": "Tehniskās telpas nodošana",
+        "trench": "Siltinātas tranšejas un izolācija",
+        "panel": "Vadības panelis un telemetrija"
+      }
+    },
+    "metrics": {
+      "handoff": {
+        "value": "48 h",
+        "label": "Iekštelpu nodošana"
+      },
+      "checks": {
+        "value": "120+",
+        "label": "Kvalitātes pārbaudes"
+      },
+      "crew": {
+        "value": "6 amati",
+        "label": "Speciālisti brigādē"
+      }
+    },
+    "systems": {
+      "kicker": "Piegādātās sistēmas",
+      "title": "Viss starp aku un krānu, uzstādīts eleganti",
+      "summary": "Katrs komplekts ietver atlasītu aprīkojumu, tīru trasi un dokumentāciju, lai īpašnieks saņemtu žurnāla cienīgu tehnisko telpu.",
+      "footer": "Visi materiāli ir pārtikas klase un atbilst ES dzeramā ūdens standartiem.",
+      "cards": {
+        "pump": {
+          "title": "Sūkņa un elektro mezgls",
+          "body": "Pareizi izvēlēts iegremdējamais sūknis, kabeļi un mīkstā starta vadība tieši jūsu slodzēm.",
+          "items": [
+            "Eiropas iegremdējamais sūknis ar nerūsējošu pacēlāju",
+            "Atsevišķs automāts, pārsprieguma aizsardzība un mīkstais starts",
+            "Noslēpti kabelu kanāli ar marķētu vadu"
+          ]
+        },
+        "hydronics": {
+          "title": "Hidro mugurkauls",
+          "body": "Siltināts pievads, rezerves apsildes kabelis un spiedtvertne klusai darbībai.",
+          "items": [
+            "Iepriekš siltināta tranšeja ar apsildes kabeļa iespējām",
+            "Pulverkrāsoti kolektori, spiedtvertne un manometri",
+            "Drenāžas vārsti un paraugu punkti apkopei"
+          ]
+        },
+        "monitoring": {
+          "title": "Monitorings un vadība",
+          "body": "Drošs skapis ar telemetriju, noplūdes sensoriem un attāliem brīdinājumiem, kas pieslēdzas mūsu servisam.",
+          "items": [
+            "IP klases vadības panelis ar skārienekrānu",
+            "Noplūdes, plūsmas un spiediena sensori ar tiešsaistes datiem",
+            "Attālināta programmaparatūras un lietotnes konfigurācija"
+          ]
+        },
+        "finish": {
+          "title": "Iekšējā apdare",
+          "body": "Tehniskās telpas tiek fotografētas, marķētas un atstātas tīrākas nekā sākumā.",
+          "items": [
+            "Pielāgotas montāžas plāksnes un apgaismojums katrai ierīcei",
+            "Cauruļu un vārstu marķējumi latviešu un angļu valodā",
+            "Nodošanas dosjē ar QR kodiem un kontrolsarakstu"
+          ]
+        }
+      }
+    },
+    "playbook": {
+      "kicker": "Nodošanas plāns",
+      "title": "Pieci cieši saplānoti instalācijas etapi",
+      "summary": "Skaidri etapi informē bez īpašuma slēgšanas — lielākā daļa klientu visu laiku paliek uz vietas.",
+      "steps": {
+        "intake": {
+          "title": "Iebraukšana un sagatavošana",
+          "body": "Uzmēram telpu, apstiprinām slodzes, skenējam esošās caurules un iezīmējam tranšeju."
+        },
+        "utility": {
+          "title": "Āra komunikāciju sagatavošana",
+          "body": "Brigāde izrok un siltina pievadus, ieklāj kabeļu caurules un tajā pašā dienā atjauno labiekārtojumu."
+        },
+        "piping": {
+          "title": "Iekšējais hidro mugurkauls",
+          "body": "Spiedtvertne, kolektori, filtri un monitoringa skapis tiek salikti ar klienta apstiprinātiem maketiem."
+        },
+        "commission": {
+          "title": "Iedarbināšana un pārbaudes",
+          "body": "Elektriķi pieslēdz sūkni un vadību, mēs izvadām gaisu, iestādam spiedienus un noregulējam automatiku."
+        },
+        "handoff": {
+          "title": "Nodrošinājums īpašniekam",
+          "body": "Izrunājam katru vārstu, nododam dokumentus un uzņemam profesionālas fotogrāfijas."
+        }
+      }
+    },
+    "showcase": {
+      "kicker": "Pierādījums",
+      "title": "Instalācijas, kas izskatās pēc individuāla dizaina",
+      "summary": "Pašlaik realizēto māju, vasarnīcu un boutique viesnīcu piemēri.",
+      "bullets": [
+        "Kabeļi paslēpti pulverkrāsotos kanālos.",
+        "Siltinātas tranšejas aizbērtas un apzaļumotas tajā pašā dienā.",
+        "Vadības skapji marķēti, nofotografēti un pievienoti īpašnieka portālam."
+      ],
+      "stats": {
+        "finish": {
+          "value": "48 h",
+          "label": "Iekštelpu pabeigšanas logs"
+        },
+        "crew": {
+          "value": "6 meist.",
+          "label": "Meistari uz vietas dienā"
+        },
+        "callouts": {
+          "value": "<1%",
+          "label": "Pēc nodošanas izsaukumi"
+        }
+      },
+      "gallery": {
+        "utility": {
+          "title": "Tehniskās telpas scenogrāfija",
+          "caption": "Spiedtvertne, filtri un kolektori rindojas uz akustiskām sienām."
+        },
+        "trench": {
+          "title": "Saudzīga tranšeja",
+          "caption": "Siltinātas caurules, apsilde un brīdinājuma lente pirms aizbēršanas."
+        },
+        "panel": {
+          "title": "Viedais vadības skapis",
+          "caption": "Drošs skapis ar telemetriju, trauksmēm un attālinātu piekļuvi."
+        }
+      }
+    },
+    "assurance": {
+      "kicker": "Drošības slānis",
+      "title": "Paliekam uz zvana ilgi pēc pēdējās skrūves",
+      "summary": "Dokumentācija, monitorings un brigādes gatavība uzreiz pāriet prognozējamā ekspluatācijā.",
+      "cta": "Pieteikt nodošanas brigādi",
+      "note": "Iekļauta pirmā gada monitoringa sinhronizācija un prioritārs izsaukums.",
+      "stats": {
+        "warranty": {
+          "value": "24 mēn.",
+          "label": "Instalācijas garantija"
+        },
+        "response": {
+          "value": "<4 h",
+          "label": "Prioritātes reakcija"
+        },
+        "inspections": {
+          "value": "3 vizītes",
+          "label": "Pēcnodošanas apskates"
+        }
+      },
+      "pillars": {
+        "monitoring": {
+          "title": "Pastāvīgs monitorings",
+          "body": "Sensori no pirmās dienas sūta datus mūsu kontroles telpai, tāpēc anomālijas uzzinām mēs, nevis jūs.",
+          "bullets": [
+            "Telemetrijas vārteja nokonfigurēta un pārbaudīta",
+            "Noplūdes un spiediena trauksmes tiek sūtītas īpašniekiem",
+            "Attālināti programmaparatūras atjauninājumi"
+          ]
+        },
+        "quality": {
+          "title": "Dokumentēta kvalitāte",
+          "body": "Fiksējam pievilkšanas momentus, fotogrāfijas un seriālos numurus, lai jebkura nākamā apkope būtu informēta.",
+          "bullets": [
+            "Foto albums un QR marķējumi",
+            "Seriālu reģistrs katrai ierīcei",
+            "Izbūves shēmas un tranšeju dziļumi"
+          ]
+        },
+        "support": {
+          "title": "Premium atbalsts",
+          "body": "Tieša līnija ar inženieri, kurš vadīja instalāciju, plus concierge grafiks.",
+          "bullets": [
+            "Prioritārs kalendārs sezonas darbiem",
+            "Vizīte pirms sezonas pīķa",
+            "Īpašnieka apmācības atkārtojums pēc pieprasījuma"
+          ]
+        }
+      }
+    },
+    "faq": {
+      "kicker": "Vēl jautājumi?",
+      "title": "Atbildes, ko stāstām katru dienu",
+      "items": {
+        "prep": {
+          "question": "Kas nepieciešams pirms darbu sākuma?",
+          "answer": "Atbrīvojiet 1 m platu ceļu uz tehnisko telpu, atsūtiet sadales skapja foto un iezīmējiet saudzējamas zonas dārzā."
+        },
+        "timeline": {
+          "question": "Vai paliksim bez ūdens instalācijas laikā?",
+          "answer": "Pārtraukums nepārsniedz 2 stundas — pagaidu tvertnes uztur virtuves un vannas darbībā."
+        },
+        "power": {
+          "question": "Vai varat strādāt ar ierobežotu elektrību?",
+          "answer": "Jā, atvedam pagaidu sadali un pēc vajadzības pieslēdzam ģeneratoru, ja panelim pietrūkst jaudas."
+        },
+        "finishes": {
+          "question": "Kas sakārto galīgo apdari un uzkopšanu?",
+          "answer": "Mūsu komanda pārkrāso pieskārienu vietas, uzstāda plauktus un atstāj telpu fotogrāfijām gatavu."
+        }
+      }
+    }
+  },
+  "PricesPage": {
+    "bannerTitle": "Caurspīdīgas cenas, bez pārsteigumiem",
+    "services": {
+      "drilling": {
+        "title": "Precīza urbšanas programma"
+      },
+      "maintenance": {
+        "title": "Aprūpes plāns"
+      },
+      "installation": {
+        "title": "Pilna instalācija"
+      }
+    },
+    "hero": {
+      "kicker": "Cenu un budžeta plānošana",
+      "title": {
+        "line1": "Investīciju vērtas ūdens sistēmas",
+        "line2": "ar prognozējamām izmaksām"
+      },
+      "summary": "Katrs piedāvājums ir ar detalizētu tāmi – tehnikas mobilizācija, iekšējā furnitūra un nodošanas atbalsts tiek dokumentēts pirms darba sākuma.",
+      "note": "Vajag finansējumu vai darbu sadalījumu pa posmiem? Cenu fiksējam uz 60 dienām, kamēr kārtojas dokumenti.",
+      "actions": {
+        "primary": "Pieteikt cenu konsultāciju",
+        "secondary": "Lejupielādēt cenu lapu"
+      },
+      "badge": {
+        "title": "Gatavs dokumentiem",
+        "body": "Detalizēts BOQ + Ganta grafiks 24 h laikā"
+      },
+      "metrics": {
+        "packages": {
+          "value": "€2 300",
+          "label": "Pamata urbšanas programma"
+        },
+        "timeline": {
+          "value": "17 dienas",
+          "label": "Vidējais termiņš"
+        },
+        "savings": {
+          "value": "11%",
+          "label": "Ietaupījums pret cisternām"
+        }
+      }
+    },
+    "matrix": {
+      "kicker": "Caurspīdīgi komplekti",
+      "title": "Trīs programmas bez slēptām pozīcijām",
+      "summary": "Izvēlies projektu, kas atbilst mērķim. Katrs komplekts ietver dokumentus, garantiju un koordināciju.",
+      "tiers": {
+        "drilling": {
+          "title": "Precīza urbšana",
+          "summary": "Mobilizācija, urbums, pārtikas klases apvalks un vairāku stundu testēšana.",
+          "price": "€2 300",
+          "timeline": "10-14 dienas",
+          "bullets": [
+            "Dziļums līdz 30 m iekļauts",
+            "Atļaujas un laboratorijas paraugi",
+            "Telemetrijai gatava elektroinstalācija"
+          ]
+        },
+        "installation": {
+          "title": "Pilna instalācija",
+          "summary": "Sūknis, siltināta tranšeja, iekšējie kolektori un viedā uzraudzība.",
+          "price": "no €4 200",
+          "timeline": "5-7 dienas",
+          "bullets": [
+            "Pulverkrāsota tehniskā siena",
+            "Siltumtrase + izolācija",
+            "Īpašnieka apmācība un dosjē"
+          ]
+        },
+        "maintenance": {
+          "title": "Konciērža aprūpe",
+          "summary": "Sezonālā skalošana, ķīmija, telemetrija un neatliekamais serviss.",
+          "price": "no €900 / vizīte",
+          "timeline": "4-6 stundas",
+          "bullets": [
+            "ISO laboratorijas atskaites",
+            "Telemetrijas uzraudzība",
+            "<4 h ātra reaģēšana"
+          ]
+        }
+      }
+    },
+    "calculator": {
+      "kicker": "Aprēķinu rīks",
+      "title": "Modelejiet projektu sekundēs",
+      "summary": "Mainiet dziļumu, apjomu un reģionu, lai saņemtu dzīvu aprēķinu ar loģistiku, dokumentiem un pabeigšanu.",
+      "depthLabel": "Iestatiet urbuma dziļumu (min 30 m)",
+      "serviceLabel": "Izvēlieties pakalpojumu",
+      "addOnsLabel": "Izvēlieties papildpakalpojumus",
+      "addOnsHint": "Pievienojiet nostiprināšanu, skalošanu, filtra uzstādīšanu vai sagatavošanas darbus.",
+      "addOnsEmpty": "Papildpakalpojumi nav izvēlēti",
+      "locationLabel": "Reģions",
+      "locationHint": "Sedz brigādes ceļu, prāmjus un nakšņošanu.",
+      "locationIncluded": "Iekļauts",
+      "button": "Fiksēt aprēķinu",
+      "resultLabel": "Prognozētā investīcija",
+      "resultSummary": "Darbi pie {depth} m {location} reģionam, gatavi atļauju saskaņojumam.",
+      "footnote": "Aprēķins spēkā 60 dienas. PVN pievieno pēc nepieciešamības.",
+      "breakdown": {
+        "base": "Pamata pakete: {amount}",
+        "variable": "Dziļuma piemaksa: {amount}",
+        "addOns": "Papildpakalpojumi: {amount}",
+        "location": "Reģiona loģistika: {amount}"
+      },
+      "services": {
+        "drilling": {
+          "label": "Urbšana",
+          "helper": "Atļaujas, urbums un sūkņa tests"
+        },
+        "installation": {
+          "label": "Instalācija",
+          "helper": "Sūknis, caurules un kolektori"
+        },
+        "maintenance": {
+          "label": "Apkope",
+          "helper": "Sezonālā skalošana + monitorings"
+        }
+      },
+      "addOns": {
+        "casing": {
+          "label": "Urbuma nostiprināšana",
+          "helper": "Papildu apvalki un blīvējums sienu stabilitātei"
+        },
+        "flush": {
+          "label": "Urbuma skalošana",
+          "helper": "Intensīva caurplūde, kas izņem nogulsnes pirms mezglu montāžas"
+        },
+        "filter": {
+          "label": "Filtra uzstādīšana",
+          "helper": "Filtrācijas mezgls pielāgots jūsu ūdens ķīmijai"
+        },
+        "prep": {
+          "label": "Sagatavošanas darbi",
+          "helper": "Tranšejas, piekļuves ceļi un segumu aizsardzība pirms brigādes"
+        }
+      },
+      "locations": {
+        "riga": "Rīga un Pierīga",
+        "vidzeme": "Vidzeme",
+        "zemgale": "Zemgale",
+        "kurzeme": "Kurzeme",
+        "latgale": "Latgale"
+      }
+    },
+    "loyalty": {
+      "kicker": "Lojalitātes programma",
+      "title": "Pastāvīgie klienti saņem konciērža ekonomiku",
+      "summary": "Apvienojiet instalāciju un aprūpi, lai iegūtu ātrāku reaģēšanu, fiksētas likmes un projekta arhīvu.",
+      "perks": [
+        "Cenu fiksācija uz 60 dienām",
+        "Šifrēts īpašnieka portāls",
+        "Tieša inženiera līnija"
+      ],
+      "stats": {
+        "sites": {
+          "value": "320+",
+          "label": "Objekti programmā"
+        },
+        "response": {
+          "value": "<4 h",
+          "label": "Prioritārais serviss"
+        },
+        "savings": {
+          "value": "12%",
+          "label": "Vidējais ietaupījums"
+        }
+      },
+      "tiers": {
+        "standard": {
+          "title": "Standarta abonements",
+          "summary": "Piemērots muižām un mazām viesnīcām sezonālai sagatavošanai.",
+          "price": "€190 / mēn",
+          "bullets": [
+            "2 dziļās apkopes gadā",
+            "Vieglā telemetrijas uzraudzība",
+            "Ķīmijas atskaites ESG vajadzībām"
+          ]
+        },
+        "priority": {
+          "title": "Prioritārais abonements",
+          "summary": "Kūrortiem un attīstītājiem, kam vajag proaktīvu monitoringu.",
+          "price": "€420 / mēn",
+          "bullets": [
+            "Mēneša mikrodignostika",
+            "24/7 kontroles telpas trauksmes",
+            "Dedikēts inženieris uz zvana"
+          ]
+        }
+      }
+    },
+    "faq": {
+      "kicker": "Budžeta skaidrība",
+      "title": "Jautājumi par cenām, ko dzirdam katru dienu",
+      "items": {
+        "deposit": {
+          "question": "Vai nepieciešama iemaksa?",
+          "answer": "Jā, 30% rezervē brigādi un materiālus. Pārējais tiek maksāts pēc posmu nodošanas."
+        },
+        "scope": {
+          "question": "Vai var kombinēt darbus?",
+          "answer": "Protams. Urbšanu, instalāciju un servisu var sadalīt – tāme paliek modulāra."
+        },
+        "changes": {
+          "question": "Kā ietekmē cenu izmaiņas?",
+          "answer": "Portālā izsniedzam izmaiņu aktu ar jaunu grafiku un izmaksu starpību pirms darba turpināšanas."
+        },
+        "financing": {
+          "question": "Vai palīdzat ar finansējumu?",
+          "answer": "Jā, sadarbojamies ar Baltijas finansētājiem – saņemam jūsu datus un 48 h laikā sagatavojam dokumentus."
+        }
+      }
+    }
   }
 }

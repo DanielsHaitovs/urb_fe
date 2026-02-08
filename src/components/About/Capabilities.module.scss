@@ -1,0 +1,79 @@
+@use "@/styles/variables.module.scss" as tokens;
+
+.section {
+  margin-top: clamp(32px, 6vw, 100px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.kicker {
+  @include tokens.kicker;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+.header p {
+  margin: 0;
+  color: rgba(215, 228, 247, 0.9);
+  max-width: 720px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  position: relative;
+  border-radius: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 24px;
+  background: rgba(5, 10, 28, 0.85);
+  overflow: hidden;
+}
+
+.cardGlow {
+  position: absolute;
+  inset: 20% 10% auto;
+  height: 160px;
+  background: radial-gradient(circle, rgba(255, 168, 212, 0.4), transparent 60%);
+  filter: blur(30px);
+  pointer-events: none;
+}
+
+.card h3 {
+  position: relative;
+  margin: 0 0 8px;
+  font-size: 1.4rem;
+}
+
+.card p {
+  position: relative;
+  margin: 0 0 12px;
+  color: rgba(210, 223, 244, 0.9);
+}
+
+.card ul {
+  position: relative;
+  margin: 0;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: rgba(232, 240, 255, 0.95);
+}
+
+.card li::marker {
+  color: #67e3ff;
+}

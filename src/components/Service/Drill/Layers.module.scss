@@ -1,0 +1,84 @@
+@use "@/styles/variables.module.scss" as tokens;
+
+.main {
+  @include tokens.main;
+}
+
+.content {
+  @include tokens.content;
+}
+
+.kicker {
+  @include tokens.kicker;
+}
+
+.title {
+  @include tokens.title;
+  word-break: break-all;
+}
+
+.featureGrid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 12px;
+    position: relative;
+}
+
+.featureCard {
+    padding: 24px;
+    position: relative;
+    border-radius: 32px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    word-break: break-word;
+    width: 100%;
+}
+
+.featureIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  display: grid;
+  place-items: center;
+}
+
+.featureCard h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.featureCard ul {
+  margin: 0;
+  padding-left: 18px;
+  color: rgba(228, 237, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+@media (min-width: 768px) {
+    .featureCard {
+        width: calc(50% - 57px);
+    }
+}
+
+@keyframes floatFade {
+  0% {
+    transform: translateY(0px);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-8px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 0.8;
+  }
+}

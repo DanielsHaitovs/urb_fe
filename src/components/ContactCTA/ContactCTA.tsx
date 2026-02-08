@@ -3,9 +3,15 @@
 import type { ChangeEvent, FormEventHandler } from "react";
 import { useCallback, useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
+import { useRouter } from "next/navigation";
 import { CalendarClock, Mail, Phone, X } from "lucide-react";
-import styles from "./ContactCTA.module.scss";
-import { CONTACT_EMAIL, CONTACT_PHONE_DISPLAY } from "@/lib/contactDetails";
+import styles from "@/components/ContactCTA/ContactCTA.module.scss";
+import {
+  CONTACT_EMAIL,
+  CONTACT_PHONE_DISPLAY,
+  CONTACT_PHONE_HREF,
+  CONTACT_SCHEDULE_LINK,
+} from "@/lib/contactDetails";
 import { ScreenType } from "@/types/deviceType";
 
 const actionIcons = {
@@ -31,10 +37,12 @@ type Props = {
 
 export default function ContactCTA({ screen }: Props) {
   const t = useTranslations("ContactCTA");
+  const router = useRouter();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [formData, setFormData] = useState<FormState>({ ...defaultFormState });
   const [errors, setErrors] = useState<Partial<Record<FormField, string>>>({});
   const [status, setStatus] = useState<"idle" | "success">("idle");
+  const isDesktop = screen === "desktop";
 
   const resetForm = useCallback(() => {
     setFormData({ ...defaultFormState });
@@ -120,6 +128,28 @@ export default function ContactCTA({ screen }: Props) {
 
   const getErrorId = (field: FormField) => (errors[field] ? `contact-${field}-error` : undefined);
 
+  const handleActionClick = (actionId: ActionId) => {
+    if (actionId === "mail") {
+      openModal();
+      return;
+    }
+
+    if (actionId === "call") {
+      if (isDesktop) {
+        router.push(CONTACT_SCHEDULE_LINK);
+      } else {
+        if (typeof window !== "undefined") {
+          window.location.href = CONTACT_PHONE_HREF;
+        }
+      }
+      return;
+    }
+
+    if (actionId === "schedule") {
+      router.push(CONTACT_SCHEDULE_LINK);
+    }
+  };
+
   const actions: Array<{
     id: ActionId;
     aria: string;
@@ -159,7 +189,7 @@ export default function ContactCTA({ screen }: Props) {
                 type="button"
                 className={styles.action}
                 aria-label={aria}
-                onClick={openModal}
+                onClick={() => handleActionClick(id)}
               >
                 <div className={styles.iconWrap}>
                   <Icon size={22} aria-hidden="true" />

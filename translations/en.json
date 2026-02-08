@@ -11,22 +11,227 @@
     "cleanWater": "Clean Water"
   },
   "AboutPage": {
-    "kicker": "About Urb",
-    "title": "Engineering immersive urban journeys",
-    "summary": "We blend architecture, responsive media, and civic technology to transform streets into playful destinations.",
-    "highlights": {
-      "mission": {
-        "title": "Mission first",
-        "body": "Design adaptive infrastructure that invites neighbors to explore their city differently."
+    "bannerTitle": "Meet the team engineering your water future",
+    "hero": {
+      "kicker": "Water engineering studio",
+      "title": {
+        "line1": "Million-euro rigor",
+        "line2": "applied to private wells"
       },
-      "team": {
-        "title": "Interdisciplinary team",
-        "body": "Architects, artists, and engineers prototype together to keep experiences human."
+      "summary": "Hydro-geologists, field crews, and industrial designers move as one squad so complex parcels feel effortless for owners.",
+      "detail": "From remote cabins to resort-scale developments we bring the same instrumentation, transparent reporting, and concierge support.",
+      "actions": {
+        "primary": "Meet the leadership",
+        "secondary": "See delivery playbooks"
       },
-      "impact": {
-        "title": "Measured impact",
-        "body": "Installations already activate plazas across twelve cities worldwide."
+      "stats": {
+        "projects": {
+          "value": "320+",
+          "label": "commissioned systems",
+          "helper": "Telemetry logs plus lab certificates on file"
+        },
+        "crews": {
+          "value": "6 trades",
+          "label": "disciplines per site",
+          "helper": "Drilling, trenching, electricians, finishers, QA, service"
+        },
+        "uptime": {
+          "value": "99.2%",
+          "label": "average uptime",
+          "helper": "Care plans monitored 24/7 with live alerts"
+        }
       }
+    },
+    "credibility": {
+      "kicker": "Trusted partner",
+      "title": "Water well drilling experts",
+      "summary": "We are a specialist well drilling company offering tailor-made solutions to private homeowners throughout Latvia.",
+      "commitment": "We guarantee transparent pricing and long-term service for every activation. If geology blocks the install, you will not be charged.",
+      "bullets": [
+        "Compact rigs keep neighbors and landscaping protected.",
+        "Permits, telemetry, and documentation are handled in-house.",
+        "No hidden costs or surprise change orders mid-project."
+      ],
+      "certificatesTitle": "Certificates & accreditations",
+      "certificates": [
+        "ISO 9001 quality system",
+        "ISO 14001 environmental management",
+        "ISO 45001 safety management",
+        "Latvian drilling license LV-254",
+        "State accredited LATMET water lab partner",
+        "Baltic sustainable construction charter signatory"
+      ],
+      "factsTitle": "Facts about Urb",
+      "facts": [
+        {
+          "value": "200+",
+          "label": "projects delivered across Latvia",
+          "body": "Successful boreholes in every region with zero unresolved warranty claims."
+        },
+        {
+          "value": "50 km",
+          "label": "total borehole depth",
+          "body": "Demonstrates the breadth of our crews and equipment fleet."
+        },
+        {
+          "value": "2 years",
+          "label": "comprehensive warranty",
+          "body": "Every package includes documented maintenance and dedicated support."
+        }
+      ]
+    },
+    "capabilities": {
+      "kicker": "Field leadership",
+      "title": "Capabilities that cover the entire water journey",
+      "summary": "Engineers, craftsmen, and data specialists build a single accountable team so you always know who is on site and why.",
+      "cards": [
+        {
+          "title": "Hydro design studio",
+          "body": "Surveyors, GIS analysts, and permitting leads script the job before a rig touches the parcel.",
+          "bullets": [
+            "Parcel scans with depth prognosis and risk overlays",
+            "Permit packs approved in under 72 hours on average",
+            "Neighbors notified with clear logistics windows"
+          ]
+        },
+        {
+          "title": "Turnkey installation lab",
+          "body": "Mechanical, electrical, and finish trades coordinate to deliver magazine-ready utility rooms.",
+          "bullets": [
+            "Powder-coated manifolds and labeled piping",
+            "Insulated trenches restored the same day",
+            "Smart monitoring racks commissioned on-site"
+          ]
+        },
+        {
+          "title": "Lifetime operations desk",
+          "body": "Care teams watch telemetry, run chemistry, and dispatch service before owners notice issues.",
+          "bullets": [
+            "24/7 monitoring with predictive alerts",
+            "Mobile labs for iron, hardness, and bacteria checks",
+            "Guaranteed response windows under four hours"
+          ]
+        }
+      ]
+    },
+    "timeline": {
+      "kicker": "Milestones",
+      "title": "A decade of obsessive upgrades",
+      "summary": "Every phase added a new discipline so we could own more of the outcome for our clients.",
+      "steps": [
+        {
+          "year": "2010",
+          "title": "Family rig and telemetry pilots",
+          "body": "We launched with a single dual-rotary rig and began logging depth, torque, and flow data for every borehole.",
+          "metrics": [
+            {
+              "value": "12",
+              "label": "pilot wells per year"
+            },
+            {
+              "value": "0",
+              "label": "missed post-drill inspections"
+            }
+          ]
+        },
+        {
+          "year": "2016",
+          "title": "Full-stack installation crews",
+          "body": "Electricians, trench crews, and finish carpenters joined so clients had one accountable team.",
+          "metrics": [
+            {
+              "value": "5-7 days",
+              "label": "average install window"
+            },
+            {
+              "value": "15%",
+              "label": "schedule gains via prefab manifolds"
+            }
+          ]
+        },
+        {
+          "year": "2023",
+          "title": "Predictive care program",
+          "body": "We connected every system to a control room, pairing telemetry with lab chemistry for proactive service.",
+          "metrics": [
+            {
+              "value": "99.2%",
+              "label": "uptime across maintained sites"
+            },
+            {
+              "value": "<4 h",
+              "label": "guaranteed emergency dispatch"
+            }
+          ]
+        }
+      ]
+    },
+    "testimonials": {
+      "kicker": "Customer reviews",
+      "title": "Owners who rely on Urb every week",
+      "summary": "Ten recent notes from homeowners, resorts, and developers who trust us with their water.",
+      "items": [
+        {
+          "name": "Daina & Mārtiņš",
+          "location": "Garkalne parcel",
+          "quote": "Crew finished the borehole and interior stack without tearing up our mature garden.",
+          "tag": "Drilling"
+        },
+        {
+          "name": "Jānis V.",
+          "location": "Cēsis estate",
+          "quote": "Telemetry alerts pinged me before frost season and the team winterized in one visit.",
+          "tag": "Care"
+        },
+        {
+          "name": "Ilze Petrovica",
+          "location": "Jūrmala guesthouse",
+          "quote": "Luxury utility room actually looks designed—powder-coated manifolds and perfect lighting.",
+          "tag": "Installation"
+        },
+        {
+          "name": "Roberts P.",
+          "location": "Ādaži production site",
+          "quote": "Urb handled permits, lab work, and documentation so investors could green-light the expansion.",
+          "tag": "Compliance"
+        },
+        {
+          "name": "Līga & Andris",
+          "location": "Sigulda hillside",
+          "quote": "They rerouted around granite without delays and left us with daily progress notes.",
+          "tag": "Field crew"
+        },
+        {
+          "name": "Hotel A13",
+          "location": "Vidzeme coast",
+          "quote": "24/7 monitoring saved us during a holiday weekend when pressure dipped—issue solved remotely.",
+          "tag": "Monitoring"
+        },
+        {
+          "name": "Edgars K.",
+          "location": "Āgenskalns townhouse",
+          "quote": "Transparent pricing held even after we added filtration upgrades mid-way.",
+          "tag": "Pricing"
+        },
+        {
+          "name": "Sarmīte",
+          "location": "Rojas novads",
+          "quote": "Documentation arrived with QR codes, torque specs, and lab certificates—impressive discipline.",
+          "tag": "QA"
+        },
+        {
+          "name": "Laura A.",
+          "location": "Ogre retreat",
+          "quote": "Installation team protected timber floors, labeled every valve, and handed us a photo book.",
+          "tag": "Finishing"
+        },
+        {
+          "name": "Baltic Cabins",
+          "location": "Latgale resort",
+          "quote": "We now run thirty cabins off Urb’s system and see real-time consumption per block.",
+          "tag": "Scaling"
+        }
+      ]
     }
   },
   "Strength": {
@@ -171,6 +376,30 @@
             "Sleeving and sanitary sealing stop surface intrusion",
             "Tie-in manifolds integrate with interior plumbing"
           ]
+        }
+      }
+    },
+    "workflow": {
+      "kicker": "Meet our process",
+      "title": "How we build your ideal water source",
+      "subtitle": "in four precise steps",
+      "summary": "From the first parcel walk to final quality checks, every phase stays transparent, fast, and documented.",
+      "steps": {
+        "consultation": {
+          "title": "Consultation",
+          "description": "On-site inspection, hydro notes, and access prep tuned to your parcel."
+        },
+        "planning": {
+          "title": "Planning",
+          "description": "Individual drilling blueprint with rig selection, logistics, and permitting."
+        },
+        "drilling": {
+          "title": "Drilling",
+          "description": "Compact, low-impact rigs deliver clean boreholes and tidy surfaces."
+        },
+        "quality": {
+          "title": "Quality control",
+          "description": "Equipment commissioning, sampling, and activation of the 24-month guarantee."
         }
       }
     },
@@ -335,5 +564,838 @@
     "prices": "Prices",
     "call": "Call us",
     "email": "Email us"
+  },
+  "DrillingPage": {
+    "hero": {
+      "kicker": "Precision drilling",
+      "title": {
+        "line1": "Engineered boreholes",
+        "line2": "For modern private water"
+      },
+      "summary": "We mobilize surveyors, rigs, and monitoring tech as one squad so every borehole arrives faster, cleaner, and ready for long-term automation.",
+      "detail": "From pine forests to rocky clay, we orchestrate permits, logistics, and finishing touches while you follow progress in a single shared dashboard.",
+      "actions": {
+        "primary": "Book a site inspection",
+        "secondary": "See the full process"
+      },
+      "badge": {
+        "title": "Two-year craftsmanship guarantee",
+        "body": "Materials, sealing, and first service included"
+      },
+      "gallery": {
+        "rig": "Tracked rotary rig",
+        "pit": "Food-grade casing",
+        "install": "Pump, power, telemetry"
+      }
+    },
+    "metrics": {
+      "depth": {
+        "value": "310 m",
+        "label": "Deepest commissioned"
+      },
+      "response": {
+        "value": "<24 h",
+        "label": "Site readiness"
+      },
+      "clients": {
+        "value": "320+",
+        "label": "Owners served"
+      },
+      "warranty": {
+        "value": "2 years",
+        "label": "Warranty and support"
+      }
+    },
+    "features": {
+      "kicker": "What we handle",
+      "title": "Layers of precision in every borehole",
+      "summary": "Hydro-geologic science, clean hardware, and responsive care stack together so your private water stays calm for decades.",
+      "survey": {
+        "title": "Survey obsessed",
+        "body": "We map aquifers, heritage lines, and neighbors before a single track touches your soil.",
+        "bullets": [
+          "Parcel walk-through with depth prognosis",
+          "Utility + easement overlays",
+          "Seasonal volume modeling"
+        ]
+      },
+      "hardware": {
+        "title": "Tier-one hardware",
+        "body": "Food-grade casing, European pumps, and stainless manifolds endure Baltic winters.",
+        "bullets": [
+          "Dual-rotary rig for mixed geology",
+          "Certified polyethylene casing",
+          "In-line filtration and telemetry"
+        ]
+      },
+      "compliance": {
+        "title": "Compliance shield",
+        "body": "We file permits, lab samples, and bore logs so regulators sign off instantly.",
+        "bullets": [
+          "Full legal dossier",
+          "Water quality lab set",
+          "As-built documentation"
+        ]
+      },
+      "aftercare": {
+        "title": "Aftercare built-in",
+        "body": "Remote monitoring, maintenance reminders, and hotline support sit on standby 24/7.",
+        "bullets": [
+          "Telemetry alerts",
+          "Seasonal flush packages",
+          "Warranty concierge"
+        ]
+      }
+    },
+    "process": {
+      "kicker": "Five precise moves",
+      "title": "Our drilling choreography",
+      "summary": "Every project gets a transparent plan with timestamps, crew assignments, and quality gates.",
+      "steps": {
+        "study": {
+          "title": "Site study",
+          "body": "Desktop hydro model plus on-site soil probing with neighbors notified."
+        },
+        "mobilize": {
+          "title": "Mobilization",
+          "body": "Rig pads, environmental protection, and logistics booked down to the minute."
+        },
+        "drill": {
+          "title": "Drilling window",
+          "body": "Rotary-percussion boring with live telemetry on depth, torque, and aquifer response."
+        },
+        "seal": {
+          "title": "Sealing + testing",
+          "body": "Food-grade casing, sanitary grout, and multi-hour pump tests with lab samples."
+        },
+        "handoff": {
+          "title": "Interior handoff",
+          "body": "Pump, pressure stack, and smart monitor tied into your utility room with documentation."
+        }
+      }
+    },
+    "gallery": {
+      "kicker": "Field telemetry",
+      "title": "Live data proves the difference",
+      "summary": "Our crews export runtime summaries after every visit so you know exactly how the well performs.",
+      "pumps": {
+        "title": "Pumps calibrated",
+        "value": "640"
+      },
+      "runtime": {
+        "title": "Average uptime",
+        "value": "99.2%"
+      },
+      "seal": {
+        "title": "Sanitary seals",
+        "value": "100%"
+      }
+    },
+    "pricing": {
+      "kicker": "Transparent pricing",
+      "title": "Two clear ways to fund your borehole",
+      "summary": "Every quote includes logistics, permitting, and finishing hardware. No surprise invoices mid-dig.",
+      "base": {
+        "title": "Base program",
+        "summary": "Ideal for parcels up to 30 meters with standard sand or clay layers.",
+        "price": "€2 300",
+        "note": "Includes mobility, first flush, and documentation.",
+        "items": [
+          "Up to 30 m rotary drilling",
+          "Food-grade casing + grout",
+          "Pump sizing + install",
+          "Telemetry-ready wiring"
+        ]
+      },
+      "beyond": {
+        "title": "Beyond 30 m",
+        "summary": "Add predictable pricing for deeper aquifers or complex geology.",
+        "price": "€70 / m",
+        "note": "Billed only for verified meters beyond the base depth.",
+        "items": [
+          "Dual-rotary rig upgrade",
+          "Additional casing + sealing",
+          "Extended pump testing",
+          "Lab reporting + logistics"
+        ]
+      }
+    },
+    "guarantee": {
+      "kicker": "Peace of mind",
+      "title": "Multi-layer warranty and support",
+      "summary": "We track every component’s serial number, service timestamp, and chemical exposure so support is instant.",
+      "body": "Need reassurance at 2 AM? An engineer reads your telemetry and guides the fix remotely or dispatches a crew.",
+      "cta": "Talk with engineering"
+    },
+    "faq": {
+      "kicker": "Questions",
+      "title": "Borehole basics answered",
+      "prep": {
+        "question": "How do I prepare the parcel?",
+        "answer": "Clear a 3 m path for the rig, share power access, and we install temporary ground protection if needed."
+      },
+      "timeline": {
+        "question": "What is the project timeline?",
+        "answer": "Survey + permits take 3-5 days, drilling averages one week, and finishing another 2-3 days depending on terrain."
+      },
+      "docs": {
+        "question": "Do you handle documentation?",
+        "answer": "Yes, we submit permit packs, lab samples, and final bore logs so municipalities can archive the project instantly."
+      },
+      "winter": {
+        "question": "Can you drill in winter?",
+        "answer": "Absolutely. Heated rigs, frost mats, and insulated manifolds keep the schedule moving even below zero."
+      }
+    }
+  },
+  "MaintenancePage": {
+    "hero": {
+      "kicker": "Flow protection",
+      "title": {
+        "line1": "White-glove maintenance",
+        "line2": "For relentless water uptime"
+      },
+      "summary": "Engineers flush, sanitize, tune telemetry, and upgrade components so your wells deliver investor-grade reliability without babysitting.",
+      "detail": "Concierge scheduling adapts to occupancy, lab reporting satisfies ESG goals, and emergency crews mobilize in under four hours.",
+      "actions": {
+        "primary": "Book a maintenance audit",
+        "secondary": "Download care plans"
+      },
+      "badge": {
+        "title": "99.2% uptime across serviced wells",
+        "body": "Emergency dispatch under 4 hours"
+      },
+      "chips": [
+        "Telemetry logs",
+        "Seasonalization",
+        "Lab-certified chemistry"
+      ]
+    },
+    "metrics": {
+      "uptime": {
+        "value": "99.2%",
+        "label": "Average uptime"
+      },
+      "response": {
+        "value": "<4 h",
+        "label": "Emergency response"
+      },
+      "wells": {
+        "value": "870+",
+        "label": "Systems under care"
+      }
+    },
+    "features": {
+      "kicker": "What we cover",
+      "title": "Maintenance that thinks four steps ahead",
+      "summary": "Each visit is a full-system reset - hydraulic performance, chemistry, telemetry, and seasonal resilience handled in one pass.",
+      "flush": {
+        "title": "Deep flush & debris extraction",
+        "body": "Dual-pump flushing clears iron, sand, and biofilm without stressing casing or landscaping.",
+        "bullets": [
+          "Reverse-flow purge ejects sand and scale",
+          "Shock chlorination neutralizes biofilm",
+          "Surface cleanup leaves paving spotless"
+        ]
+      },
+      "diagnostics": {
+        "title": "Pump diagnostics & load tuning",
+        "body": "Telemetry probes benchmark pressure, amp draw, and vibration to predict failures weeks ahead.",
+        "bullets": [
+          "Thermal cameras catch hot bearings",
+          "Real-time amp charts tune controllers",
+          "Automated alerts push to your phone"
+        ]
+      },
+      "water": {
+        "title": "Water wellness reporting",
+        "body": "On-site lab kits verify potability, trace metals, and mineral balance with clear recommendations.",
+        "bullets": [
+          "15-parameter chemistry scan",
+          "Lab PDFs ready for ESG audits",
+          "Filter media tailored to results"
+        ]
+      },
+      "seasonal": {
+        "title": "Seasonal hardening",
+        "body": "We winterize, restart, and insulate infrastructure around your occupancy calendar.",
+        "bullets": [
+          "Glycol purges protect lines",
+          "Heat tracing plus insulation checks",
+          "Spring restart playbook included"
+        ]
+      }
+    },
+    "program": {
+      "kicker": "Care program",
+      "title": "Five phases to recalibrate and harden your system",
+      "summary": "The same documented sequence keeps every visit transparent for owners, boards, and operators.",
+      "steps": {
+        "inspect": {
+          "title": "Arrival & telemetry capture",
+          "body": "We log baseline flow, static level, and electrical load before making changes."
+        },
+        "sanitize": {
+          "title": "Flush, sanitize, and de-scale",
+          "body": "Dual-pump flushing, chlorination, and debris extraction reset hydraulic performance."
+        },
+        "upgrade": {
+          "title": "On-the-spot upgrades",
+          "body": "Filters, seals, injectors, and controllers swap out from stocked service vans."
+        },
+        "monitor": {
+          "title": "Smart monitoring sync",
+          "body": "Telemetry gateways upload trends, alarms are reprogrammed, and owners regain access."
+        },
+        "report": {
+          "title": "Executive-ready reporting",
+          "body": "You receive lab results, before/after telemetry, and next-step recommendations within 24h."
+        }
+      }
+    },
+    "plans": {
+      "kicker": "Choose your focus",
+      "title": "Maintenance plans matched to the way you use water",
+      "summary": "Pick seasonal visits or monthly concierge care - both include telemetry logs, lab chemistry, and guaranteed response windows.",
+      "seasonal": {
+        "title": "Seasonal",
+        "summary": "Deep preparation before and after peak occupancy.",
+        "price": "2x / year",
+        "note": "Ideal for private estates and retreats.",
+        "items": [
+          "Full-system diagnostics + pressure balancing",
+          "Filter replacements and chemistry calibration",
+          "Winterization + de-winterization sequence",
+          "Priority rapid-response slotting"
+        ]
+      },
+      "continuous": {
+        "title": "Continuous",
+        "summary": "Concierge monitoring and optimization every month.",
+        "price": "12x / year",
+        "note": "Best for resorts, developments, and utilities.",
+        "items": [
+          "Monthly micro-diagnostics and yield adjustments",
+          "Predictive part replacement before failures",
+          "Water stewardship reports for stakeholders",
+          "On-call engineer + quarterly strategy reviews"
+        ]
+      }
+    },
+    "care": {
+      "kicker": "Assurance layer",
+      "title": "Coverage only a dedicated crew can promise",
+      "summary": "Once you're on our roster, specialized teams stay on standby for chemistry incidents, telemetry anomalies, or stakeholder reporting.",
+      "note": "Standby clients receive priority routing, encrypted reporting, and the engineer who wrote the plan on speed dial.",
+      "cta": "Book the standby team",
+      "stats": {
+        "coverage": {
+          "value": "24/7",
+          "label": "Live monitoring"
+        },
+        "sla": {
+          "value": "<4 h",
+          "label": "On-site SLA"
+        },
+        "lab": {
+          "value": "ISO 17025",
+          "label": "Lab accreditation"
+        }
+      },
+      "cards": {
+        "emergency": {
+          "title": "Emergency flush & rescue",
+          "body": "When a well suddenly drops pressure or pulls color, we deploy dual-pump purge rigs with containment.",
+          "bullets": [
+            "Rapid turbidity + bacteria testing",
+            "Temporary bypass keeps water online",
+            "Crew arrives with pre-authorized parts"
+          ]
+        },
+        "chemistry": {
+          "title": "Chemistry & compliance investigations",
+          "body": "We coordinate certified labs, regulators, and remediation so stakeholder updates stay calm.",
+          "bullets": [
+            "Chain-of-custody sampling kits",
+            "Root-cause analysis with visuals",
+            "Corrective action roadmap"
+          ]
+        },
+        "monitoring": {
+          "title": "Continuous telemetry & automation",
+          "body": "Sensors stream data to our control room for predictive maintenance and remote fixes.",
+          "bullets": [
+            "Encrypted gateways + dual SIM failover",
+            "AI alerts tuned to your aquifer",
+            "Remote valve + pump commands"
+          ]
+        }
+      }
+    },
+    "faq": {
+      "kicker": "Still curious?",
+      "title": "Maintenance questions we answer weekly",
+      "items": {
+        "eligibility": {
+          "question": "Do you service wells you didn't build?",
+          "answer": "Yes. We begin with a diagnostic audit, document existing hardware, and onboard the system into our monitoring stack."
+        },
+        "timeline": {
+          "question": "How fast can the first visit happen?",
+          "answer": "After the audit we can schedule a full maintenance window within 5 business days, or sooner for emergency enrollments."
+        },
+        "lab": {
+          "question": "Are lab samples included or extra?",
+          "answer": "One comprehensive chemistry panel is included per visit; additional parameters or rush processing are billed at lab rates."
+        },
+        "contract": {
+          "question": "Do plans require multi-year contracts?",
+          "answer": "Seasonal plans run 12 months at a time, while continuous care can be signed for 12 or 24 months with fixed pricing."
+        },
+        "downtime": {
+          "question": "Will our site lose water during service?",
+          "answer": "We stage temporary bypass tanks and throttled pumping so homes, hotels, or plants keep running while we work."
+        }
+      }
+    }
+  },
+  "InstallationPage": {
+    "hero": {
+      "kicker": "Turnkey installation",
+      "title": {
+        "line1": "Whole-home water delivery",
+        "line2": "engineered as one system"
+      },
+      "summary": "We take the borehole you already own (or we just drilled) and build the quiet, efficient interior stack that delivers hotel-grade water everywhere you need it.",
+      "detail": "Electricians, trench crews, finish carpenters, and commissioning engineers move as one 5-7 day window so you never guess who shows up next.",
+      "actions": {
+        "primary": "Schedule install assessment",
+        "secondary": "See deliverables"
+      },
+      "badge": {
+        "title": "Luxury utility rooms",
+        "body": "Powder-coated manifolds, labeled piping, tidy wiring"
+      },
+      "chips": [
+        "Food-grade casing tie-in",
+        "Silent hydronic stack",
+        "Smart monitoring panel"
+      ],
+      "gallery": {
+        "primary": "Utility room commissioning",
+        "trench": "Heated trenching & insulation",
+        "panel": "Control rack & telemetry"
+      }
+    },
+    "metrics": {
+      "handoff": {
+        "value": "48 h",
+        "label": "Interior handoff"
+      },
+      "checks": {
+        "value": "120+",
+        "label": "Quality checks"
+      },
+      "crew": {
+        "value": "6 crafts",
+        "label": "Specialists on crew"
+      }
+    },
+    "systems": {
+      "kicker": "Systems delivered",
+      "title": "Everything between aquifer and tap, installed beautifully",
+      "summary": "Each package ships with curated hardware, clean routing, and documentation so owners inherit a magazine-ready mechanical room.",
+      "footer": "All materials are food-grade and compliant with EU potable water standards.",
+      "cards": {
+        "pump": {
+          "title": "Pump & power stack",
+          "body": "Right-sized submersible pump, cabling, and soft-start controls tuned to your load profile.",
+          "items": [
+            "European submersible pump with stainless riser",
+            "Dedicated breaker, surge protection, and soft-start",
+            "Concealed cable trays with labeled wiring"
+          ]
+        },
+        "hydronics": {
+          "title": "Hydronic spine",
+          "body": "Insulated supply, back-up heat trace, and pressure tank staged for whisper-quiet operation.",
+          "items": [
+            "Pre-insulated trench with heat trace options",
+            "Powder-coated manifolds, pressure tank, gauges",
+            "Drain valves and sampling ports for maintenance"
+          ]
+        },
+        "monitoring": {
+          "title": "Monitoring & control",
+          "body": "Touch-safe rack with telemetry, leak sensing, and remote alerts that plug into our service desk.",
+          "items": [
+            "IP-rated control panel with touchscreen",
+            "Leak, flow, and pressure sensors streaming live",
+            "Remote firmware and app onboarding"
+          ]
+        },
+        "finish": {
+          "title": "Interior finishes",
+          "body": "Utility rooms photographed, labeled, and left cleaner than we found them.",
+          "items": [
+            "Custom backboards and lighting for every component",
+            "Cable, pipe, and valve labels in Latvian + English",
+            "Commissioning dossier with QR-coded checklist"
+          ]
+        }
+      }
+    },
+    "playbook": {
+      "kicker": "Commissioning playbook",
+      "title": "Five tightly-sequenced installation windows",
+      "summary": "Clear milestones keep you informed without shutting down the property—most owners stay onsite the entire time.",
+      "steps": {
+        "intake": {
+          "title": "Intake & staging day",
+          "body": "We map the utility room, confirm loads, scan existing plumbing, and mark trench routing."
+        },
+        "utility": {
+          "title": "Exterior utility prep",
+          "body": "Crew trenches insulated supply lines, lays conduit, and restores landscaping the same day."
+        },
+        "piping": {
+          "title": "Interior hydronic spine",
+          "body": "Pressure tank, manifolds, filters, and monitoring rack assembled with mockup approvals."
+        },
+        "commission": {
+          "title": "Power-up & commissioning",
+          "body": "Electricians energize pump and controls, we purge air, set pressures, and tune automation."
+        },
+        "handoff": {
+          "title": "Owner handoff",
+          "body": "We walk you through every valve, provide documentation, and capture a polished photo set."
+        }
+      }
+    },
+    "showcase": {
+      "kicker": "Proof of craft",
+      "title": "Installations that look custom-built",
+      "summary": "A gallery of recent completions across homes, cottages, and boutique resorts.",
+      "bullets": [
+        "Cable routing hidden inside powder-coated channels.",
+        "Insulated trenches backfilled and landscaped the same day.",
+        "Control racks labeled, photographed, and stored in the owner portal."
+      ],
+      "stats": {
+        "finish": {
+          "value": "48 h",
+          "label": "Interior completion window"
+        },
+        "crew": {
+          "value": "6 pros",
+          "label": "Trades onsite per day"
+        },
+        "callouts": {
+          "value": "<1%",
+          "label": "Post-handoff callouts"
+        }
+      },
+      "gallery": {
+        "utility": {
+          "title": "Utility room staging",
+          "caption": "Pressure tank, filters, and manifolds align against acoustic panels."
+        },
+        "trench": {
+          "title": "Low-impact trenching",
+          "caption": "Insulated piping, heat trace, and warning tape before restoration."
+        },
+        "panel": {
+          "title": "Smart control rack",
+          "caption": "Touch-safe cabinet with telemetry, alerts, and remote access."
+        }
+      }
+    },
+    "assurance": {
+      "kicker": "Assurance layer",
+      "title": "We stay on-call long after the last panel is tightened",
+      "summary": "Documentation, monitoring, and crew availability shift you straight into predictable operations.",
+      "cta": "Book the commissioning crew",
+      "note": "Includes year-one monitoring sync and emergency response priority.",
+      "stats": {
+        "warranty": {
+          "value": "24 mo",
+          "label": "Installation warranty"
+        },
+        "response": {
+          "value": "<4 h",
+          "label": "Priority support window"
+        },
+        "inspections": {
+          "value": "3 visits",
+          "label": "Post-install inspections"
+        }
+      },
+      "pillars": {
+        "monitoring": {
+          "title": "Always-on monitoring",
+          "body": "Sensors stream to our control room from day one so anomalies trigger us, not you.",
+          "bullets": [
+            "Telemetry gateway configured and tested",
+            "Leak and pressure alerts routed to owners",
+            "Remote firmware updates included"
+          ]
+        },
+        "quality": {
+          "title": "Documented quality",
+          "body": "We log torque specs, photos, and serials so any future service has the full history.",
+          "bullets": [
+            "Photo book and QR-coded labels",
+            "Serial registry for every component",
+            "As-built schematics and trench depths"
+          ]
+        },
+        "support": {
+          "title": "White-glove support",
+          "body": "Direct line to the engineer who led the install plus concierge scheduling.",
+          "bullets": [
+            "Preferred scheduling calendar",
+            "On-site refresh before peak season",
+            "Owner training refresh on demand"
+          ]
+        }
+      }
+    },
+    "faq": {
+      "kicker": "Still wondering?",
+      "title": "Installation clarity we repeat daily",
+      "items": {
+        "prep": {
+          "question": "What do you need from us before work starts?",
+          "answer": "Clear a 1 m path to the utility room, share utility panel photos, and mark any fragile landscaping."
+        },
+        "timeline": {
+          "question": "Will we be without water during install?",
+          "answer": "Downtime stays under 2 hours—temporary bypass tanks keep kitchens and baths live."
+        },
+        "power": {
+          "question": "Can you work with limited electrical service?",
+          "answer": "Yes, we bring temporary load centers and stage generator support if panel capacity is tight."
+        },
+        "finishes": {
+          "question": "Who handles the final finishes and cleanup?",
+          "answer": "Our crew re-paints touch points, reinstalls shelving, and leaves the room photo-ready."
+        }
+      }
+    }
+  },
+  "PricesPage": {
+    "bannerTitle": "Transparent pricing, no surprises",
+    "services": {
+      "drilling": {
+        "title": "Precision borehole program"
+      },
+      "maintenance": {
+        "title": "Flow protection care plan"
+      },
+      "installation": {
+        "title": "Turnkey installation stack"
+      }
+    },
+    "hero": {
+      "kicker": "Pricing & budgeting",
+      "title": {
+        "line1": "Investment-grade water",
+        "line2": "with predictable budgets"
+      },
+      "summary": "Every quote arrives with line-item clarity – rig mobilization, interior hardware, and commissioning support are documented before anyone breaks ground.",
+      "note": "Need financing or phased delivery? We lock pricing for 60 days while the paperwork moves forward.",
+      "actions": {
+        "primary": "Book pricing consult",
+        "secondary": "Download rate card"
+      },
+      "badge": {
+        "title": "Paperwork-ready",
+        "body": "Detailed BOQ + Gantt export in 24h"
+      },
+      "metrics": {
+        "packages": {
+          "value": "€2 300",
+          "label": "Base drilling program"
+        },
+        "timeline": {
+          "value": "17 days",
+          "label": "Average door-to-water"
+        },
+        "savings": {
+          "value": "11%",
+          "label": "Clients saved vs. tanker"
+        }
+      }
+    },
+    "matrix": {
+      "kicker": "Transparent bundles",
+      "title": "Three signature programs, zero hidden line items",
+      "summary": "Pick the scope that matches your project. Each bundle ships with documentation, warranty, and concierge coordination.",
+      "tiers": {
+        "drilling": {
+          "title": "Precision drilling",
+          "summary": "Mobilization, borehole, food-grade casing, and multi-hour pump testing.",
+          "price": "€2 300",
+          "timeline": "10-14 days",
+          "bullets": [
+            "Up to 30 m depth included",
+            "Permitting + lab samples",
+            "Telemetry-ready wiring"
+          ]
+        },
+        "installation": {
+          "title": "Turnkey installation",
+          "summary": "Pump, insulated trenching, interior manifolds, and smart monitoring.",
+          "price": "from €4 200",
+          "timeline": "5-7 days",
+          "bullets": [
+            "Powder-coated utility wall",
+            "Heat-trace + insulation",
+            "Owner training + dossier"
+          ]
+        },
+        "maintenance": {
+          "title": "Concierge care",
+          "summary": "Seasonal flushing, chemistry, telemetry tuning, and emergency response.",
+          "price": "from €900 / visit",
+          "timeline": "4-6 hours",
+          "bullets": [
+            "ISO lab reporting",
+            "Telemetry monitoring",
+            "<4 h rapid dispatch"
+          ]
+        }
+      }
+    },
+    "calculator": {
+      "kicker": "Instant estimator",
+      "title": "Model your project in seconds",
+      "summary": "Adjust depth, scope, and region to see a live estimate that already includes logistics, documentation, and finishing.",
+      "depthLabel": "Set borehole depth (min 30 m)",
+      "serviceLabel": "Select service focus",
+      "addOnsLabel": "Select extra services",
+      "addOnsHint": "Layer reinforcement, flushing, filtration, or prep work on top of the core scope.",
+      "addOnsEmpty": "No extra services selected",
+      "locationLabel": "Location",
+      "locationHint": "Covers crew travel, ferries, and overnight logistics.",
+      "locationIncluded": "Included",
+      "button": "Lock this estimate",
+      "resultLabel": "Projected investment",
+      "resultSummary": "Scope set at {depth} m for the {location} region, ready for permit review.",
+      "footnote": "Estimates include 60-day price hold. VAT added where applicable.",
+      "breakdown": {
+        "base": "Base package: {amount}",
+        "variable": "Depth add-ons: {amount}",
+        "addOns": "Extra services: {amount}",
+        "location": "Regional logistics: {amount}"
+      },
+      "services": {
+        "drilling": {
+          "label": "Drilling",
+          "helper": "Includes permits, borehole, and pump test"
+        },
+        "installation": {
+          "label": "Installation",
+          "helper": "Pump, piping, and interior manifolds"
+        },
+        "maintenance": {
+          "label": "Maintenance",
+          "helper": "Seasonal flush + monitoring"
+        }
+      },
+      "addOns": {
+        "casing": {
+          "label": "Well reinforcement",
+          "helper": "Extra casing and sealing to stabilize the borehole walls"
+        },
+        "flush": {
+          "label": "Borehole flushing",
+          "helper": "High-volume purge that clears debris before installing hardware"
+        },
+        "filter": {
+          "label": "Filter installation",
+          "helper": "Inline filtration stack tuned to your chemistry profile"
+        },
+        "prep": {
+          "label": "Site preparation works",
+          "helper": "Trenching, access pads, and surface protection before crews arrive"
+        }
+      },
+      "locations": {
+        "riga": "Riga & Pieriga",
+        "vidzeme": "Vidzeme",
+        "zemgale": "Zemgale",
+        "kurzeme": "Kurzeme",
+        "latgale": "Latgale"
+      }
+    },
+    "loyalty": {
+      "kicker": "Loyalty program",
+      "title": "Preferred clients unlock concierge economics",
+      "summary": "Bundle installation + care to access faster dispatch, capped rates, and project historian support.",
+      "perks": [
+        "Price hold for 60 days",
+        "Encrypted owner portal",
+        "Direct engineer hotline"
+      ],
+      "stats": {
+        "sites": {
+          "value": "320+",
+          "label": "Sites under agreement"
+        },
+        "response": {
+          "value": "<4 h",
+          "label": "Priority response"
+        },
+        "savings": {
+          "value": "12%",
+          "label": "Average savings"
+        }
+      },
+      "tiers": {
+        "standard": {
+          "title": "Standard retainer",
+          "summary": "Ideal for estates and boutiques that need seasonal prep and annual audits.",
+          "price": "€190 / month",
+          "bullets": [
+            "2 deep-clean visits per year",
+            "Telemetry monitoring lite",
+            "Chemistry reports for ESG"
+          ]
+        },
+        "priority": {
+          "title": "Priority retainer",
+          "summary": "For resorts and developers that require proactive monitoring and instant dispatch.",
+          "price": "€420 / month",
+          "bullets": [
+            "Monthly micro-diagnostics",
+            "24/7 control-room alerts",
+            "Dedicated engineer on call"
+          ]
+        }
+      }
+    },
+    "faq": {
+      "kicker": "Budget clarity",
+      "title": "Pricing questions we answer daily",
+      "items": {
+        "deposit": {
+          "question": "Do you require a deposit?",
+          "answer": "Yes, 30% secures the crew and materials. The remaining balance follows milestone handoffs."
+        },
+        "scope": {
+          "question": "Can we mix and match line items?",
+          "answer": "Absolutely. We routinely split drilling, installation, and care between teams—every quote stays modular."
+        },
+        "changes": {
+          "question": "How do scope changes affect pricing?",
+          "answer": "We issue a transparent change order in the shared portal, including updated Gantt and cost deltas before proceeding."
+        },
+        "financing": {
+          "question": "Do you support leasing or financing?",
+          "answer": "Yes. We partner with Baltic lenders—share your corporate details and we prepare the documents in 48 hours."
+        }
+      }
+    }
   }
 }

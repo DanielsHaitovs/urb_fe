@@ -10,10 +10,15 @@ export default async function OffersLayout({
 }>) {
   const t = await getTranslations("OffersPage");
   const bannerTitle = t("bannerTitle");
+  const actions = [
+    { label: t("services.drilling.title"), href: "/offers/drilling" },
+    { label: t("services.maintenance.title"), href: "/offers/maintenance" },
+    { label: t("services.installation.title"), href: "/offers/installation" },
+  ];
 
   return (
     <>
-      <Header banner={true} showActions={false} bannerTitle={bannerTitle} />
+      <Header banner={true} bannerTitle={bannerTitle} actions={actions} />
       {children}
       <Footer />
     </>

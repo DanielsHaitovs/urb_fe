@@ -1,0 +1,66 @@
+.scenarioSection {
+  border-radius: 32px;
+  padding: clamp(24px, 4vw, 48px);
+  background: linear-gradient(120deg, rgba(0, 36, 85, 0.7), rgba(2, 8, 24, 0.92));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.scenarioCopy {
+  width: 100%;
+}
+
+.scenarioCopy h2 {
+  margin: 8px 0;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+}
+
+.scenarioCopy p {
+  margin: 0;
+  color: rgba(209, 224, 255, 0.92);
+}
+
+.scenarioGrid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+
+.scenarioCard {
+  padding: 20px;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.02);
+  min-height: 100%;
+  width: 100%;
+}
+
+.scenarioCard h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.1rem;
+}
+
+.scenarioCard p {
+  margin: 0 0 12px 0;
+  color: rgba(216, 230, 255, 0.85);
+}
+
+.scenarioCard ul {
+  margin: 0;
+  color: rgba(236, 243, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+@media (min-width: 792px) {
+  .scenarioCard {
+    width: calc(25% - 12px);
+  }
+}

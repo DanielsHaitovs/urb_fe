@@ -1,0 +1,124 @@
+@use "@/styles/variables.module.scss" as tokens;
+
+.main {
+  @include tokens.mainDark;
+}
+
+.content {
+  @include tokens.content;
+}
+
+.kicker {
+  @include tokens.kicker;
+}
+
+.title {
+  @include tokens.title;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 1.1rem;
+  color: rgba(180, 210, 255, 0.95);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.summary {
+  @include tokens.summary;
+}
+
+.stepGrid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: clamp(18px, 3vw, 32px);
+}
+
+.stepCard {
+  padding: 28px 24px 32px;
+  border-radius: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(180deg, rgba(5, 8, 19, 0.8), rgba(5, 8, 19, 0.4));
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-height: 100%;
+  width: 100%;
+}
+
+.stepCard::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 28px;
+  padding: 1px;
+  background: linear-gradient(160deg, rgba(100, 194, 255, 0.55), rgba(164, 120, 255, 0.4));
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.stepBadge {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.stepNumber {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  padding: 6px 12px;
+}
+
+.iconRing {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px dashed rgba(100, 194, 255, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.04);
+  color: #8fd3ff;
+}
+
+.stepCard h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.stepCard p {
+  margin: 0;
+  color: rgba(210, 224, 255, 0.85);
+  line-height: 1.5;
+}
+
+@media (max-width: 640px) {
+  .workflow {
+    padding: 28px 20px 40px;
+  }
+
+  .subtitle {
+    letter-spacing: 0.1em;
+  }
+}
+
+@media (min-width: 768px) {
+    .stepCard {
+        width: calc(50% - 67px);
+    }
+}
+
+@media (min-width: 1440px) {
+    .stepCard {
+        width: calc(25% - 75px);
+    }
+}
