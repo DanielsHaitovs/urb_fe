@@ -14,7 +14,6 @@
 
 .title {
   @include tokens.title;
-  word-break: break-all;
 }
 
 .summary {
@@ -65,10 +64,8 @@
 }
 
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  gap: 14px;
+  @include tokens.list;
+  width: 100%;
 }
 
 .tile,
@@ -137,6 +134,6 @@
 .tileOne,
 .tileTwo,
 .tileThree {
-    width: calc(33.33% - 59px);
+    width: calc(33.33% - 62px);
     }
 }

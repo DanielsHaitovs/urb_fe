@@ -28,11 +28,13 @@ export default function MaintanenceCare() {
   }));
 
   return (
-    <section className={styles.section}>
-      <div className={styles.intro}>
+    <section className={styles.main}>
+      <div className={styles.content}>
         <p className={styles.kicker}>{t("care.kicker")}</p>
-        <h2>{t("care.title")}</h2>
-        <p>{t("care.summary")}</p>
+        <h1 className={styles.title}>
+          <span>{t("care.title")}</span>
+          <span className={styles.summary}>{t("care.summary")}</span>
+        </h1>
       </div>
       <div className={styles.layout}>
         <aside className={styles.panel}>

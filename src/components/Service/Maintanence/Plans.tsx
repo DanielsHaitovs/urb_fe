@@ -16,13 +16,15 @@ export default function MaintanencePlans() {
   }));
 
   return (
-    <section id="plans" className={styles.section}>
-      <header>
+    <section id="plans" className={styles.main}>
+      <div className={styles.content}>
         <p className={styles.kicker}>{t("plans.kicker")}</p>
-        <h2>{t("plans.title")}</h2>
-        <p>{t("plans.summary")}</p>
-      </header>
-      <div className={styles.grid}>
+        <h1 className={styles.title}>
+          <span>{t("plans.title")}</span>
+          <span className={styles.summary}>{t("plans.summary")}</span>
+        </h1>
+      </div>
+      <div className={styles.list}>
         {plans.map((plan) => (
           <article key={plan.id} className={styles.card}>
             <div className={styles.head}>

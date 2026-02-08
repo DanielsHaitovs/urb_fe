@@ -1,20 +1,7 @@
-.section {
-	position: relative;
-	overflow: hidden;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	box-sizing: border-box;
-	padding: clamp(24px, 4vw, 64px);
-	border-radius: 36px;
-	background:
-		radial-gradient(circle at 18% 20%, rgba(90, 176, 255, 0.35), transparent 45%),
-		radial-gradient(circle at 82% 0%, rgba(0, 112, 243, 0.4), transparent 50%),
-		#030817;
-	border: 1px solid rgba(255, 255, 255, 0.08);
-	box-shadow: 0 40px 90px rgba(0, 10, 36, 0.65);
-	color: #f4f7ff;
-	isolation: isolate;
+@use "@/styles/variables.module.scss" as tokens;
+
+.main {
+	@include tokens.mainDark;
 }
 
 .aurora, .gridGlow {
@@ -56,34 +43,21 @@
 }
 
 .kicker {
-	align-self: center;
-	text-transform: uppercase;
-	letter-spacing: 0.24em;
-	font-size: 0.82rem;
-	font-weight: 600;
-	color: #d7e7ff;
-	padding: 6px 16px;
-	border-radius: 999px;
-	background: rgba(255, 255, 255, 0.06);
-	border: 1px solid rgba(255, 255, 255, 0.18);
-	backdrop-filter: blur(12px);
+	@include tokens.kicker;
 }
 
-.header h2 {
-	font-size: clamp(2rem, 4vw, 3rem);
-	line-height: 1.1;
-	margin: 0;
+.title {
+	@include tokens.title;
 }
 
-.header p {
-	margin: 0;
-	color: rgba(244, 247, 255, 0.78);
-	font-size: 1.05rem;
+.summary {
+	@include tokens.summary;
 }
 
 .stats {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 	gap: clamp(16px, 3vw, 28px);
 	width: 100%;
 }
@@ -98,6 +72,7 @@
 	overflow: hidden;
 	transition: transform 350ms ease, border-color 350ms ease, box-shadow 350ms ease;
 	animation: cardRise 700ms ease forwards;
+	width: 100%;
 }
 
 .card::before {
@@ -181,13 +156,9 @@
 	}
 }
 
-@media (max-width: 768px) {
-	.section {
-		border-radius: 28px;
-	}
-
+@media (min-width: 768px) {
 	.card {
-		padding: 28px 24px;
+		width: calc(33% - 75px);
 	}
 }
 

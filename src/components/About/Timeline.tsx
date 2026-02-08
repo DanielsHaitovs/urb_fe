@@ -20,11 +20,13 @@ export default function AboutTimeline() {
   const steps = t.raw("steps") as TimelineStep[];
 
   return (
-    <section className={styles.section}>
-      <div className={styles.header}>
+    <section className={styles.main}>
+      <div className={styles.content}>
         <p className={styles.kicker}>{t("kicker")}</p>
-        <h2>{t("title")}</h2>
-        <p>{t("summary")}</p>
+        <h1 className={styles.title}>
+          <span>{t("title")}</span>
+          <span className={styles.summary}>{t("summary")}</span>
+        </h1>
       </div>
       <div className={styles.list}>
         {steps.map((step, index) => (

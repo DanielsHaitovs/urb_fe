@@ -27,7 +27,7 @@
 }
 
 .accent {
-  color: #a8f2ff;
+  @include tokens.accent;
 }
 
 .summary {

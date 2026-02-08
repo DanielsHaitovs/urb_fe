@@ -15,14 +15,10 @@
 
 .title {
   @include tokens.title;
-  word-break: break-all;
 }
 
 .grid {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: clamp(16px, 3vw, 28px);
+  @include tokens.list;
 }
 
 .card {

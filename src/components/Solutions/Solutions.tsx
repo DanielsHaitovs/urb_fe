@@ -18,11 +18,11 @@ export default function DailySolutions({ screen }: { screen: ScreenType }) {
   }));
 
   return (
-    <section className={styles.section} aria-labelledby="solutions-heading" data-screen={screen}>
+    <section className={styles.main} aria-labelledby="solutions-heading" data-screen={screen}>
       <div className={styles.aurora} aria-hidden="true" />
       <div className={styles.ridges} aria-hidden="true" />
       <div className={styles.shell}>
-        <div className={styles.copy}>
+        <div className={styles.content}>
           <span className={styles.kicker}>{t("kicker")}</span>
           <h2 id="solutions-heading" className={styles.title}>
             <span>{t("title.line1")}</span>
