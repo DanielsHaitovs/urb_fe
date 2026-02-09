@@ -1,0 +1,62 @@
+@use "@/styles/variables.module.scss" as tokens;
+
+.main {
+    @include tokens.main;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 16px;
+    padding: 22px;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(3, 7, 20, 0.9);
+    color: #f5f8ff;
+    text-decoration: none;
+}
+
+.content {
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.action {
+    width: 100%;
+    border-radius: 999px;
+    border: 1px solid rgba(147, 199, 255, 0.5);
+    background: rgba(147, 199, 255, 0.12);
+    color: #dbe6ff;
+    font-size: 0.95rem;
+    padding: 10px 18px;
+    cursor: pointer;
+    transition: background 160ms ease, color 160ms ease, border-color 160ms ease;
+    text-decoration: none;
+}
+
+.action:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.card:hover .action:not(:disabled),
+.linkCard:hover .action {
+  background: rgba(147, 199, 255, 0.25);
+  color: #0a142d;
+  border-color: rgba(147, 199, 255, 0.75);
+}
+
+.linkCard {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+@media (min-width: 768px) {
+    .main {
+        flex-direction: row;
+    }
+}

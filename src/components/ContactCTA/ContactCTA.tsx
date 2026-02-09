@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import { CalendarClock, Mail, Phone } from "lucide-react";
 import styles from "@/components/ContactCTA/ContactCTA.module.scss";
-import ContactForm from "@/components/ContactCTA/Form";
+import ModalContactForm from "@/components/ContactCTA/Modal/Form";
 import {
   CONTACT_EMAIL,
   CONTACT_PHONE_DISPLAY,
@@ -127,7 +127,7 @@ export default function ContactCTA({ screen }: Props) {
           })}
         </div>
       </div>
-      <ContactForm isOpen={isModalOpen} onClose={closeModal} />
+      <ModalContactForm isOpen={isModalOpen} onClose={closeModal} />
     </section>
   );
 }
