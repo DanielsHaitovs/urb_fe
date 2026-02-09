@@ -393,6 +393,100 @@
       "hint": "Atbild īsts inženieris – ne automatisks bots."
     }
   },
+  "ContactPage": {
+    "bannerTitle": "Sazinieties tieši ar komandu, kas veidos jūsu urbumu",
+    "hero": {
+      "kicker": "Sazinieties ar Urb",
+      "title": {
+        "line1": "Dedikēta atbalsta komanda",
+        "line2": "katram urbšanas grafikam"
+      },
+      "summary": "Operāciju, lauka un laboratorijas speciālisti strādā vienā iesūtnē, tāpēc katrs pieprasījums acumirklī nonāk pie īstā speciālista.",
+      "helper": "Nosūtiet rasējumus, ģeoloģijas piezīmes vai vienkārši adresi — atgriezīsimies ar precīzu plānu mazāk nekā diennakts laikā.",
+      "badges": {
+        "response": {
+          "label": "Vidējā pirmā atbilde",
+          "value": "< 15 min"
+        },
+        "coverage": {
+          "label": "Apgūti reģioni",
+          "value": "Visa Latvija"
+        },
+        "support": {
+          "label": "Neatliekamā līnija",
+          "value": "24/7"
+        }
+      }
+    },
+    "channels": {
+      "kicker": "Izvēlieties saziņas veidu",
+      "title": "Tieša piekļuve operāciju komandai",
+      "summary": "Katrs pieskāriens izveido biļeti ar kontekstu, lai speciālists uzreiz redzētu jūsu īpašuma informāciju.",
+      "cards": {
+        "call": {
+          "title": "Zvaniet vadības centram",
+          "helper": "Aprunājieties ar urbšanas koordinatoriem vai pierakstiet servisa logu.",
+          "cta": "Zvanīt tūlīt",
+          "aria": "Zvaniet URB uz {phone}"
+        },
+        "mail": {
+          "title": "Sūtiet projekta failus",
+          "helper": "Pievienojiet zonējuma plānus, sūkņu žurnālus vai telpas foto ātrākai izvērtēšanai.",
+          "cta": "Atvērt formu",
+          "aria": "Rakstiet URB uz {email}"
+        },
+        "visit": {
+          "title": "Apmeklējiet mūsu bāzi",
+          "helper": "Apskatiet tehniku, materiālus un monitoringu klātienē.",
+          "cta": "Plānot vizīti",
+          "detail": "Sauriešu centrs"
+        }
+      }
+    },
+    "response": {
+      "kicker": "Kā mēs reaģējam",
+      "title": "No pieprasījuma līdz komandai objektā trīs soļos",
+      "summary": "Caurspīdīgs grafiks, lai vienmēr zinātu nākamo darbību.",
+      "steps": {
+        "intake": {
+          "title": "Pieprasījuma fiksācija",
+          "body": "Operāciju galts apkopo ģeoloģiju, piekļuvi, steidzamību un dokumentus.",
+          "eta": "0–2 h"
+        },
+        "planning": {
+          "title": "Plāns un tāme",
+          "body": "Inženieri piesaista tehniku, brigādes, saskaņošanas un izmaksu rāmi.",
+          "eta": "6–12 h"
+        },
+        "field": {
+          "title": "Brigādes izsūtīšana",
+          "body": "Koordinatori apstiprina ierašanās logu un sagatavo precīzu aprīkojumu.",
+          "eta": "1–3 dienas"
+        }
+      }
+    },
+    "map": {
+      "kicker": "Kur mūs atrast",
+      "title": "Ropažu novada operāciju kampuss",
+      "summary": "Pierakstiet ekskursiju vai nogādājiet paraugus mūsu darbnīcā un laboratorijā.",
+      "addressLabel": "Adrese",
+      "hoursLabel": "Atbalsta laiki",
+      "areasLabel": "Aptveramās teritorijas",
+      "address": "Ropažu nov., Stopiņu pag., Saurieši, \"Lejas Akmeņkalni\", LV-2118",
+      "hours": [
+        "Darba dienās 08:00 – 20:00",
+        "Sestdien 09:00 – 15:00",
+        "Neatliekamā līnija 24/7"
+      ],
+      "areas": [
+        "Rīga, Pierīga, Vidzeme",
+        "Kurzeme, Zemgale, Latgale"
+      ],
+      "badge": "Tiešais atbalsta mezgls",
+      "panelTitle": "Vadības telpa un materiālu bibliotēka",
+      "panelBody": "Pirms tehnikas izbraukšanas apskatiet urbšanas iekārtas, filtrācijas mezglus un monitoringa stendus."
+    }
+  },
   "CleanWater": {
     "kicker": "KVALITĀTES RISINĀJUMU PARTNERIS",
     "title": {

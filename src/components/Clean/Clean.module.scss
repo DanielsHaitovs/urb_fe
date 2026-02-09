@@ -5,11 +5,7 @@
 }
 
 .inner {
-	position: relative;
-	z-index: 1;
-	display: flex;
-	flex-direction: column;
-	gap: clamp(28px, 4vw, 52px);
+	@include tokens.content;
 }
 
 .hero {

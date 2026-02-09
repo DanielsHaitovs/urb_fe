@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import styles from "@/components/Banner/TopBanner.module.scss";
 import { LucideSparkles, Mail, MapPin } from "lucide-react";
+import type { MouseEvent } from "react";
 import { useEffect, useRef } from "react";
 
 export default function TopBanner() {
@@ -50,6 +51,20 @@ export default function TopBanner() {
     };
   }, []);
 
+  const handleEmailClick = (event: MouseEvent<HTMLAnchorElement>) => {
+    if (typeof window === "undefined") {
+      return;
+    }
+
+    const hasContactForm = Boolean(document.querySelector("[data-contact-cta]"));
+    if (!hasContactForm) {
+      return;
+    }
+
+    event.preventDefault();
+    window.dispatchEvent(new CustomEvent("urb:open-contact-form"));
+  };
+
   return (
     <div className={styles.topBanner}>
       {/* Desktop/static layout */}
@@ -62,7 +77,12 @@ export default function TopBanner() {
           <MapPin />
           <p className={styles.address}>{t("address")}</p>
         </div>
-        <a href="mailto:info@urb.lv" className={styles.wrapper} aria-label="Email info@urb.lv">
+        <a
+          href="mailto:info@urb.lv"
+          className={styles.wrapper}
+          aria-label="Email info@urb.lv"
+          onClick={handleEmailClick}
+        >
           <Mail />
           <span>info@urb.lv</span>
         </a>
@@ -77,7 +97,12 @@ export default function TopBanner() {
               <span className={styles.separator}>•</span>
               <span className={styles.item}><MapPin /><span className={styles.address}>{t("address")}</span></span>
               <span className={styles.separator}>•</span>
-              <a href="mailto:info@urb.lv" className={styles.item} aria-label="Email info@urb.lv">
+              <a
+                href="mailto:info@urb.lv"
+                className={styles.item}
+                aria-label="Email info@urb.lv"
+                onClick={handleEmailClick}
+              >
                 <Mail />
                 <span>info@urb.lv</span>
               </a>

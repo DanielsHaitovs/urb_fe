@@ -26,7 +26,7 @@ export default function Header({
         <Menu screen={screen} />
       </div>
       {banner && (
-        <Banner screen={screen} title={bannerTitle} actions={actions} />
+        <Banner title={bannerTitle} actions={actions} />
       )}
     </header>
   );

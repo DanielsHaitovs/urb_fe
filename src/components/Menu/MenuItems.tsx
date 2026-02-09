@@ -5,6 +5,7 @@ import styles from "@/components/Menu/MenuItems.module.scss";
 import Image from "next/image";
 import { ScreenType } from "@/types/deviceType";
 import { Mail, Phone, X } from "lucide-react";
+import type { MouseEvent } from "react";
 import { useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { LocaleToggleButton } from "@/components/Language/LocaleToggleButton";
@@ -29,6 +30,20 @@ type Props = {
 
 export function MenuItems({ screen, isOpen, setOpen }: Props) {
   const t = useTranslations("MenuItems");
+
+  const handleMailClick = (event: MouseEvent<HTMLAnchorElement>) => {
+    if (typeof window === "undefined") {
+      return;
+    }
+
+    const hasContactForm = Boolean(document.querySelector("[data-contact-cta]"));
+    if (!hasContactForm) {
+      return;
+    }
+
+    event.preventDefault();
+    window.dispatchEvent(new CustomEvent("urb:open-contact-form"));
+  };
   
   useEffect(() => {
     if (isOpen) {
@@ -94,7 +109,12 @@ export function MenuItems({ screen, isOpen, setOpen }: Props) {
             <Phone size={18} aria-hidden="true" />
             <span>{t("call")}</span>
           </Link>
-          <Link className={styles.mailTo} href={CONTACT_EMAIL_HREF} aria-label={`Email URB at ${CONTACT_EMAIL}`}>
+          <Link
+            className={styles.mailTo}
+            href={CONTACT_EMAIL_HREF}
+            aria-label={`Email URB at ${CONTACT_EMAIL}`}
+            onClick={handleMailClick}
+          >
             <Mail size={18} aria-hidden="true" />
             <span>{t("email")}</span>
           </Link>
