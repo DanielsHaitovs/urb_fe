@@ -1,0 +1,78 @@
+.actions {
+    width: 90%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+.action {
+    width: calc(50% - 12px);
+    height: calc(50% - 12px);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    border-radius: 28px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.5rem;
+    background: rgba(6, 10, 26, 0.72);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 18px 40px rgba(1, 6, 18, 0.75);
+    backdrop-filter: blur(18px);
+    overflow: hidden;
+    transition: transform 250ms ease, box-shadow 250ms ease, border-color 250ms ease;
+}
+
+.action::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: 30px;
+  background: radial-gradient(circle at 10% 10%, rgba(98, 191, 255, 0.35), transparent 55%),
+    radial-gradient(circle at 80% 20%, rgba(255, 166, 137, 0.25), transparent 60%),
+    linear-gradient(140deg, rgba(4, 10, 30, 0.98), rgba(7, 18, 52, 0.92));
+  opacity: 0.6;
+  filter: blur(0px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.action::after {
+  content: "";
+  position: absolute;
+  inset: 10px;
+  border-radius: 20px;
+  background: radial-gradient(circle at 30% 30%, rgba(147, 199, 255, 0.15), transparent 65%);
+  opacity: 0.7;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.action:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 50px rgba(2, 8, 22, 0.9);
+  border-color: rgba(90, 176, 255, 0.6);
+}
+
+.action:focus-within {
+  outline: 2px solid rgba(147, 199, 255, 0.9);
+  outline-offset: 4px;
+}
+
+@media (min-width: 768px) {
+    .actions {
+        height: 70%;
+        width: 50%;
+        margin-right: auto;
+    }
+    
+    .action {
+        width: calc(50% - 15px);
+    }
+}

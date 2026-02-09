@@ -411,6 +411,100 @@
       "hint": "No auto-responders—an engineer writes back within one business day."
     }
   },
+  "ContactPage": {
+    "bannerTitle": "Talk directly to the crew handling your borehole",
+    "hero": {
+      "kicker": "Contact Urb",
+      "title": {
+        "line1": "Dedicated response desk",
+        "line2": "for every drilling timeline"
+      },
+      "summary": "Operations, field leads, and lab analysts share one inbox so every request gets routed to the right discipline without delay.",
+      "helper": "Share drawings, geology notes, or just an address—we return with a scoped answer in under a day.",
+      "badges": {
+        "response": {
+          "label": "Average first reply",
+          "value": "< 15 min"
+        },
+        "coverage": {
+          "label": "Regions served",
+          "value": "All of Latvia"
+        },
+        "support": {
+          "label": "Emergency hotline",
+          "value": "24/7"
+        }
+      }
+    },
+    "channels": {
+      "kicker": "Choose your channel",
+      "title": "Get routed straight to operations",
+      "summary": "Every tap creates a ticket with context so whichever discipline picks up has your parcel info ready.",
+      "cards": {
+        "call": {
+          "title": "Call the control room",
+          "helper": "Speak with drilling coordinators or schedule maintenance windows.",
+          "cta": "Dial now",
+          "aria": "Call URB at {phone}"
+        },
+        "mail": {
+          "title": "Email project files",
+          "helper": "Attach zoning plans, pump logs, or interior photos for faster scoping.",
+          "cta": "Open form",
+          "aria": "Email URB at {email}"
+        },
+        "visit": {
+          "title": "Visit our HQ",
+          "helper": "See rigs, materials, and monitoring tech in person.",
+          "cta": "Plan a visit",
+          "detail": "Saurieši campus"
+        }
+      }
+    },
+    "response": {
+      "kicker": "How we respond",
+      "title": "From inquiry to on-site team in three signals",
+      "summary": "Transparent timeline so you always know what happens next.",
+      "steps": {
+        "intake": {
+          "title": "Intake telemetry",
+          "body": "Ops desk logs geology, access, urgency, and documentation.",
+          "eta": "0–2 h"
+        },
+        "planning": {
+          "title": "Blueprint & quote",
+          "body": "Engineers map rigs, crews, permitting, and cost framework.",
+          "eta": "6–12 h"
+        },
+        "field": {
+          "title": "Crew dispatch",
+          "body": "Coordinators confirm arrival window and prep the exact equipment list.",
+          "eta": "1–3 days"
+        }
+      }
+    },
+    "map": {
+      "kicker": "Where to find us",
+      "title": "Ropažu novads operations campus",
+      "summary": "Schedule walkthroughs or drop samples at our workshop and water lab.",
+      "addressLabel": "Address",
+      "hoursLabel": "Support hours",
+      "areasLabel": "Service corridors",
+      "address": "Ropažu nov., Stopiņu pag., Saurieši, \"Lejas Akmeņkalni\", LV-2118",
+      "hours": [
+        "Weekdays 08:00 – 20:00",
+        "Saturday 09:00 – 15:00",
+        "Emergency line 24/7"
+      ],
+      "areas": [
+        "Rīga, Pierīga, Vidzeme",
+        "Kurzeme, Zemgale, Latgale"
+      ],
+      "badge": "Live support node",
+      "panelTitle": "Control room & materials library",
+      "panelBody": "Tour drilling rigs, filtration stacks, and monitoring racks before they roll to your site."
+    }
+  },
   "CleanWater": {
     "kicker": "Quality solutions partner",
     "title": {

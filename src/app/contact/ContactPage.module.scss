@@ -2,12 +2,7 @@
 
 .page {
   @include tokens.page;
-}
-
-.section {
-  scroll-margin-top: 80px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  min-height: 40vh;
+  gap: clamp(24px, 6vw, 64px);
 }
