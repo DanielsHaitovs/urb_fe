@@ -6,9 +6,9 @@ import { ArrowUpRight } from "lucide-react";
 import styles from "@/components/Footer/Footer.module.scss";
 
 const serviceLinks = [
-  { id: "drilling", href: "/#daily-solutions", labelKey: "nav.services.links.drilling" },
-  { id: "survey", href: "/#clean-water", labelKey: "nav.services.links.survey" },
-  { id: "maintenance", href: "/#daily-solutions", labelKey: "nav.services.links.maintenance" },
+  { id: "drilling", href: "/offers/drilling", labelKey: "nav.services.links.drilling" },
+  { id: "survey", href: "/offers/installation", labelKey: "nav.services.links.survey" },
+  { id: "maintenance", href: "/offers/maintenance", labelKey: "nav.services.links.maintenance" },
 ] as const;
 
 export default function Footer() {
@@ -23,9 +23,9 @@ export default function Footer() {
       links: [
         { id: "home", href: "/", label: menuT("main") },
         { id: "strength", href: "/#strength", label: menuT("strength") },
-        { id: "offers", href: "/#daily-solutions", label: menuT("offers") },
-        { id: "prices", href: "/#clean-water", label: menuT("prices") },
-        { id: "contact", href: "/#contact", label: menuT("call") },
+        { id: "offers", href: "/offers", label: menuT("offers") },
+        { id: "prices", href: "/prices", label: menuT("prices") },
+        { id: "contact", href: "/contact", label: menuT("call") },
       ],
     },
     {
