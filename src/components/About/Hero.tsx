@@ -1,37 +1,38 @@
-"use client";
+'use client'
 
-import Link from "next/link";
-import { useTranslations } from "next-intl";
-import styles from "@/components/About/Hero.module.scss";
+import Link from 'next/link'
+import { useTranslations } from 'next-intl'
+import styles from '@/components/About/Hero.module.scss'
+import { JSX } from 'react'
 
-const statKeys = ["projects", "crews", "uptime"] as const;
+const statKeys = ['projects', 'crews', 'uptime'] as const
 
 type HeroStat = {
-  value: string;
-  label: string;
-  helper: string;
-};
+  value: string
+  label: string
+  helper: string
+}
 
-export default function AboutHero() {
-  const t = useTranslations("AboutPage.hero");
-  const stats = statKeys.map((key) => t.raw(`stats.${key}`) as HeroStat);
+export default function AboutHero(): JSX.Element {
+  const t = useTranslations('AboutPage.hero')
+  const stats = statKeys.map((key) => t.raw(`stats.${key}`) as HeroStat)
 
   return (
     <section className={styles.main}>
       <div className={styles.content}>
-        <p className={styles.kicker}>{t("kicker")}</p>
+        <p className={styles.kicker}>{t('kicker')}</p>
         <h1 className={styles.title}>
-          <span>{t("title.line1")}</span>
-          <span className={styles.accent}>{t("title.line2")}</span>
+          <span>{t('title.line1')}</span>
+          <span className={styles.accent}>{t('title.line2')}</span>
         </h1>
-        <p className={styles.summary}>{t("summary")}</p>
-        <p className={styles.detail}>{t("detail")}</p>
+        <p className={styles.summary}>{t('summary')}</p>
+        <p className={styles.detail}>{t('detail')}</p>
         <div className={styles.actions}>
           <Link href="/contact" className={styles.primary}>
-            {t("actions.primary")}
+            {t('actions.primary')}
           </Link>
           <Link href="/offers" className={styles.secondary}>
-            {t("actions.secondary")}
+            {t('actions.secondary')}
           </Link>
         </div>
       </div>
@@ -46,5 +47,5 @@ export default function AboutHero() {
         <div className={styles.ring} aria-hidden="true" />
       </div>
     </section>
-  );
+  )
 }

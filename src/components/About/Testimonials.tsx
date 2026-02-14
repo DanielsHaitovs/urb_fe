@@ -1,29 +1,30 @@
-"use client";
+'use client'
 
-import { useTranslations } from "next-intl";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
-import "swiper/css";
-import styles from "@/components/About/Testimonials.module.scss";
+import { useTranslations } from 'next-intl'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Autoplay } from 'swiper/modules'
+import 'swiper/css'
+import styles from '@/components/About/Testimonials.module.scss'
+import { JSX } from 'react'
 
 type Testimonial = {
-  name: string;
-  location: string;
-  quote: string;
-  tag: string;
-};
+  name: string
+  location: string
+  quote: string
+  tag: string
+}
 
-export default function AboutTestimonials() {
-  const t = useTranslations("AboutPage.testimonials");
-  const testimonials = t.raw("items") as Testimonial[];
+export default function AboutTestimonials(): JSX.Element {
+  const t = useTranslations('AboutPage.testimonials')
+  const testimonials = t.raw('items') as Testimonial[]
 
   return (
     <section className={styles.main}>
       <div className={styles.content}>
-        <p className={styles.kicker}>{t("kicker")}</p>
+        <p className={styles.kicker}>{t('kicker')}</p>
         <div className={styles.title}>
-          <span>{t("title")}</span>
-          <span className={styles.summary}>{t("summary")}</span>
+          <span>{t('title')}</span>
+          <span className={styles.summary}>{t('summary')}</span>
         </div>
       </div>
       <Swiper
@@ -64,5 +65,5 @@ export default function AboutTestimonials() {
         ))}
       </Swiper>
     </section>
-  );
+  )
 }

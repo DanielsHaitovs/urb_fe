@@ -1,40 +1,41 @@
-import Link from "next/link";
-import { ArrowUpRight, ShieldCheck } from "lucide-react";
-import { useTranslations } from "next-intl";
-import styles from "@/components/Prices/Hero.module.scss";
+import Link from 'next/link'
+import { ArrowUpRight, ShieldCheck } from 'lucide-react'
+import { useTranslations } from 'next-intl'
+import styles from '@/components/Prices/Hero.module.scss'
+import { JSX } from 'react'
 
-const metricIds = ["packages", "timeline", "savings"] as const;
+const metricIds = ['packages', 'timeline', 'savings'] as const
 
-export default function PricesHero() {
-  const t = useTranslations("PricesPage");
+export default function PricesHero(): JSX.Element {
+  const t = useTranslations('PricesPage')
 
   const metrics = metricIds.map((id) => ({
     id,
     value: t(`hero.metrics.${id}.value`),
     label: t(`hero.metrics.${id}.label`),
-  }));
+  }))
 
   return (
     <header className={styles.main}>
       <div className={styles.content}>
-        <p className={styles.kicker}>{t("hero.kicker")}</p>
+        <p className={styles.kicker}>{t('hero.kicker')}</p>
         <h1 className={styles.title}>
-          <span>{t("hero.title.line1")}</span>
-          <span className={styles.accent}>{t("hero.title.line2")}</span>
+          <span>{t('hero.title.line1')}</span>
+          <span className={styles.accent}>{t('hero.title.line2')}</span>
         </h1>
-        <p className={styles.summary}>{t("hero.summary")}</p>
-        <p className={styles.note}>{t("hero.note")}</p>
+        <p className={styles.summary}>{t('hero.summary')}</p>
+        <p className={styles.note}>{t('hero.note')}</p>
         <div className={styles.actions}>
           <Link href="/contact" className={styles.primaryButton}>
-            <span>{t("hero.actions.primary")}</span>
+            <span>{t('hero.actions.primary')}</span>
             <ArrowUpRight size={18} aria-hidden="true" />
           </Link>
         </div>
         <div className={styles.badge}>
           <ShieldCheck size={30} aria-hidden="true" />
           <div>
-            <p>{t("hero.badge.title")}</p>
-            <strong>{t("hero.badge.body")}</strong>
+            <p>{t('hero.badge.title')}</p>
+            <strong>{t('hero.badge.body')}</strong>
           </div>
         </div>
       </div>
@@ -47,5 +48,5 @@ export default function PricesHero() {
         ))}
       </div>
     </header>
-  );
+  )
 }

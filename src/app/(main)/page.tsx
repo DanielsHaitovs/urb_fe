@@ -1,17 +1,17 @@
-"use client";
+'use client'
 
-import styles from "@/app/(main)/HomePage.module.scss";
-import CleanWater from "@/components/Clean/Clean";
-import DailySolutions from "@/components/Solutions/Solutions";
-import ContactCTA from "@/components/ContactCTA/ContactCTA";
-import Strength from "@/components/Strength/Strength";
-import { ScrollTopButton } from "@/components/ScrollTopButton/ScrollTopButton";
-import { useScreenSize } from "@/providers/ScreenTypeProvider";
-import WorkflowShowcase from "@/components/WorkflowShowcase/WorkflowShowcase";
+import styles from '@/app/(main)/HomePage.module.scss'
+import CleanWater from '@/components/Clean/Clean'
+import DailySolutions from '@/components/Solutions/Solutions'
+import ContactCTA from '@/components/ContactCTA/ContactCTA'
+import Strength from '@/components/Strength/Strength'
+import { ScrollTopButton } from '@/components/ScrollTopButton/ScrollTopButton'
+import { useScreenSize } from '@/providers/ScreenTypeProvider'
+import WorkflowShowcase from '@/components/WorkflowShowcase/WorkflowShowcase'
+import { JSX } from 'react'
 
-
-export default function Home() {
-  const screen = useScreenSize();
+export default function Home(): JSX.Element {
+  const screen = useScreenSize()
 
   return (
     <main className={styles.page}>
@@ -30,5 +30,5 @@ export default function Home() {
       </section>
       <ScrollTopButton />
     </main>
-  );
+  )
 }

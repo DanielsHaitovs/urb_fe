@@ -1,14 +1,14 @@
-import {getRequestConfig} from 'next-intl/server';
-import {cookies} from 'next/headers';
-import {defaultLocale, isLocale, LOCALE_COOKIE} from '@/i18n/config';
+import { getRequestConfig } from 'next-intl/server'
+import { cookies } from 'next/headers'
+import { defaultLocale, isLocale, LOCALE_COOKIE } from '@/i18n/config'
 
 export default getRequestConfig(async () => {
-  const store = await cookies();
-  const cookieLocale = store.get(LOCALE_COOKIE)?.value;
-  const locale = isLocale(cookieLocale) ? cookieLocale : defaultLocale;
+  const store = await cookies()
+  const cookieLocale = store.get(LOCALE_COOKIE)?.value
+  const locale = isLocale(cookieLocale) ? cookieLocale : defaultLocale
 
   return {
     locale,
-    messages: (await import(`../../translations/${locale}.json`)).default
-  };
-});
+    messages: (await import(`../../translations/${locale}.json`)).default,
+  }
+})

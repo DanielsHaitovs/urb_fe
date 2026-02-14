@@ -1,15 +1,12 @@
-"use client";
+'use client'
 
-import Image from "next/image";
-import styles from "@/components/Banner/Banner.module.scss";
-import InfoActions from "./Actions/InfoActions";
+import Image from 'next/image'
+import styles from '@/components/Banner/Banner.module.scss'
+import InfoActions from '@/components/Banner/Actions/InfoActions'
+import { BannerProps } from '@/types/banner.types'
+import { JSX } from 'react'
 
-type BannerProps = {
-  title?: string;
-  actions?: { label: string; href: string }[];
-};
-
-export default function Banner({ title, actions }: BannerProps) {
+export default function Banner({ title, actions }: BannerProps): JSX.Element {
   return (
     <div className={styles.banner} aria-label="Hero banner">
       <Image
@@ -27,5 +24,5 @@ export default function Banner({ title, actions }: BannerProps) {
         </div>
       </div>
     </div>
-  );
+  )
 }

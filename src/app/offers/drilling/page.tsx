@@ -1,16 +1,17 @@
-"use client";
+'use client'
 
-import styles from "@/app/offers/drilling/Drilling.module.scss";
-import { ScrollTopButton } from "@/components/ScrollTopButton/ScrollTopButton";
-import Drill from "@/components/Service/Drill/Drill";
-import DrillLayers from "@/components/Service/Drill/Layers";
-import DrillPricing from "@/components/Service/Drill/Pricing";
-import DrillFaq from "@/components/Service/Drill/Faq";
-import { useScreenSize } from "@/providers/ScreenTypeProvider";
-import ContactCTA from "@/components/ContactCTA/ContactCTA";
+import styles from '@/app/offers/drilling/Drilling.module.scss'
+import { ScrollTopButton } from '@/components/ScrollTopButton/ScrollTopButton'
+import Drill from '@/components/Service/Drill/Drill'
+import DrillLayers from '@/components/Service/Drill/Layers'
+import DrillPricing from '@/components/Service/Drill/Pricing'
+import DrillFaq from '@/components/Service/Drill/Faq'
+import { useScreenSize } from '@/providers/ScreenTypeProvider'
+import ContactCTA from '@/components/ContactCTA/ContactCTA'
+import { JSX } from 'react'
 
-export default function DrillingPage() {
-  const screen = useScreenSize();
+export default function DrillingPage(): JSX.Element {
+  const screen = useScreenSize()
 
   return (
     <main className={styles.page}>
@@ -21,5 +22,5 @@ export default function DrillingPage() {
       <ContactCTA screen={screen} />
       <ScrollTopButton />
     </main>
-  );
+  )
 }

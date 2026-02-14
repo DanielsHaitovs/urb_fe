@@ -1,34 +1,36 @@
-import Link from "next/link";
-import { ShieldCheck } from "lucide-react";
-import { useTranslations } from "next-intl";
-import styles from "@/components/Service/Install/Assurance.module.scss";
+import Link from 'next/link'
+import { ShieldCheck } from 'lucide-react'
+import { useTranslations } from 'next-intl'
+import styles from '@/components/Service/Install/Assurance.module.scss'
+import { JSX } from 'react'
 
-const pillarIds = ["monitoring", "quality", "support"] as const;
-const statIds = ["warranty", "response", "inspections"] as const;
+const pillarIds = ['monitoring', 'quality', 'support'] as const
+const statIds = ['warranty', 'response', 'inspections'] as const
 
-export default function InstallAssurance() {
-  const t = useTranslations("InstallationPage");
+export default function InstallAssurance(): JSX.Element {
+  const t = useTranslations('InstallationPage')
 
   const pillars = pillarIds.map((id) => ({
     id,
     title: t(`assurance.pillars.${id}.title`),
     body: t(`assurance.pillars.${id}.body`),
-    bullets: (t.raw(`assurance.pillars.${id}.bullets`) as string[]) ?? [],
-  }));
+    bullets:
+      (t.raw(`assurance.pillars.${id}.bullets`) as string[] | undefined) ?? [],
+  }))
 
   const stats = statIds.map((id) => ({
     id,
     value: t(`assurance.stats.${id}.value`),
     label: t(`assurance.stats.${id}.label`),
-  }));
+  }))
 
   return (
     <section className={styles.main}>
       <div className={styles.content}>
-        <p className={styles.kicker}>{t("assurance.kicker")}</p>
+        <p className={styles.kicker}>{t('assurance.kicker')}</p>
         <h1 className={styles.title}>
-            <span>{t("assurance.title")}</span>
-            <span className={styles.summary}>{t("assurance.summary")}</span>
+          <span>{t('assurance.title')}</span>
+          <span className={styles.summary}>{t('assurance.summary')}</span>
         </h1>
         <div className={styles.stats}>
           {stats.map((stat) => (
@@ -41,9 +43,9 @@ export default function InstallAssurance() {
         <div className={styles.ctaRow}>
           <Link href="/contact" className={styles.primaryButton}>
             <ShieldCheck size={18} aria-hidden="true" />
-            <span>{t("assurance.cta")}</span>
+            <span>{t('assurance.cta')}</span>
           </Link>
-          <p>{t("assurance.note")}</p>
+          <p>{t('assurance.note')}</p>
         </div>
       </div>
       <div className={styles.grid}>
@@ -60,5 +62,5 @@ export default function InstallAssurance() {
         ))}
       </div>
     </section>
-  );
+  )
 }

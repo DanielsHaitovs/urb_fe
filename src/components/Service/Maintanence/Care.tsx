@@ -1,39 +1,40 @@
-import Link from "next/link";
-import { ArrowUpRight, LifeBuoy, TestTubes, Radar } from "lucide-react";
-import { useTranslations } from "next-intl";
-import styles from "@/components/Service/Maintanence/Care.module.scss";
+import Link from 'next/link'
+import { ArrowUpRight, LifeBuoy, TestTubes, Radar } from 'lucide-react'
+import { useTranslations } from 'next-intl'
+import styles from '@/components/Service/Maintanence/Care.module.scss'
+import { JSX } from 'react'
 
-const cardIds = ["emergency", "chemistry", "monitoring"] as const;
-const statIds = ["coverage", "sla", "lab"] as const;
+const cardIds = ['emergency', 'chemistry', 'monitoring'] as const
+const statIds = ['coverage', 'sla', 'lab'] as const
 const icons = [
   <LifeBuoy key="lifeBuoy" size={22} aria-hidden="true" />,
   <TestTubes key="testTubes" size={22} aria-hidden="true" />,
   <Radar key="radar" size={22} aria-hidden="true" />,
-];
+]
 
-export default function MaintanenceCare() {
-  const t = useTranslations("MaintenancePage");
+export default function MaintanenceCare(): JSX.Element {
+  const t = useTranslations('MaintenancePage')
 
   const cards = cardIds.map((id) => ({
     id,
     title: t(`care.cards.${id}.title`),
     body: t(`care.cards.${id}.body`),
-    bullets: (t.raw(`care.cards.${id}.bullets`) as string[]) ?? [],
-  }));
+    bullets: (t.raw(`care.cards.${id}.bullets`) as string[] | undefined) ?? [],
+  }))
 
   const stats = statIds.map((id) => ({
     id,
     value: t(`care.stats.${id}.value`),
     label: t(`care.stats.${id}.label`),
-  }));
+  }))
 
   return (
     <section className={styles.main}>
       <div className={styles.content}>
-        <p className={styles.kicker}>{t("care.kicker")}</p>
+        <p className={styles.kicker}>{t('care.kicker')}</p>
         <h1 className={styles.title}>
-          <span>{t("care.title")}</span>
-          <span className={styles.summary}>{t("care.summary")}</span>
+          <span>{t('care.title')}</span>
+          <span className={styles.summary}>{t('care.summary')}</span>
         </h1>
       </div>
       <div className={styles.layout}>
@@ -46,16 +47,18 @@ export default function MaintanenceCare() {
               </div>
             ))}
           </div>
-          <p className={styles.note}>{t("care.note")}</p>
+          <p className={styles.note}>{t('care.note')}</p>
           <Link href="/contact" className={styles.cta}>
-            <span>{t("care.cta")}</span>
+            <span>{t('care.cta')}</span>
             <ArrowUpRight size={18} aria-hidden="true" />
           </Link>
         </aside>
         <div className={styles.cards}>
           {cards.map((card, index) => (
             <article key={card.id} className={styles.card}>
-              <div className={styles.iconWrapper}>{icons[index % icons.length]}</div>
+              <div className={styles.iconWrapper}>
+                {icons[index % icons.length]}
+              </div>
               <div>
                 <h3>{card.title}</h3>
                 <p>{card.body}</p>
@@ -70,5 +73,5 @@ export default function MaintanenceCare() {
         </div>
       </div>
     </section>
-  );
+  )
 }

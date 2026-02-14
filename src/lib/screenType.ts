@@ -1,29 +1,29 @@
-import type { ScreenType } from "@/types/deviceType";
+import type { ScreenType } from '@/types/deviceType'
 
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react'
 
 export default function useScreenType(): ScreenType {
-  const [screenType, setScreenType] = useState<ScreenType>("mobile");
+  const [screenType, setScreenType] = useState<ScreenType>('mobile')
 
   useEffect(() => {
     const handleResize = (): void => {
       if (window.innerWidth < 768) {
-        setScreenType("mobile");
+        setScreenType('mobile')
       } else if (window.innerWidth < 993) {
-        setScreenType("tablet");
+        setScreenType('tablet')
       } else {
-        setScreenType("desktop");
+        setScreenType('desktop')
       }
-    };
+    }
 
-    handleResize();
+    handleResize()
 
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize)
 
     return (): void => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [])
 
-  return screenType;
+  return screenType
 }

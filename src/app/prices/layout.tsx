@@ -1,21 +1,21 @@
-import type { ReactNode } from "react";
-import Header from "@/components/Header/Header";
-import Footer from "@/components/Footer/Footer";
-import { getTranslations } from "next-intl/server";
-import AboutTestimonials from "@/components/About/Testimonials";
+import type { JSX, ReactNode } from 'react'
+import Header from '@/components/Header/Header'
+import Footer from '@/components/Footer/Footer'
+import AboutTestimonials from '@/components/About/Testimonials'
+import { useTranslations } from 'next-intl'
 
-export default async function PricesLayout({
+export default function PricesLayout({
   children,
 }: Readonly<{
-  children: ReactNode;
-}>) {
-  const t = await getTranslations("PricesPage");
-  const bannerTitle = t("bannerTitle");
+  children: ReactNode
+}>): JSX.Element {
+  const t = useTranslations('PricesPage')
+  const bannerTitle = t('bannerTitle')
   const actions = [
-    { label: t("services.drilling.title"), href: "/offers/drilling" },
-    { label: t("services.maintenance.title"), href: "/offers/maintenance" },
-    { label: t("services.installation.title"), href: "/offers/installation" },
-  ];
+    { label: t('services.drilling.title'), href: '/offers/drilling' },
+    { label: t('services.maintenance.title'), href: '/offers/maintenance' },
+    { label: t('services.installation.title'), href: '/offers/installation' },
+  ]
 
   return (
     <>
@@ -24,5 +24,5 @@ export default async function PricesLayout({
       <AboutTestimonials />
       <Footer />
     </>
-  );
+  )
 }

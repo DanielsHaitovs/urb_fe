@@ -1,25 +1,29 @@
-import type { ReactNode } from "react";
-import Header from "@/components/Header/Header";
-import Footer from "@/components/Footer/Footer";
-import { getTranslations } from "next-intl/server";
-import AboutTestimonials from "@/components/About/Testimonials";
+import type { JSX, ReactNode } from 'react'
+import Header from '@/components/Header/Header'
+import Footer from '@/components/Footer/Footer'
+import AboutTestimonials from '@/components/About/Testimonials'
+import { useTranslations } from 'next-intl'
 
-export default async function AboutLayout({
+export default function AboutLayout({
   children,
 }: Readonly<{
-  children: ReactNode;
-}>) {
-  const [aboutT, offersT] = await Promise.all([
-    getTranslations("AboutPage"),
-    getTranslations("OffersPage"),
-  ]);
+  children: ReactNode
+}>): JSX.Element {
+  const aboutT = useTranslations('AboutPage')
+  const offersT = useTranslations('OffersPage')
 
-  const bannerTitle = aboutT("bannerTitle");
+  const bannerTitle = aboutT('bannerTitle')
   const actions = [
-    { label: offersT("services.drilling.title"), href: "/offers/drilling" },
-    { label: offersT("services.maintenance.title"), href: "/offers/maintenance" },
-    { label: offersT("services.installation.title"), href: "/offers/installation" },
-  ];
+    { label: offersT('services.drilling.title'), href: '/offers/drilling' },
+    {
+      label: offersT('services.maintenance.title'),
+      href: '/offers/maintenance',
+    },
+    {
+      label: offersT('services.installation.title'),
+      href: '/offers/installation',
+    },
+  ]
 
   return (
     <>
@@ -28,5 +32,5 @@ export default async function AboutLayout({
       <AboutTestimonials />
       <Footer />
     </>
-  );
+  )
 }

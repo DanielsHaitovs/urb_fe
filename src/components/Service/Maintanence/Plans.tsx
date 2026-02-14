@@ -1,10 +1,11 @@
-import styles from "@/components/Service/Maintanence/Plans.module.scss";
-import { useTranslations } from "next-intl";
+import styles from '@/components/Service/Maintanence/Plans.module.scss'
+import { useTranslations } from 'next-intl'
+import { JSX } from 'react'
 
-const planIds = ["seasonal", "continuous"] as const;
+const planIds = ['seasonal', 'continuous'] as const
 
-export default function MaintanencePlans() {
-  const t = useTranslations("MaintenancePage");
+export default function MaintanencePlans(): JSX.Element {
+  const t = useTranslations('MaintenancePage')
 
   const plans = planIds.map((id) => ({
     id,
@@ -12,16 +13,16 @@ export default function MaintanencePlans() {
     summary: t(`plans.${id}.summary`),
     price: t(`plans.${id}.price`),
     note: t(`plans.${id}.note`),
-    items: (t.raw(`plans.${id}.items`) as string[]) ?? [],
-  }));
+    items: (t.raw(`plans.${id}.items`) as string[] | undefined) ?? [],
+  }))
 
   return (
     <section id="plans" className={styles.main}>
       <div className={styles.content}>
-        <p className={styles.kicker}>{t("plans.kicker")}</p>
+        <p className={styles.kicker}>{t('plans.kicker')}</p>
         <h1 className={styles.title}>
-          <span>{t("plans.title")}</span>
-          <span className={styles.summary}>{t("plans.summary")}</span>
+          <span>{t('plans.title')}</span>
+          <span className={styles.summary}>{t('plans.summary')}</span>
         </h1>
       </div>
       <div className={styles.list}>
@@ -42,5 +43,5 @@ export default function MaintanencePlans() {
         ))}
       </div>
     </section>
-  );
+  )
 }

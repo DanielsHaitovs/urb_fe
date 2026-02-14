@@ -1,40 +1,41 @@
-'use client';
+'use client'
 
-import { setLocale } from '@/actions/setLocale';
-import styles from '@/components/Language/Language.module.scss';
-import { defaultLocale, isLocale, locales, type Locale } from '@/i18n/config';
-import { ChevronDown } from 'lucide-react';
-import { useLocale } from 'next-intl';
-import { useEffect, useRef, useState, useTransition } from 'react';
+import { setLocale } from '@/actions/setLocale'
+import styles from '@/components/Language/Language.module.scss'
+import { defaultLocale, isLocale, locales, type Locale } from '@/i18n/config'
+import { ChevronDown } from 'lucide-react'
+import { useLocale } from 'next-intl'
+import { JSX, useEffect, useRef, useState, useTransition } from 'react'
 
-export function LocaleToggleButton() {
-  const locale = useLocale();
-  const activeLocale = isLocale(locale) ? locale : defaultLocale;
-  const [isPending, startTransition] = useTransition();
-  const [isOpen, setOpen] = useState(false);
-  const containerRef = useRef<HTMLDivElement>(null);
+export function LocaleToggleButton(): JSX.Element {
+  const locale = useLocale()
+  const activeLocale = isLocale(locale) ? locale : defaultLocale
+  const [isPending, startTransition] = useTransition()
+  const [isOpen, setOpen] = useState(false)
+  const containerRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
+    const handleClickOutside = (event: MouseEvent): void => {
       if (!containerRef.current?.contains(event.target as Node)) {
-        setOpen(false);
+        setOpen(false)
       }
-    };
+    }
 
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, []);
+    document.addEventListener('mousedown', handleClickOutside)
+    return (): void =>
+      document.removeEventListener('mousedown', handleClickOutside)
+  }, [])
 
-  const handleSelect = (targetLocale: Locale) => {
-    setOpen(false);
+  const handleSelect = (targetLocale: Locale): void => {
+    setOpen(false)
     if (targetLocale === activeLocale) {
-      return;
+      return
     }
 
     startTransition(async () => {
-      await setLocale(targetLocale);
-    });
-  };
+      await setLocale(targetLocale)
+    })
+  }
 
   return (
     <div className={styles.localeToggle} ref={containerRef}>
@@ -59,7 +60,7 @@ export function LocaleToggleButton() {
         aria-activedescendant={`locale-${activeLocale}`}
       >
         {locales.map((item) => {
-          const isActive = item === activeLocale;
+          const isActive = item === activeLocale
           return (
             <li key={item}>
               <button
@@ -74,9 +75,9 @@ export function LocaleToggleButton() {
                 <span>{item.toUpperCase()}</span>
               </button>
             </li>
-          );
+          )
         })}
       </ul>
     </div>
-  );
+  )
 }

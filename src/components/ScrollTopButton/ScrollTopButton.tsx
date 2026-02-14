@@ -1,25 +1,25 @@
-"use client";
+'use client'
 
-import { useEffect, useState } from "react";
-import { ArrowUp } from "lucide-react";
-import styles from "@/components/ScrollTopButton/ScrollTopButton.module.scss";
+import { JSX, useEffect, useState } from 'react'
+import { ArrowUp } from 'lucide-react'
+import styles from '@/components/ScrollTopButton/ScrollTopButton.module.scss'
 
-export function ScrollTopButton() {
-  const [isVisible, setIsVisible] = useState(false);
+export function ScrollTopButton(): JSX.Element {
+  const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsVisible(window.scrollY > 200);
-    };
+    const handleScroll = (): void => {
+      setIsVisible(window.scrollY > 200)
+    }
 
-    handleScroll();
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    handleScroll()
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return (): void => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+  const scrollToTop = (): void => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
 
   return (
     <button
@@ -33,5 +33,5 @@ export function ScrollTopButton() {
     >
       <ArrowUp size={22} aria-hidden="true" />
     </button>
-  );
+  )
 }

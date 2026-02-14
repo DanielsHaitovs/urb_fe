@@ -1,16 +1,17 @@
-"use client";
+'use client'
 
-import styles from "@/app/about/AboutPage.module.scss";
-import AboutHero from "@/components/About/Hero";
-import AboutCredibility from "@/components/About/Credibility";
-import AboutCapabilities from "@/components/About/Capabilities";
-import AboutTimeline from "@/components/About/Timeline";
-import ContactCTA from "@/components/ContactCTA/ContactCTA";
-import { ScrollTopButton } from "@/components/ScrollTopButton/ScrollTopButton";
-import { useScreenSize } from "@/providers/ScreenTypeProvider";
+import styles from '@/app/about/AboutPage.module.scss'
+import AboutHero from '@/components/About/Hero'
+import AboutCredibility from '@/components/About/Credibility'
+import AboutCapabilities from '@/components/About/Capabilities'
+import AboutTimeline from '@/components/About/Timeline'
+import ContactCTA from '@/components/ContactCTA/ContactCTA'
+import { ScrollTopButton } from '@/components/ScrollTopButton/ScrollTopButton'
+import { useScreenSize } from '@/providers/ScreenTypeProvider'
+import { JSX } from 'react'
 
-export default function AboutPage() {
-  const screen = useScreenSize();
+export default function AboutPage(): JSX.Element {
+  const screen = useScreenSize()
 
   return (
     <main className={styles.page}>
@@ -22,5 +23,5 @@ export default function AboutPage() {
       <ContactCTA screen={screen} />
       <ScrollTopButton />
     </main>
-  );
+  )
 }

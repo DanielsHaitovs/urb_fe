@@ -1,43 +1,56 @@
-"use client";
+'use client'
 
-import Link from "next/link";
-import { useTranslations } from "next-intl";
-import { ArrowUpRight } from "lucide-react";
-import styles from "@/components/Footer/Footer.module.scss";
+import Link from 'next/link'
+import { useTranslations } from 'next-intl'
+import { ArrowUpRight } from 'lucide-react'
+import styles from '@/components/Footer/Footer.module.scss'
+import { JSX } from 'react'
 
 const serviceLinks = [
-  { id: "drilling", href: "/offers/drilling", labelKey: "nav.services.links.drilling" },
-  { id: "survey", href: "/offers/installation", labelKey: "nav.services.links.survey" },
-  { id: "maintenance", href: "/offers/maintenance", labelKey: "nav.services.links.maintenance" },
-] as const;
+  {
+    id: 'drilling',
+    href: '/offers/drilling',
+    labelKey: 'nav.services.links.drilling',
+  },
+  {
+    id: 'survey',
+    href: '/offers/installation',
+    labelKey: 'nav.services.links.survey',
+  },
+  {
+    id: 'maintenance',
+    href: '/offers/maintenance',
+    labelKey: 'nav.services.links.maintenance',
+  },
+] as const
 
-export default function Footer() {
-  const t = useTranslations("Footer");
-  const menuT = useTranslations("MenuItems");
-  const year = new Date().getFullYear();
+export default function Footer(): JSX.Element {
+  const t = useTranslations('Footer')
+  const menuT = useTranslations('MenuItems')
+  const year = new Date().getFullYear()
 
   const navSections = [
     {
-      id: "compass",
-      title: t("nav.compass.title"),
+      id: 'compass',
+      title: t('nav.compass.title'),
       links: [
-        { id: "home", href: "/", label: menuT("main") },
-        { id: "strength", href: "/#strength", label: menuT("strength") },
-        { id: "offers", href: "/offers", label: menuT("offers") },
-        { id: "prices", href: "/prices", label: menuT("prices") },
-        { id: "contact", href: "/contact", label: menuT("call") },
+        { id: 'home', href: '/', label: menuT('main') },
+        { id: 'strength', href: '/#strength', label: menuT('strength') },
+        { id: 'offers', href: '/offers', label: menuT('offers') },
+        { id: 'prices', href: '/prices', label: menuT('prices') },
+        { id: 'contact', href: '/contact', label: menuT('call') },
       ],
     },
     {
-      id: "services",
-      title: t("nav.services.title"),
+      id: 'services',
+      title: t('nav.services.title'),
       links: serviceLinks.map((link) => ({
         id: link.id,
         href: link.href,
         label: t(link.labelKey as Parameters<typeof t>[0]),
       })),
-    }
-  ];
+    },
+  ]
 
   return (
     <footer className={styles.footer}>
@@ -46,12 +59,12 @@ export default function Footer() {
       <div className={styles.container}>
         <div className={styles.topRegion}>
           <div className={styles.brand}>
-            <p className={styles.kicker}>{t("kicker")}</p>
+            <p className={styles.kicker}>{t('kicker')}</p>
             <h2 className={styles.title}>
-              <span>{t("title.line1")}</span>
-              <span className={styles.highlight}>{t("title.line2")}</span>
+              <span>{t('title.line1')}</span>
+              <span className={styles.highlight}>{t('title.line2')}</span>
             </h2>
-            <p className={styles.summary}>{t("summary")}</p>
+            <p className={styles.summary}>{t('summary')}</p>
           </div>
           <div className={styles.navRegion}>
             {navSections.map((section) => (
@@ -73,15 +86,15 @@ export default function Footer() {
         </div>
         <div className={styles.bottomBar}>
           <div>
-            <p>{t("legal.rights", { year })}</p>
-            <span>{t("legal.address")}</span>
+            <p>{t('legal.rights', { year })}</p>
+            <span>{t('legal.address')}</span>
           </div>
           <div className={styles.bottomLinks}>
-            <Link href="/#clean-water">{t("legal.links.privacy")}</Link>
-            <Link href="/contact">{t("legal.links.terms")}</Link>
+            <Link href="/#clean-water">{t('legal.links.privacy')}</Link>
+            <Link href="/contact">{t('legal.links.terms')}</Link>
           </div>
         </div>
       </div>
     </footer>
-  );
+  )
 }
