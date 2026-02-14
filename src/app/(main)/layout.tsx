@@ -11,6 +11,7 @@ export default function HomePageLayout({
 }>): JSX.Element {
   const t = useTranslations('Banner')
   const title = t('title')
+  const description = t('description')
 
   const actions = [
     { label: t('strength'), href: '#strength' },
@@ -21,7 +22,12 @@ export default function HomePageLayout({
 
   return (
     <>
-      <Header banner={true} actions={actions} bannerTitle={title} />
+      <Header
+        banner={true}
+        actions={actions}
+        bannerTitle={title}
+        description={description}
+      />
       {children}
       <AboutTestimonials />
       <Footer />

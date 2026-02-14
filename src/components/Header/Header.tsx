@@ -10,6 +10,7 @@ import { JSX } from 'react'
 type HeaderProps = {
   banner?: boolean
   bannerTitle?: string
+  description?: string
   actions?: { label: string; href: string }[]
 }
 
