@@ -1,6 +1,6 @@
 @use "@/styles/component.module.scss" as tokens;
 
-.banner {
+.main {
   position: relative;
   width: 100%;
   display: flex;
@@ -18,47 +18,47 @@
   z-index: 1;
   object-fit: cover;
   height: 100%;
-  filter: brightness(0.75);
+  filter: brightness(0.55);
 }
 
-.bannerContent {
+.content {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 90%;
+  left: 5%;
   top: 30%;
+  height: 70%;
   z-index: 2;
   color: #fff;
-  width: 100%;
 }
 
-.title {
-  margin: 0;
-  display: block;
-  font-size: clamp(1.4rem, 4vw, 3rem);
-  text-align: center;
-}
-
-.actions {
+.hero {
   width: 100%;
+  gap: 20px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 18px;
-  padding: 20px 0;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
-.action {
-  width: calc(50% - 40px);
-  @include tokens.action;
+.title {
+  @include tokens.title;
 }
 
+
 @media (min-width: 768px) {
-  .banner {
+  .main {
     max-height: 700px;
   }
 
-  .title {
-    font-size: 1.70rem;
+  .content {
+    flex-direction: row-reverse;
+    height: 50%;
+  }
+
+  .hero {
+    padding: 20px;
   }
 }

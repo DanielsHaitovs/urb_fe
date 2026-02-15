@@ -6,17 +6,12 @@ import styles from '@/components/Header/Header.module.scss'
 import TopBanner from '@/components/Banner/TopBanner'
 import { useScreenSize } from '@/providers/ScreenTypeProvider'
 import { JSX } from 'react'
-
-type HeaderProps = {
-  banner?: boolean
-  bannerTitle?: string
-  description?: string
-  actions?: { label: string; href: string }[]
-}
+import { HeaderProps } from '@/types/header.types'
 
 export default function Header({
   banner = false,
   bannerTitle,
+  description,
   actions,
 }: HeaderProps): JSX.Element {
   const screen = useScreenSize()
@@ -27,7 +22,13 @@ export default function Header({
         <TopBanner />
         <Menu screen={screen} />
       </div>
-      {banner && <Banner title={bannerTitle} actions={actions} />}
+      {banner && (
+        <Banner
+          title={bannerTitle}
+          actions={actions}
+          description={description}
+        />
+      )}
     </header>
   )
 }

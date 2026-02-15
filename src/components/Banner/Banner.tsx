@@ -4,14 +4,15 @@ import Image from 'next/image'
 import styles from '@/components/Banner/Banner.module.scss'
 import { BannerProps } from '@/types/banner.types'
 import { JSX } from 'react'
-import Link from 'next/link'
+import InfoActions from './Actions/InfoActions'
 
 export default function Banner({
   title,
   description,
+  actions,
 }: BannerProps): JSX.Element {
   return (
-    <div className={styles.banner} aria-label="Hero banner">
+    <div className={styles.main} aria-label="Hero banner">
       <Image
         src="/banner/banner.png"
         alt="Urb Logo"
@@ -20,25 +21,12 @@ export default function Banner({
         sizes="100vw"
         className={styles.background}
       />
-      <div className={styles.bannerContent}>
-        <h1 className={styles.title}>{title}</h1>
-        <p>{description}</p>
-        <div className={styles.actions}>
-          <Link
-            href={'/contacts'}
-            className={styles.action}
-            aria-label="Contact us"
-          >
-            Contact Us
-          </Link>
-          <Link
-            href={'/prices'}
-            className={styles.action}
-            aria-label="View prices"
-          >
-            Prices
-          </Link>
+      <div className={styles.content}>
+        <div className={styles.hero}>
+          <p>{description}</p>
+          <h1 className={styles.title}>{title}</h1>
         </div>
+        <InfoActions actions={actions} />
       </div>
     </div>
   )

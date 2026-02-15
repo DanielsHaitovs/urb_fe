@@ -9,6 +9,7 @@ import { ScrollTopButton } from '@/components/ScrollTopButton/ScrollTopButton'
 import { useScreenSize } from '@/providers/ScreenTypeProvider'
 import WorkflowShowcase from '@/components/WorkflowShowcase/WorkflowShowcase'
 import { JSX } from 'react'
+import { ReachOutToUsButton } from '@/components/ReachOutToUs/ReachOutToUs'
 
 export default function Home(): JSX.Element {
   const screen = useScreenSize()
@@ -28,6 +29,7 @@ export default function Home(): JSX.Element {
       <section id="contact" className={styles.section}>
         <ContactCTA screen={screen} />
       </section>
+      <ReachOutToUsButton />
       <ScrollTopButton />
     </main>
   )

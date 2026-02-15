@@ -80,17 +80,17 @@ export default function Strength({
       aria-labelledby="strength-heading"
       data-screen={screen}
     >
-      <div className={styles.aurora} aria-hidden="true" />
-      <div className={styles.gridGlow} aria-hidden="true" />
-      <div className={styles.inner}>
-        <header className={styles.header}>
+      <div className={styles.bright} aria-hidden="true" />
+      <div className={styles.grid} aria-hidden="true" />
+      <div className={styles.content}>
+        <div className={styles.top}>
           <span className={styles.kicker}>{t('subTitle')}</span>
           <h1 className={styles.title}>
             <span id="strength-heading">{t('title')}</span>
             <span className={styles.summary}>{t('summary')}</span>
           </h1>
-        </header>
-        <div className={styles.stats}>
+        </div>
+        <div className={styles.list}>
           {stats.map((stat, index) => (
             <StatCard
               key={stat.id}

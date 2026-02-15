@@ -27,10 +27,32 @@
 }
 
 @mixin list {
-  flex-direction: row;
-  flex-wrap: wrap;
-  display: flex;
-  gap: 18px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: clamp(16px, 3vw, 28px);
+	width: 100%;
+}
+
+@mixin contentGridBackground {
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+	z-index: 0;
+}
+
+@mixin brightBackground {
+	background: linear-gradient(120deg, rgba(90, 176, 255, 0.3), rgba(53, 160, 255, 0.18), rgba(0, 112, 243, 0.35), rgba(0, 87, 194, 0.25));
+	filter: blur(90px);
+	opacity: 0.9;
+}
+
+@mixin gridBackground {
+  background:
+		linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px) 0 0 / 140px 140px,
+		linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px) 0 0 / 140px 140px;
+	opacity: 0.5;
+	mix-blend-mode: screen;
 }
 
 @mixin content {
@@ -40,6 +62,11 @@
   flex-direction: column;
   width: 100%;
   gap: 20px;
+}
+
+@mixin topContent {
+  @include content;
+  text-align: center;
 }
 
 @mixin main {

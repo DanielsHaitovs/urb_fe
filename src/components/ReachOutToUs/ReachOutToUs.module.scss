@@ -1,0 +1,260 @@
+.button {
+  position: fixed;
+  bottom: clamp(220px, 4vw, 90px);
+  right: clamp(16px, 4vw, 48px);
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background:
+    radial-gradient(circle at 30% 30%, rgba(147, 199, 255, 0.45), transparent 65%),
+    linear-gradient(135deg, rgba(6, 15, 36, 0.85), rgba(7, 22, 55, 0.92));
+  color: #f7fbff;
+  box-shadow: 0 20px 60px rgba(2, 6, 18, 0.8);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  z-index: 20;
+  isolation: isolate;
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+  overflow: visible;
+}
+
+.button::after {
+  content: '';
+  position: absolute;
+  inset: -14px;
+  border-radius: inherit;
+  background: radial-gradient(circle, rgba(64, 139, 255, 0.35), transparent 65%);
+  filter: blur(8px);
+  opacity: 0.65;
+  z-index: -1;
+  animation: reachOutGlow 3.6s ease-in-out infinite;
+}
+
+.button svg {
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.button:hover,
+.button:focus-visible {
+  transform: translateY(-4px) scale(1.07);
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 30px 80px rgba(15, 52, 117, 0.65);
+}
+
+.button:hover svg,
+.button:focus-visible svg {
+  transform: scale(1.1) rotate(8deg);
+  filter: drop-shadow(0 0 6px rgba(111, 181, 255, 0.9));
+}
+
+.button:focus-visible {
+  outline: none;
+  box-shadow:
+    0 0 0 2px rgba(255, 255, 255, 0.3),
+    0 30px 80px rgba(15, 52, 117, 0.65);
+}
+
+@media (max-width: 480px) {
+  .button {
+    width: 48px;
+    height: 48px;
+    bottom: 170px;
+    right: 16px;
+  }
+}
+
+@keyframes reachOutGlow {
+  0% {
+    opacity: 0.35;
+    transform: scale(0.92);
+  }
+  50% {
+    opacity: 0.95;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0.35;
+    transform: scale(0.92);
+  }
+}
+
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(3, 6, 17, 0.8);
+  backdrop-filter: blur(12px);
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  z-index: 120;
+}
+
+.modalCard {
+  position: relative;
+  width: min(520px, 100%);
+  padding: clamp(24px, 5vw, 40px);
+  border-radius: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background:
+    radial-gradient(circle at top right, rgba(90, 176, 255, 0.25), transparent 55%),
+    linear-gradient(135deg, #040b1e 0%, #081332 100%);
+  box-shadow: 0 40px 120px rgba(5, 10, 28, 0.75);
+  color: #f1f5ff;
+}
+
+.modalClose {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(4, 9, 24, 0.7);
+  color: rgba(255, 255, 255, 0.75);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.modalClose:hover,
+.modalClose:focus-visible {
+  outline: none;
+  transform: translateY(-1px);
+  border-color: rgba(147, 199, 255, 0.6);
+}
+
+.modalHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.modalKicker {
+  margin: 0;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.35em;
+  color: rgba(173, 191, 230, 0.8);
+}
+
+.modalHeader h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #f7fbff;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.modalHighlight {
+  color: #93c7ff;
+}
+
+.modalSummary {
+  margin: 0;
+  color: rgba(221, 232, 255, 0.85);
+  line-height: 1.5;
+  font-size: 0.98rem;
+}
+
+.modalActions {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.modalAction {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 22px;
+  width: 100%;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(5, 9, 22, 0.85);
+  color: inherit;
+  cursor: pointer;
+  transition: transform 0.22s ease, border-color 0.22s ease, background 0.22s ease;
+  font: inherit;
+}
+
+.modalAction::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 24px;
+  padding: 1px;
+  background: linear-gradient(120deg, rgba(90, 176, 255, 0.5), rgba(0, 112, 243, 0.2));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.modalAction:hover,
+.modalAction:focus-visible {
+  outline: none;
+  transform: translateY(-4px);
+  border-color: rgba(90, 176, 255, 0.7);
+  background: rgba(9, 16, 40, 0.95);
+}
+
+.modalIconWrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: rgba(90, 176, 255, 0.18);
+  color: #a8d1ff;
+}
+
+.modalActionCopy {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.modalActionLabel {
+  font-size: 1.05rem;
+  color: #f5f8ff;
+}
+
+.modalActionHelper {
+  margin: 0;
+  color: rgba(211, 226, 255, 0.85);
+  font-size: 0.95rem;
+}
+
+.modalActionArrow {
+  margin-left: auto;
+  font-size: 1.25rem;
+  color: rgba(147, 199, 255, 0.85);
+}
+
+@media (max-width: 520px) {
+  .modalCard {
+    border-radius: 28px;
+    padding: 24px 18px;
+  }
+
+  .modalAction {
+    padding: 18px;
+    gap: 12px;
+  }
+
+  .modalIconWrap {
+    width: 40px;
+    height: 40px;
+  }
+}

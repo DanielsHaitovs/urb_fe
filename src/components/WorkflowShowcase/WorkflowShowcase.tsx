@@ -39,30 +39,31 @@ export default function WorkflowShowcase(): JSX.Element {
   return (
     <section className={styles.main} aria-label={title}>
       <div className={styles.content}>
-        <p className={styles.kicker}>{kicker}</p>
-        <h2 className={styles.title}>{title}</h2>
-        {subtitle ? <p className={styles.subtitle}>{subtitle}</p> : null}
-        {description ? <p className={styles.summary}>{description}</p> : null}
-      </div>
+        <div className={styles.top}>
+          <p className={styles.kicker}>{kicker}</p>
+          <h2 className={styles.title}>{title}</h2>
+          {subtitle ? <p className={styles.subtitle}>{subtitle}</p> : null}
+          {description ? <p className={styles.summary}>{description}</p> : null}
+        </div>
+        <div className={styles.list}>
+          {steps.map((step, index) => {
+            const Icon = step.icon
+            const order = String(index + 1).padStart(2, '0')
 
-      <div className={styles.stepGrid}>
-        {steps.map((step, index) => {
-          const Icon = step.icon
-          const order = String(index + 1).padStart(2, '0')
-
-          return (
-            <article key={step.id} className={styles.stepCard}>
-              <div className={styles.stepBadge} aria-hidden="true">
-                <span className={styles.stepNumber}>{order}</span>
-                <span className={styles.iconRing}>
-                  <Icon size={34} strokeWidth={1.6} aria-hidden="true" />
-                </span>
-              </div>
-              <h3>{step.title}</h3>
-              <p>{step.description}</p>
-            </article>
-          )
-        })}
+            return (
+              <article key={step.id} className={styles.card}>
+                <div className={styles.cardBadge}>
+                  <span className={styles.stepNumber}>{order}</span>
+                  <span className={styles.iconRing}>
+                    <Icon size={34} strokeWidth={1.6} />
+                  </span>
+                </div>
+                <h3>{step.title}</h3>
+                <p>{step.description}</p>
+              </article>
+            )
+          })}
+        </div>
       </div>
     </section>
   )

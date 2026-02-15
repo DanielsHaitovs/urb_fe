@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl'
 import styles from '@/components/Banner/TopBanner.module.scss'
-import { LucideSparkles, Mail, MapPin } from 'lucide-react'
+import { LucideSparkles, Mail, MapPin, Phone } from 'lucide-react'
 import type { JSX, MouseEvent } from 'react'
 import { useEffect, useRef } from 'react'
 
@@ -15,11 +15,11 @@ export default function TopBanner(): JSX.Element {
     if (!track) return
 
     const isMobileTablet = (): boolean =>
-      window.matchMedia('(max-width: 1024px)').matches
+      window.matchMedia('(max-width: 1300px)').matches
 
     const ensureClone = (): void => {
       if (!isMobileTablet()) {
-        track.classList.remove(styles.hasDuplicate as unknown as string)
+        track.classList.remove(styles.hasDuplicate)
         const children = Array.from(track.children)
         if (children.length > 1) {
           for (let i = 1; i < children.length; i++)
@@ -35,7 +35,7 @@ export default function TopBanner(): JSX.Element {
         track.appendChild(clone)
       }
       // Flag to enable animation when duplicate exists
-      track.classList.add(styles.hasDuplicate as unknown as string)
+      track.classList.add(styles.hasDuplicate)
     }
 
     ensureClone()
@@ -85,6 +85,14 @@ export default function TopBanner(): JSX.Element {
           <Mail />
           <span>info@urb.lv</span>
         </a>
+        <a
+          href="tel:+37128150254"
+          className={styles.wrapper}
+          aria-label="Call +37128150254"
+        >
+          <Phone />
+          <span>+37128150254</span>
+        </a>
       </div>
 
       {/* Mobile/Tablet running line */}
@@ -110,6 +118,15 @@ export default function TopBanner(): JSX.Element {
               >
                 <Mail />
                 <span>info@urb.lv</span>
+              </a>
+              <span className={styles.separator}>•</span>
+              <a
+                href="tel:+37128150254"
+                className={styles.item}
+                aria-label="Call +37128150254"
+              >
+                <Phone />
+                <span>+37128150254</span>
               </a>
               <span className={styles.separator}>•</span>
             </div>

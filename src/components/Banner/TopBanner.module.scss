@@ -36,7 +36,6 @@
   margin: 5px 0;
 }
 
-// New rows for responsive layouts
 .staticRow {
   display: flex;
   flex-direction: row;
@@ -46,23 +45,21 @@
 }
 
 .runningRow {
-  display: none; // hidden by default, shown on mobile/tablet
+  display: none;
   width: 100%;
   overflow: hidden;
 }
 
-// Marquee implementation
 .marquee {
   position: relative;
   width: 100%;
   overflow: hidden;
-  display: flex; // keep both content blocks on one line
-  white-space: nowrap; // prevent wrapping to next line
+  display: flex;
+  white-space: nowrap;
   align-items: center;
-  gap: 0; // avoid extra spacing between duplicated blocks
+  gap: 0;
 }
 
-// New: a track that holds two identical content blocks and animates continuously
 .marqueeTrack {
   display: inline-flex;
   align-items: center;
@@ -70,10 +67,9 @@
   will-change: transform;
 }
 
-/* Enable seamless animation only when we have two identical panels */
 .hasDuplicate {
   animation: marquee-scroll 16s linear infinite;
-  width: max-content; // track sizes to its combined content (two panels)
+  width: max-content;
 }
 
 .marqueeContent {
@@ -82,7 +78,7 @@
   gap: 12px;
   white-space: nowrap;
   padding-left: 12px;
-  flex: 0 0 auto; // each panel sizes to its content; two panels side-by-side
+  flex: 0 0 auto;
 }
 
 .item {
@@ -93,20 +89,18 @@
 
 .separator {
   opacity: 0.8;
-  margin: 0 12px; // symmetric spacing around every dot
+  margin: 0 12px;
 }
 
 @keyframes marquee-scroll {
   0% { transform: translate3d(0, 0, 0); }
-  100% { transform: translate3d(-50%, 0, 0); } // move by exactly one panel width
+  100% { transform: translate3d(-50%, 0, 0); }
 }
 
-// Mobile & tablet: show running line, hide static layout
-@media (max-width: 1024px) {
+@media (max-width: 1300px) {
   .staticRow { display: none; }
   .runningRow { display: block; }
 
-  // Tighten paddings and sizes for smaller screens
   .topBanner {
     padding: 6px 0px;
     width: 100%;
@@ -116,13 +110,11 @@
   }
 }
 
-// Desktop: hide running line
-@media (min-width: 1025px) {
+@media (min-width: 1301px) {
   .runningRow { display: none; }
   .staticRow { display: flex; }
 }
 
-// Helper to offset page content below fixed banner
 .bannerSpacer {
-  height: 48px; // match banner height so content doesn’t jump
+  height: 48px;
 }

@@ -14,27 +14,63 @@
   display: grid;
   place-items: center;
   cursor: pointer;
-  transition: opacity 220ms ease, transform 220ms ease, box-shadow 220ms ease;
+  transition:
+    opacity 220ms ease,
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
   opacity: 0;
-  transform: translateY(20px);
   pointer-events: none;
   z-index: 20;
   backdrop-filter: blur(8px);
+  isolation: isolate;
+  overflow: visible;
+  --scroll-top-translate: 20px;
+  --scroll-top-scale: 1;
+  transform: translateY(var(--scroll-top-translate)) scale(var(--scroll-top-scale));
+}
+
+.button::after {
+  content: '';
+  position: absolute;
+  inset: -14px;
+  border-radius: inherit;
+  background: radial-gradient(circle, rgba(64, 139, 255, 0.35), transparent 65%);
+  filter: blur(8px);
+  opacity: 0.65;
+  z-index: -1;
+  animation: scrollTopGlow 3.6s ease-in-out infinite;
 }
 
 .button[data-visible] {
   opacity: 1;
-  transform: translateY(0);
   pointer-events: auto;
+  --scroll-top-translate: 0;
 }
 
-.button:hover {
-  box-shadow: 0 24px 70px rgba(4, 12, 30, 0.9);
+.button svg {
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.button:hover,
+.button:focus-visible {
+  --scroll-top-translate: -4px;
+  --scroll-top-scale: 1.07;
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 30px 80px rgba(15, 52, 117, 0.65);
+}
+
+.button:hover svg,
+.button:focus-visible svg {
+  transform: scale(1.1) rotate(8deg);
+  filter: drop-shadow(0 0 6px rgba(111, 181, 255, 0.9));
 }
 
 .button:focus-visible {
-  outline: 2px solid rgba(147, 199, 255, 0.9);
-  outline-offset: 3px;
+  outline: none;
+  box-shadow:
+    0 0 0 2px rgba(255, 255, 255, 0.3),
+    0 30px 80px rgba(15, 52, 117, 0.65);
 }
 
 @media (max-width: 480px) {
@@ -43,5 +79,20 @@
     height: 48px;
     bottom: 100px;
     right: 16px;
+  }
+}
+
+@keyframes scrollTopGlow {
+  0% {
+    opacity: 0.35;
+    transform: scale(0.92);
+  }
+  50% {
+    opacity: 0.95;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0.35;
+    transform: scale(0.92);
   }
 }
